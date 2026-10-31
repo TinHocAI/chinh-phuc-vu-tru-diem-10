@@ -1,0 +1,22 @@
+{
+  "id": "ASTRO_BOCBO_01",
+  "name": "Nguyễn Văn An",
+  "school": "THPT Bộc Bố",
+  "grade": "11",
+  "class_name": "11A1",
+  "avatar": "boy_astronaut",
+  "ship_name": "Sao Băng Bộc Bố 01",
+  "level": 2,
+  "exp": 450,
+  "exp_to_next": 600,
+  "oxy": 100,
+  "streak": 7,
+  "unlocked_badges": [
+    "Tân Binh Không Gian",
+    "Chỉ Huy Khối 11"
+  ],
+  "completed_stations": [
+    "M11_01",
+    "P11_01"
+  ]
+}

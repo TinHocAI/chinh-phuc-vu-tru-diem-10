@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinh Phục Vũ Trụ Điểm 10 - THPT Bộc Bố</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+
+  <!-- Fullscreen Anti-gravity Canvas -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- Top Global HUD Bar -->
+  <header class="hud-topbar">
+    <div class="brand-section">
+      <div class="school-badge">THPT BỘC BỐ</div>
+      <div class="game-title">Chinh Phục Vũ Trụ Điểm 10</div>
+    </div>
+
+    <div class="pilot-hud-stats">
+      <!-- Streak Flame -->
+      <div class="stat-item" title="Chuỗi ngày học liên tục">
+        <span class="streak-flame">🔥</span>
+        <span id="hud-streak-count" style="font-weight:700;">5</span> ngày
+      </div>
+
+      <!-- Oxygen Energy Bar -->
+      <div class="stat-item" title="Thanh Năng Lượng Oxy">
+        <span>🫧</span>
+        <div class="oxy-bar-wrapper">
+          <div style="display:flex; justify-content:space-between; font-size:10px;">
+            <span>OXY</span>
+            <span id="hud-oxy-text">100%</span>
+          </div>
+          <div class="oxy-bar-track">
+            <div id="hud-oxy-fill" class="oxy-bar-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Level & User Info -->
+      <div class="pilot-profile-btn" id="nav-btn-hub" title="Xem Buồng Lái">
+        <span id="hud-avatar-icon" style="font-size:20px;">👨‍🚀</span>
+        <div>
+          <div style="font-weight:700; font-size:0.85rem;" id="hud-user-name">Nguyễn Văn An</div>
+          <div style="font-size:0.75rem; color:var(--cyan-glow);" id="hud-ship-name">Sao Băng Bộc Bố 01</div>
+        </div>
+        <span class="school-badge" id="hud-level" style="background:#00f2fe; color:#050814; font-size:10px; margin-left:4px;">Lv.1</span>
+      </div>
+
+      <!-- Nav Menu Pills -->
+      <button class="sci-btn sci-btn-outline" style="padding:6px 14px; font-size:0.82rem;" id="nav-btn-map">🌌 Bản Đồ Sao</button>
+      <button class="sci-btn sci-btn-outline" style="padding:6px 14px; font-size:0.82rem;" id="nav-btn-reactor">⚡ Lò Phản Ứng</button>
+      <button class="sci-btn sci-btn-outline" style="padding:6px 14px; font-size:0.82rem;" id="nav-btn-leaderboard">🏆 Xếp Hạng</button>
+      <button class="sci-btn sci-btn-outline" style="padding:6px 10px; font-size:0.82rem;" id="btn-sound-toggle">🔊 Âm Thanh</button>
+    </div>
+  </header>
+
+  <!-- SCREEN 1: ONBOARDING & NHẬP VAI -->
+  <main id="screen-onboarding" class="app-screen">
+    <div class="onboarding-container sci-card">
+      <div style="font-size:13px; color:var(--cyan-glow); letter-spacing:1px; margin-bottom:8px; font-weight:700;">GIAI ĐOẠN 1: KHỞI ĐỘNG & NHẬP VAI</div>
+      <h1 style="font-size:1.8rem; margin-bottom:20px;">Hạm Đội Không Gian THPT Bộc Bố</h1>
+
+      <!-- Dialogue with Virtual Astronaut Assistant -->
+      <div id="onboarding-dialogue-wrap">
+        <div class="dialogue-npc-box">
+          <div class="npc-avatar-circle">🤖</div>
+          <div class="npc-dialogue-content">
+            <div class="npc-name">Trợ lý Cố vấn Không gian AI (CLB AI Bộc Bố)</div>
+            <div class="npc-text" id="npc-dialogue-text">Đang kết nối tín hiệu...</div>
+            <div class="dialogue-stepper">
+              <span id="npc-step-badge" style="font-size:12px; color:var(--text-dim); margin-right:10px; align-self:center;">Bước 1/3</span>
+              <button class="sci-btn sci-btn-primary" style="padding:8px 18px; font-size:0.85rem;" id="npc-next-btn" onclick="nextDialogueStep()">Tiếp Tục ➜</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Identity & Ship Customization -->
+      <div id="onboarding-identity-wrap" style="display:none;">
+        <h3 style="font-size:1.15rem; margin-bottom:15px; color:var(--cyan-glow);">Định Danh Phi Hành Gia</h3>
+
+        <!-- Avatar Selection -->
+        <div class="avatar-selection-grid">
+          <div class="avatar-choice-card selected" id="avatar-card-boy_astronaut" onclick="selectAvatar('boy_astronaut')">
+            <div class="avatar-img-wrapper">👨‍🚀</div>
+            <div class="avatar-label">Nam Sinh BB</div>
+            <div style="font-size:11px; color:var(--text-dim); margin-top:4px;">Bộ đồ du hành BB-01</div>
+          </div>
+          <div class="avatar-choice-card" id="avatar-card-girl_astronaut" onclick="selectAvatar('girl_astronaut')">
+            <div class="avatar-img-wrapper">👩‍🚀</div>
+            <div class="avatar-label">Nữ Sinh BB</div>
+            <div style="font-size:11px; color:var(--text-dim); margin-top:4px;">Bộ đồ du hành BB-02</div>
+          </div>
+        </div>
+
+        <!-- Identity Form -->
+        <div class="sci-input-group">
+          <label>Đăng nhập liền mạch (Đồng bộ danh sách lớp):</label>
+          <select id="select-sso" class="sci-input">
+            <option value="vnEdu">Đồng bộ qua vnEdu THPT Bộc Bố</option>
+            <option value="OLM">Đồng bộ qua OLM Trường Học</option>
+          </select>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+          <div class="sci-input-group">
+            <label>Họ và Tên Phi Hành Gia:</label>
+            <input type="text" id="input-student-name" class="sci-input" value="Nguyễn Văn An" placeholder="Nhập tên học sinh...">
+          </div>
+          <div class="sci-input-group">
+            <label>Tên Phi Thuyền Du Hành:</label>
+            <input type="text" id="input-ship-name" class="sci-input" value="Sao Băng Bộc Bố 01" placeholder="Ví dụ: Chiến Hạm Pác Nặm...">
+          </div>
+        </div>
+
+        <button class="sci-btn sci-btn-primary" style="width:100%; margin-top:15px;" onclick="finishOnboarding()">
+          🚀 Khởi Động Động Cơ & Tiến Vào Trạm Không Gian
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- SCREEN 2: MAIN HUB (TRẠM KHÔNG GIAN TRUNG TÂM / BUỒNG LÁI) -->
+  <main id="screen-hub" class="app-screen">
+    <div class="hub-welcome-banner sci-card">
+      <div>
+        <div class="hub-ship-tag">TỌA ĐỘ TRẠM TRUNG TÂM • THPT BỘC BỐ</div>
+        <h1 style="font-size:1.85rem; margin:6px 0;">Chào Mừng Trở Lại, <span id="hub-greeting-name" style="color:var(--cyan-glow);">Nguyễn Văn An</span>!</h1>
+        <div style="color:var(--text-dim); font-size:0.92rem;" id="hub-ship-callsign">Phi thuyền: Sao Băng Bộc Bố 01</div>
+      </div>
+      <div style="min-width:220px; background:rgba(0,0,0,0.4); padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+        <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:6px;">
+          <span style="color:var(--text-dim);">TIẾN ĐỘ THĂNG CẤP</span>
+          <span id="hub-exp-progress" style="font-weight:700; color:var(--cyan-glow);">120 / 300 EXP</span>
+        </div>
+        <div class="oxy-bar-track" style="height:8px;">
+          <div id="hub-exp-bar-fill" class="oxy-bar-fill" style="width:40%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hub-main-grid">
+      <!-- Tile 1: Bản đồ sao -->
+      <div class="hub-tile sci-card" id="hub-tile-map">
+        <div>
+          <div class="tile-icon-huge">🌌</div>
+          <div class="tile-title">Bản Đồ Sao Anti-gravity</div>
+          <div class="tile-desc">
+            Tiến vào không gian không trọng lực. Khám phá các hành tinh kiến thức, trôi nổi qua các trạm câu hỏi và chinh phục Hố Đen thử thách.
+          </div>
+        </div>
+        <div class="tile-footer">
+          <span>Khám phá <span id="hub-galaxies-count">2</span> Hệ sao đang mở</span>
+          <span>Khởi hành ➜</span>
+        </div>
+      </div>
+
+      <!-- Tile 2: Lò phản ứng -->
+      <div class="hub-tile sci-card" id="hub-tile-reactor">
+        <div>
+          <div class="tile-icon-huge">⚡</div>
+          <div class="tile-title">Lò Phản Ứng Dữ Liệu</div>
+          <div class="tile-desc">
+            Nạp đề cương môn học (.docx, .pdf, văn bản). AI Gemini sẽ tự động phân tích và gieo thành một chòm sao câu hỏi 4 cấp độ mới!
+          </div>
+        </div>
+        <div class="tile-footer">
+          <span style="color:#52c41a;">Sẵn sàng tiếp nhận tài liệu</span>
+          <span>Nạp đề cương ➜</span>
+        </div>
+      </div>
+
+      <!-- Tile 3: Bảng xếp hạng -->
+      <div class="hub-tile sci-card" id="hub-tile-leaderboard">
+        <div>
+          <div class="tile-icon-huge">🏆</div>
+          <div class="tile-title">Bảng Xếp Hạng Toàn Trường</div>
+          <div class="tile-desc">
+            Vinh danh Top 10 Chỉ huy Hạm đội THPT Bộc Bố mỗi tuần với điểm EXP cao nhất và chuỗi ngày học tập bền bỉ nhất.
+          </div>
+        </div>
+        <div class="tile-footer">
+          <span style="color:#ffd700;">Hạng hiện tại: Top 15</span>
+          <span>Xem bảng vàng ➜</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SCREEN 3: REACTOR (LÒ PHẢN ỨNG DỮ LIỆU / AI DOCUMENT PROCESSING) -->
+  <main id="screen-reactor" class="app-screen">
+    <div class="reactor-header">
+      <div style="font-size:13px; color:var(--cyan-glow); letter-spacing:1px; font-weight:700;">GIAI ĐOẠN 3: CƠ CHẾ LÒ PHẢN ỨNG</div>
+      <h1 style="font-size:1.85rem; margin:8px 0;">Tổng Hợp Tri Thức Với Gemini AI</h1>
+      <p style="color:var(--text-dim); max-width:650px; margin:0 auto; font-size:0.95rem;">
+        Hệ thống tự động đọc đề cương của thầy cô, chia thành 4 mức độ: Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao và gieo thành hệ sao mới.
+      </p>
+    </div>
+
+    <div class="sci-card" style="max-width:800px; margin:0 auto;">
+      <!-- Dropzone -->
+      <div class="dropzone-container" id="reactor-dropzone">
+        <input type="file" id="reactor-file-input" accept=".pdf,.docx,.doc,.txt" style="display:none;">
+        <div class="dropzone-icon">📥</div>
+        <h3 style="font-size:1.2rem; margin-bottom:6px;">Kéo thả file đề cương vào đây hoặc bấm để chọn</h3>
+        <p class="file-specs">Hỗ trợ định dạng: Word (.docx), PDF (.pdf), hoặc Text (.txt)</p>
+      </div>
+
+      <!-- Quick Sample Buttons -->
+      <div style="text-align:center;">
+        <div style="font-size:0.85rem; color:var(--text-dim); margin-bottom:10px;">Hoặc thử nghiệm nhanh với Đề cương mẫu của trường:</div>
+        <div class="sample-pills">
+          <div class="sample-pill" onclick="loadSampleDoc('history')">📜 Lịch Sử 10 (Điện Biên Phủ)</div>
+          <div class="sample-pill" onclick="loadSampleDoc('cs')">💻 Tin Học 10 (Thuật Toán & Python)</div>
+          <div class="sample-pill" onclick="loadSampleDoc('physics')">🪐 Vật Lý 10 (Định Luật Newton)</div>
+        </div>
+      </div>
+
+      <!-- Advanced Settings (Optional Gemini API Key) -->
+      <div style="margin-top:25px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1);">
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px;">
+          <div class="sci-input-group">
+            <label>Khối Lớp:</label>
+            <select id="reactor-grade" class="sci-input">
+              <option value="10">Khối 10 (Lớp 10A1 - 10A4)</option>
+              <option value="11">Khối 11 (Lớp 11A1 - 11A3)</option>
+              <option value="12">Khối 12 (Lớp 12A1 - 12A2)</option>
+            </select>
+          </div>
+          <div class="sci-input-group">
+            <label>Môn Học:</label>
+            <select id="reactor-subject-code" class="sci-input">
+              <option value="Lịch Sử">Lịch Sử</option>
+              <option value="Toán Học">Toán Học</option>
+              <option value="Tin Học">Tin Học</option>
+              <option value="Vật Lý">Vật Lý</option>
+              <option value="Hóa Học">Hóa Học</option>
+              <option value="Sinh Học">Sinh Học</option>
+              <option value="Ngữ Văn">Ngữ Văn</option>
+              <option value="Tiếng Anh">Tiếng Anh</option>
+              <option value="Địa Lý">Địa Lý</option>
+            </select>
+          </div>
+          <div class="sci-input-group">
+            <label>Tên Chuyên Đề / Bài Học:</label>
+            <input type="text" id="reactor-custom-subject" class="sci-input" placeholder="Ví dụ: Chiến dịch Điện Biên Phủ..." value="Chuyên Đề Ôn Tập">
+          </div>
+        </div>
+        <div class="sci-input-group" style="margin-top:10px;">
+          <label>Gemini API Key (Tùy chọn - Hệ thống tự động có AI Simulator thông minh):</label>
+          <input type="password" id="reactor-api-key" class="sci-input" placeholder="Dán Gemini API Key nếu muốn AI tự phân tích chuyên sâu...">
+        </div>
+      </div>
+    </div>
+
+    <!-- Synthesis Loading Modal -->
+    <div id="reactor-loading" class="battle-modal-overlay">
+      <div class="sci-card" style="text-align:center; max-width:480px; padding:40px;">
+        <div style="font-size:50px; animation:floatOrb 1.5s ease-in-out infinite alternate; margin-bottom:15px;">⚛️</div>
+        <h2 style="font-size:1.4rem; color:var(--cyan-glow); margin-bottom:10px;">Lò Phản Ứng Đang Kích Hoạt</h2>
+        <p id="reactor-status-msg" style="color:var(--text-dim); font-size:0.92rem; line-height:1.5;">
+          Đang quét tài liệu đề cương và phân tách thành các trạm không gian...
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- SCREEN 4: ANTI-GRAVITY SPACE MAP (CHỌN LỚP, CHỌN MÔN & CHINH PHỤC) -->
+  <main id="screen-map" class="app-screen">
+    <!-- VIEW A: CỔNG ĐIỀU HƯỚNG LIÊN THIÊN HÀ (CHỌN LỚP & CHỌN MÔN) -->
+    <div id="map-route-portal" class="map-route-portal">
+      <div style="text-align:center; margin-bottom:25px;">
+        <div style="font-size:12px; color:var(--cyan-glow); font-weight:700; letter-spacing:1px;">CỔNG ĐIỀU HƯỚNG LIÊN THIÊN HÀ</div>
+        <h1 style="font-size:1.85rem; margin:6px 0;">Chọn Lộ Trình Du Hành Bản Đồ Sao</h1>
+        <p style="color:var(--text-dim); font-size:0.92rem;">
+          Lựa chọn Khối Lớp và Môn Học để mở khóa các chòm sao kiến thức tương ứng trước khi tiến vào chinh phục.
+        </p>
+      </div>
+
+      <div class="sci-card" style="margin-bottom:20px;">
+        <!-- BƯỚC 1: CHỌN KHỐI LỚP -->
+        <div class="route-section-title">
+          <span class="step-num">1</span>
+          <span>Chọn Khối Lớp Học Tập</span>
+        </div>
+        <div class="grade-pills-row">
+          <div class="grade-pill-card" id="grade-pill-10" onclick="selectGrade('10')">
+            <div class="grade-pill-title">🪐 Khối 10</div>
+            <div class="grade-pill-sub">Lớp 10A1 - 10A4</div>
+          </div>
+          <div class="grade-pill-card active" id="grade-pill-11" onclick="selectGrade('11')">
+            <div class="grade-pill-title">🪐 Khối 11 (Tất Cả Các Môn)</div>
+            <div class="grade-pill-sub">Toán, Lý, Hóa, Sinh, Tin, Sử, Địa, Văn, Anh</div>
+          </div>
+          <div class="grade-pill-card" id="grade-pill-12" onclick="selectGrade('12')">
+            <div class="grade-pill-title">🪐 Khối 12</div>
+            <div class="grade-pill-sub">Lớp 12A1 - 12A2 (Ôn thi Tốt nghiệp)</div>
+          </div>
+        </div>
+
+        <!-- BƯỚC 2: CHỌN MÔN HỌC -->
+        <div class="route-section-title">
+          <span class="step-num">2</span>
+          <span>Chọn Môn Học Thám Hiểm</span>
+        </div>
+        <div class="subject-grid" id="subjects-container">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- BƯỚC 3: DANH SÁCH CÁC HỆ SAO MỞ KHÓA -->
+        <div class="route-section-title" style="margin-top:25px;">
+          <span class="step-num">3</span>
+          <span>Hệ Sao Sẵn Sàng: <span id="portal-selected-subject-name" style="color:#fff;">Lịch Sử 10</span></span>
+        </div>
+        <div class="portal-galaxies-grid" id="portal-galaxies-list">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW B: KHÔNG GIAN BẢN ĐỒ ANTI-GRAVITY (KHI BẮT ĐẦU CHINH PHỤC) -->
+    <div id="map-play-stage" class="map-play-stage-wrapper">
+      <!-- Breadcrumb navigation & Nút quay lại chọn môn -->
+      <div class="map-breadcrumb-nav">
+        <div class="breadcrumb-trail">
+          <span class="breadcrumb-item">🛸 Lộ trình:</span>
+          <span class="breadcrumb-item" id="crumb-grade">Khối 10</span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-item" id="crumb-subject">Lịch Sử</span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-item active" id="crumb-galaxy">Hệ Sao Điện Biên Phủ</span>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="sci-btn sci-btn-outline" style="padding:6px 14px; font-size:0.82rem;" onclick="returnToRouteSelection()">
+            ⬅ Đổi Lớp / Môn Học
+          </button>
+          <button class="sci-btn sci-btn-outline" style="padding:6px 14px; font-size:0.82rem;" onclick="switchScreen('reactor')">
+            + Gieo Chòm Sao Mới
+          </button>
+        </div>
+      </div>
+
+      <div class="map-view-header">
+        <div>
+          <div style="font-size:12px; color:var(--cyan-glow); font-weight:700;">BẢN ĐỒ SAO KHÔNG TRỌNG LỰC • ĐANG THÁM HIỂM</div>
+          <h2 id="current-galaxy-title" style="font-size:1.6rem;">Hệ Sao Điện Biên Phủ</h2>
+          <div id="current-galaxy-subject" style="color:var(--text-dim); font-size:0.85rem;">Lịch Sử 10</div>
+        </div>
+
+        <!-- Galaxy Switcher Tabs -->
+        <div class="galaxy-selector-tabs" id="galaxy-tabs">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Canvas Map Stage -->
+      <div class="anti-gravity-stage" id="anti-gravity-stage">
+        <!-- Floating Station Nodes and SVG lines rendered dynamically -->
+      </div>
+
+      <!-- Map HUD Legend -->
+      <div style="margin-top:15px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="display:flex; gap:18px; font-size:0.85rem;">
+          <div><span class="legend-dot" style="background:#00f2fe;"></span>Nhận biết (50 EXP)</div>
+          <div><span class="legend-dot" style="background:#52c41a;"></span>Thông hiểu (75 EXP)</div>
+          <div><span class="legend-dot" style="background:#faad14;"></span>Vận dụng (100 EXP)</div>
+          <div><span class="legend-dot" style="background:#ff4d4f;"></span>Vận dụng cao (150 EXP)</div>
+          <div><span class="legend-dot" style="background:#7928ca;"></span>🕳️ Hố Đen Cuối Kỳ</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SCREEN 5: LEADERBOARD (BẢNG XẾP HẠNG TOÀN TRƯỜNG) -->
+  <main id="screen-leaderboard" class="app-screen">
+    <div class="leaderboard-header">
+      <div style="font-size:13px; color:var(--cyan-glow); letter-spacing:1px; font-weight:700;">GIAI ĐOẠN 5: VINH DANH LIÊN KHÔNG GIAN</div>
+      <h1 style="font-size:1.85rem; margin:8px 0;">Top Chỉ Huy Hạm Đội THPT Bộc Bố</h1>
+      <p style="color:var(--text-dim); font-size:0.92rem;">
+        Bảng xếp hạng tuần cập nhật trực tiếp theo điểm EXP và chuỗi ngày tích lũy tri thức.
+      </p>
+    </div>
+
+    <div class="sci-card" style="overflow-x:auto;">
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th>Hạng</th>
+            <th>Phi Hành Gia</th>
+            <th>Tên Phi Thuyền</th>
+            <th>Chuỗi Streak</th>
+            <th>Điểm EXP</th>
+            <th>Danh Hiệu</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-tbody">
+          <!-- Rendered dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- BATTLE / QUESTION MODAL (ĐẤU TRƯỜNG THỰC THỂ KHÔNG GIAN) -->
+  <div id="battle-modal" class="battle-modal-overlay">
+    <div class="battle-box">
+      <div class="battle-header">
+        <div>
+          <div style="font-size:11px; color:var(--text-dim); text-transform:uppercase;">Thực Thể Không Gian</div>
+          <h3 id="battle-station-title" style="font-size:1.25rem; color:var(--cyan-glow);">Trạm Căn Cứ Khởi Đầu</h3>
+        </div>
+        <div class="countdown-radar">
+          <span>⏱️</span>
+          <div class="radar-timer-circle" id="battle-countdown-num">30</div>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="question-text-content" id="battle-question-text">
+        Đang tải câu hỏi...
+      </div>
+
+      <!-- AI Socratic Hint Box -->
+      <div class="ai-hint-box" id="battle-ai-hint-box"></div>
+
+      <!-- Options List -->
+      <div class="options-list" id="battle-options-list"></div>
+
+      <!-- Action Buttons -->
+      <div class="battle-action-bar">
+        <button class="sci-btn sci-btn-gold" style="font-size:0.9rem;" onclick="requestAIHint()">
+          📡 Gọi Cứu Viện AI
+        </button>
+        <button class="sci-btn sci-btn-outline" style="font-size:0.85rem;" onclick="closeBattleModal()">
+          ✕ Thoát Khỏi Trạm
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOSS EXAM MODAL (HỐ ĐEN TỔNG HỢP HỌC KỲ - SGK KẾT NỐI TRI THỨC) -->
+  <div id="boss-exam-modal" class="boss-exam-modal-overlay">
+    <div class="boss-exam-box">
+      <!-- HEADER -->
+      <div class="boss-exam-header">
+        <div class="boss-title-wrap">
+          <div class="boss-animated-hole">🕳️</div>
+          <div>
+            <h2 id="boss-exam-title" style="font-size:1.4rem; color:#fff;">Hố Đen Thử Thách Cuối Kỳ</h2>
+            <span class="boss-curriculum-pill" id="boss-exam-curriculum">SGK Kết Nối Tri Thức Với Cuộc Sống</span>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div style="text-align:right;">
+            <div style="font-size:10px; color:var(--text-dim); text-transform:uppercase;">Thời Gian Còn Lại</div>
+            <div id="boss-timer-text" style="font-size:1.35rem; font-weight:900; color:#ff0080;">06:00</div>
+          </div>
+          <div class="boss-timer-circle" id="boss-timer-circle">⏳</div>
+        </div>
+      </div>
+
+      <!-- EXAM IN-PROGRESS VIEW -->
+      <div id="boss-active-view">
+        <!-- Question Navigation Ribbon -->
+        <div class="boss-nav-ribbon" id="boss-nav-ribbon">
+          <!-- Rendered dynamically: 1, 2, 3... -->
+        </div>
+
+        <!-- Question Content -->
+        <div>
+          <div class="boss-chapter-badge" id="boss-chapter-badge">📖 Chương I: Lịch sử và Sử học</div>
+          <div class="boss-question-prompt" id="boss-question-prompt">Nội dung câu hỏi đang tải...</div>
+          <div class="boss-options-grid" id="boss-options-grid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Footer Controls -->
+        <div class="boss-footer-controls">
+          <div style="display:flex; gap:10px;">
+            <button class="sci-btn sci-btn-outline" style="padding:8px 16px; font-size:0.85rem;" id="boss-prev-btn" onclick="prevBossQuestion()">
+              ⬅ Câu Trước
+            </button>
+            <button class="sci-btn sci-btn-outline" style="padding:8px 16px; font-size:0.85rem;" id="boss-next-btn" onclick="nextBossQuestion()">
+              Câu Tiếp Theo ➜
+            </button>
+          </div>
+
+          <div style="font-size:0.88rem; color:var(--text-dim);" id="boss-progress-status">
+            Đã hoàn thành: 0 / 6 câu
+          </div>
+
+          <div style="display:flex; gap:10px;">
+            <button class="sci-btn sci-btn-outline" style="padding:8px 16px; font-size:0.85rem;" onclick="confirmExitBoss()">
+              ✕ Rút Lui
+            </button>
+            <button class="sci-btn" style="background:linear-gradient(135deg, #7928ca, #ff0080); color:#fff; padding:10px 22px; font-weight:800; font-size:0.92rem; box-shadow:0 0 20px rgba(255,0,128,0.5);" onclick="submitBossExam()">
+              🚀 Nộp Bài Vượt Ải
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXAM RESULT & EXPLANATION REVIEW VIEW -->
+      <div id="boss-result-view" class="boss-result-container" style="display:none;">
+        <div id="boss-result-icon" style="font-size:64px; margin-bottom:12px;">👑</div>
+        <h2 id="boss-result-headline" style="font-size:1.75rem; margin-bottom:8px;">VƯỢT ẢI HỐ ĐEN THÀNH CÔNG!</h2>
+        <p id="boss-result-sub" style="color:var(--text-dim); margin-bottom:20px; font-size:0.95rem;">
+          Bạn đã thể hiện sự am hiểu kiến thức vững chắc bộ SGK Kết Nối Tri Thức Với Cuộc Sống.
+        </p>
+
+        <!-- Stats summary -->
+        <div style="display:flex; justify-content:center; gap:25px; margin-bottom:25px;">
+          <div style="background:rgba(255,255,255,0.05); padding:12px 24px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:11px; color:var(--text-dim);">ĐIỂM SỐ</div>
+            <div id="boss-result-score" style="font-size:1.6rem; font-weight:800; color:var(--cyan-glow);">5 / 6</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05); padding:12px 24px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:11px; color:var(--text-dim);">THƯỞNG EXP</div>
+            <div id="boss-result-exp" style="font-size:1.6rem; font-weight:800; color:#ffd700;">+500 EXP</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05); padding:12px 24px; border-radius:12px; border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:11px; color:var(--text-dim);">TỶ LỆ ĐÚNG</div>
+            <div id="boss-result-percent" style="font-size:1.6rem; font-weight:800; color:var(--accent-green);">83.3%</div>
+          </div>
+        </div>
+
+        <h3 style="font-size:1.15rem; color:#fff; text-align:left; margin:20px 0 12px 0;">
+          📚 Giải Thích Chi Tiết Theo SGK Kết Nối Tri Thức:
+        </h3>
+        <div id="boss-review-list" style="max-height:350px; overflow-y:auto; padding-right:6px; margin-bottom:25px;">
+          <!-- Detailed questions & explanations rendered dynamically -->
+        </div>
+
+        <button class="sci-btn sci-btn-primary" style="padding:12px 36px;" onclick="closeBossExamModal()">
+          ✓ Hoàn Tất & Về Bảng Xếp Hạng
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/sound.js"></script>
+  <script src="/static/js/space_map.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

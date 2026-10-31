@@ -1,0 +1,4138 @@
+[
+  {
+    "id": "GALAXY_MATH_11",
+    "grade": "11",
+    "subject_code": "Toán Học",
+    "name": "Hệ Sao Lượng Giác & Đạo Hàm 11",
+    "subject": "Toán Học 11 (Kết Nối Tri Thức)",
+    "description": "Khám phá hàm số lượng giác, cấp số cộng/nhân và phép tính vi phân đạo hàm.",
+    "icon": "📐",
+    "theme_color": "#1890ff",
+    "stations": [
+      {
+        "id": "M11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Hàm Số Lượng Giác",
+        "question": "Chu kỳ tuần hoàn T của hàm số y = sin(x) là:",
+        "options": [
+          "A. 2.pi",
+          "B. pi",
+          "C. pi/2",
+          "D. 4.pi"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Chu kỳ của sin(x) là 2.pi.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 25,
+          "y": 35
+        }
+      },
+      {
+        "id": "M11_02",
+        "level": "ThongHieu",
+        "title": "Trạm Cấp Số Nhân",
+        "question": "Cho cấp số nhân có u1 = 2 và công bội q = 3. Số hạng u3 là:",
+        "options": [
+          "A. 18",
+          "B. 12",
+          "C. 54",
+          "D. 6"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "u3 = u1 * q^2 = 2 * 9 = 18.",
+        "exp_reward": 75,
+        "coordinates": {
+          "x": 55,
+          "y": 45
+        }
+      },
+      {
+        "id": "M11_03",
+        "level": "VanDung",
+        "title": "Trạm Tiếp Tuyến Đồ Thị",
+        "question": "Hệ số góc k của tiếp tuyến hàm số y = x^3 - 3x tại x0 = 2 là:",
+        "options": [
+          "A. 9",
+          "B. 6",
+          "C. 12",
+          "D. 3"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "y' = 3x^2 - 3. Thay x=2: 3*4 - 3 = 9.",
+        "exp_reward": 100,
+        "coordinates": {
+          "x": 80,
+          "y": 65
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_MATH_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Toán Học 11",
+      "curriculum": "SGK Toán Học 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "MATH11_01",
+          "chapter": "Chương I: Hàm số lượng giác (Bài 1)",
+          "question": "Tập xác định của hàm số y = tan(x) là:",
+          "options": [
+            "A. D = R \\ {pi/2 + k.pi, k thuộc Z}",
+            "B. D = R \\ {k.pi, k thuộc Z}",
+            "C. D = R",
+            "D. D = [-1; 1]"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: cos(x) != 0 <=> x != pi/2 + k.pi."
+        },
+        {
+          "id": "MATH11_02",
+          "chapter": "Chương I: Hàm số lượng giác (Bài 1)",
+          "question": "Hàm số nào sau đây là hàm số chẵn trên tập xác định của nó?",
+          "options": [
+            "A. y = cos(x)",
+            "B. y = sin(x)",
+            "C. y = tan(x)",
+            "D. y = cot(x)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: cos(-x) = cos(x), đồ thị đối xứng qua trục tung Oy."
+        },
+        {
+          "id": "MATH11_03",
+          "chapter": "Chương I: Phương trình lượng giác (Bài 2)",
+          "question": "Nghiệm của phương trình sin(x) = 1 là:",
+          "options": [
+            "A. x = pi/2 + k.2pi (k thuộc Z)",
+            "B. x = k.pi (k thuộc Z)",
+            "C. x = pi/2 + k.pi (k thuộc Z)",
+            "D. x = -pi/2 + k.2pi (k thuộc Z)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Điểm cực đại của trục tung sin là pi/2 + k.2pi."
+        },
+        {
+          "id": "MATH11_04",
+          "chapter": "Chương I: Công thức lượng giác (Bài 3)",
+          "question": "Công thức nhân đôi nào sau đây là ĐÚNG?",
+          "options": [
+            "A. sin(2x) = 2.sin(x).cos(x)",
+            "B. cos(2x) = cos^2(x) + sin^2(x)",
+            "C. sin(2x) = sin(x).cos(x)",
+            "D. cos(2x) = 2.cos(x) - 1"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: sin(2x) = 2sin(x)cos(x)."
+        },
+        {
+          "id": "MATH11_05",
+          "chapter": "Chương I: Giá trị lượng giác (Bài 4)",
+          "question": "Với mọi góc alpha, đẳng thức nào sau đây luôn đúng?",
+          "options": [
+            "A. sin^2(alpha) + cos^2(alpha) = 1",
+            "B. sin(alpha) + cos(alpha) = 1",
+            "C. tan(alpha).cot(alpha) = -1",
+            "D. 1 + tan^2(alpha) = 1 / sin^2(alpha)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: sin^2 + cos^2 = 1."
+        },
+        {
+          "id": "MATH11_06",
+          "chapter": "Chương II: Dãy số (Bài 5)",
+          "question": "Cho dãy số (un) với un = (2n + 1) / (n + 2). Số hạng u3 là:",
+          "options": [
+            "A. 7/5",
+            "B. 5/7",
+            "C. 7/4",
+            "D. 1"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: u3 = (2*3 + 1)/(3 + 2) = 7/5."
+        },
+        {
+          "id": "MATH11_07",
+          "chapter": "Chương II: Cấp số cộng (Bài 6)",
+          "question": "Cho cấp số cộng (un) có u1 = 5 và công sai d = 3. Số hạng tổng quát un là:",
+          "options": [
+            "A. un = 3n + 2",
+            "B. un = 5 + 3n",
+            "C. un = 3n - 2",
+            "D. un = 5n + 3"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: un = u1 + (n - 1)d = 5 + 3(n - 1) = 3n + 2."
+        },
+        {
+          "id": "MATH11_08",
+          "chapter": "Chương II: Cấp số cộng (Bài 6)",
+          "question": "Tổng 10 số hạng đầu tiên S10 của cấp số cộng có u1 = 1, u10 = 19 là:",
+          "options": [
+            "A. 100",
+            "B. 190",
+            "C. 200",
+            "D. 90"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: S10 = 10*(1 + 19)/2 = 100."
+        },
+        {
+          "id": "MATH11_09",
+          "chapter": "Chương II: Cấp số nhân (Bài 7)",
+          "question": "Cho cấp số nhân (un) có u1 = 3 và công bội q = 2. Số hạng thứ 4 (u4) là:",
+          "options": [
+            "A. 24",
+            "B. 18",
+            "C. 48",
+            "D. 12"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: u4 = 3 * 2^3 = 24."
+        },
+        {
+          "id": "MATH11_10",
+          "chapter": "Chương II: Cấp số nhân lùi vô hạn (Bài 7)",
+          "question": "Tổng của cấp số nhân lùi vô hạn S = 1 + 1/2 + 1/4 + ... + 1/2^n + ... là:",
+          "options": [
+            "A. 2",
+            "B. 1",
+            "C. 3/2",
+            "D. Vô cực"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: S = u1 / (1 - q) = 1 / (1 - 0.5) = 2."
+        },
+        {
+          "id": "MATH11_11",
+          "chapter": "Chương III: Giới hạn dãy số (Bài 8)",
+          "question": "Giới hạn lim (3/n^2) khi n tiến ra dương vô cực bằng:",
+          "options": [
+            "A. 0",
+            "B. 3",
+            "C. 1",
+            "D. Vô cực"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: lim c/n^k = 0."
+        },
+        {
+          "id": "MATH11_12",
+          "chapter": "Chương III: Giới hạn dãy số (Bài 8)",
+          "question": "Giới hạn lim q^n khi n tiến ra vô cực bằng 0 khi và chỉ khi:",
+          "options": [
+            "A. |q| < 1",
+            "B. q > 1",
+            "C. q = 1",
+            "D. q < -1"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: |q| < 1 thì q^n -> 0."
+        },
+        {
+          "id": "MATH11_13",
+          "chapter": "Chương III: Giới hạn hàm số (Bài 9)",
+          "question": "Giá trị của lim (x^2 - 4) / (x - 2) khi x tiến đến 2 là:",
+          "options": [
+            "A. 4",
+            "B. 2",
+            "C. 0",
+            "D. Không tồn tại"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Rút gọn (x + 2) => 2 + 2 = 4."
+        },
+        {
+          "id": "MATH11_14",
+          "chapter": "Chương III: Giới hạn vô cực (Bài 9)",
+          "question": "Giá trị của lim (2x^2 + 1) / (x^2 - 3) khi x tiến đến +vô cực là:",
+          "options": [
+            "A. 2",
+            "B. 1",
+            "C. -1/3",
+            "D. 0"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Chia bậc cao nhất = 2/1 = 2."
+        },
+        {
+          "id": "MATH11_15",
+          "chapter": "Chương III: Hàm số liên tục (Bài 10)",
+          "question": "Hàm số y = f(x) được gọi là liên tục tại điểm x0 nếu:",
+          "options": [
+            "A. lim f(x) khi x -> x0 bằng f(x0)",
+            "B. f(x0) > 0",
+            "C. lim f(x) khi x -> x0 = 0",
+            "D. f(x) có đạo hàm tại x0"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Định nghĩa liên tục tại 1 điểm."
+        },
+        {
+          "id": "MATH11_16",
+          "chapter": "Chương IV: Đường thẳng và mặt phẳng (Bài 11)",
+          "question": "Có bao nhiêu mặt phẳng đi qua ba điểm không thẳng hàng?",
+          "options": [
+            "A. Duy nhất 1",
+            "B. 2",
+            "C. Vô số",
+            "D. Không có"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Tiên đề xác định mặt phẳng."
+        },
+        {
+          "id": "MATH11_17",
+          "chapter": "Chương IV: Vị trí tương đối (Bài 12)",
+          "question": "Hai đường thẳng không có điểm chung và không cùng nằm trên bất kỳ mặt phẳng nào gọi là:",
+          "options": [
+            "A. Hai đường thẳng chéo nhau",
+            "B. Hai đường thẳng song song",
+            "C. Hai đường thẳng trùng nhau",
+            "D. Hai đường thẳng vuông góc"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Khái niệm chéo nhau."
+        },
+        {
+          "id": "MATH11_18",
+          "chapter": "Chương IV: Đường thẳng song song mặt phẳng (Bài 13)",
+          "question": "Nếu đường thẳng d không nằm trong (P) và d song song với đường thẳng a nằm trong (P) thì:",
+          "options": [
+            "A. d // (P)",
+            "B. d cắt (P)",
+            "C. d vuông góc (P)",
+            "D. d nằm trong (P)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Định lý đường thẳng song song mặt phẳng."
+        },
+        {
+          "id": "MATH11_19",
+          "chapter": "Chương IV: Hai mặt phẳng song song (Bài 14)",
+          "question": "Nếu mặt phẳng (P) chứa hai đường thẳng cắt nhau a, b cùng song song với (Q) thì:",
+          "options": [
+            "A. (P) // (Q)",
+            "B. (P) cắt (Q)",
+            "C. (P) trùng (Q)",
+            "D. (P) vuông góc (Q)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Điều kiện hai mp song song."
+        },
+        {
+          "id": "MATH11_20",
+          "chapter": "Chương IV: Phép chiếu song song (Bài 15)",
+          "question": "Hình chiếu song song của hai đường thẳng song song là:",
+          "options": [
+            "A. Hai đường thẳng song song hoặc trùng nhau",
+            "B. Hai đường thẳng cắt nhau",
+            "C. Hai đoạn thẳng vuông góc",
+            "D. Một điểm duy nhất"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Tính chất bảo toàn song song."
+        },
+        {
+          "id": "MATH11_21",
+          "chapter": "Chương V: Mẫu số liệu ghép nhóm (Bài 16)",
+          "question": "Giá trị đại diện của nhóm [a; b) trong bảng số liệu ghép nhóm là:",
+          "options": [
+            "A. (a + b) / 2",
+            "B. b - a",
+            "C. a * b",
+            "D. (a + b) / 4"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Trung điểm của khoảng [a; b)."
+        },
+        {
+          "id": "MATH11_22",
+          "chapter": "Chương V: Số đặc trưng (Bài 17)",
+          "question": "Nhóm chứa mốt của mẫu số liệu ghép nhóm là nhóm có:",
+          "options": [
+            "A. Tần số lớn nhất",
+            "B. Độ dài lớn nhất",
+            "C. Tần số nhỏ nhất",
+            "D. Tần số bằng 0"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Tần số lớn nhất."
+        },
+        {
+          "id": "MATH11_23",
+          "chapter": "Chương V: Trung vị mẫu ghép nhóm (Bài 17)",
+          "question": "Trung vị của mẫu số liệu ghép nhóm chia mẫu số liệu thành:",
+          "options": [
+            "A. Hai phần có số quan sát bằng nhau (50% và 50%)",
+            "B. Ba phần bằng nhau",
+            "C. Bốn phần",
+            "D. Tùy ý"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Trung vị chia đôi mẫu số liệu."
+        },
+        {
+          "id": "MATH11_24",
+          "chapter": "Chương IX: Đạo hàm (Bài 30)",
+          "question": "Đạo hàm của hàm số f(x) tại điểm x0 là giới hạn của tỉ số nào khi x -> x0?",
+          "options": [
+            "A. (f(x) - f(x0)) / (x - x0)",
+            "B. (f(x) + f(x0)) / (x + x0)",
+            "C. f(x) / x",
+            "D. f(x0) / x0"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Định nghĩa đạo hàm bằng tỉ số số gia."
+        },
+        {
+          "id": "MATH11_25",
+          "chapter": "Chương IX: Ý nghĩa hình học (Bài 30)",
+          "question": "Hệ số góc k của tiếp tuyến đồ thị hàm số y = f(x) tại điểm có hoành độ x0 là:",
+          "options": [
+            "A. k = f'(x0)",
+            "B. k = f(x0)",
+            "C. k = x0",
+            "D. k = 1 / f'(x0)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: Ý nghĩa hình học của đạo hàm: k = f'(x0)."
+        },
+        {
+          "id": "MATH11_26",
+          "chapter": "Chương IX: Quy tắc đạo hàm (Bài 31)",
+          "question": "Đạo hàm của hàm số y = x^5 là:",
+          "options": [
+            "A. 5x^4",
+            "B. 5x^5",
+            "C. 4x^5",
+            "D. x^4"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: (x^n)' = n*x^(n-1)."
+        },
+        {
+          "id": "MATH11_27",
+          "chapter": "Chương IX: Đạo hàm tích (Bài 31)",
+          "question": "Đạo hàm của tích hai hàm số (u.v)' bằng:",
+          "options": [
+            "A. u'.v + u.v'",
+            "B. u'.v'",
+            "C. u'.v - u.v'",
+            "D. (u + v)'"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: (u.v)' = u'v + uv'."
+        },
+        {
+          "id": "MATH11_28",
+          "chapter": "Chương IX: Đạo hàm lượng giác (Bài 32)",
+          "question": "Đạo hàm của hàm số y = cos(x) là:",
+          "options": [
+            "A. -sin(x)",
+            "B. sin(x)",
+            "C. cos(x)",
+            "D. -cos(x)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: (cos x)' = -sin x."
+        },
+        {
+          "id": "MATH11_29",
+          "chapter": "Chương IX: Đạo hàm lượng giác (Bài 32)",
+          "question": "Đạo hàm của hàm số y = tan(x) trên tập xác định là:",
+          "options": [
+            "A. 1 / cos^2(x)",
+            "B. 1 / sin^2(x)",
+            "C. -1 / cos^2(x)",
+            "D. cot(x)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: (tan x)' = 1/cos^2(x) = 1 + tan^2(x)."
+        },
+        {
+          "id": "MATH11_30",
+          "chapter": "Chương IX: Đạo hàm cấp hai (Bài 33)",
+          "question": "Đạo hàm cấp hai của hàm số y = x^3 là:",
+          "options": [
+            "A. 6x",
+            "B. 3x^2",
+            "C. 6",
+            "D. 3x"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Toán 11 KNTT: y' = 3x^2 => y'' = 6x."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_PHYS_11",
+    "grade": "11",
+    "subject_code": "Vật Lý",
+    "name": "Hệ Sao Dao Động & Sóng Điện Từ 11",
+    "subject": "Vật Lý 11 (Kết Nối Tri Thức)",
+    "description": "Thám hiểm không gian dao động cơ, giao thoa sóng và định luật điện từ trường.",
+    "icon": "⚡",
+    "theme_color": "#faad14",
+    "stations": [
+      {
+        "id": "P11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Gia Tốc Dao Động",
+        "question": "Trong dao động điều hòa, gia tốc a của vật:",
+        "options": [
+          "A. Ngược pha với li độ x (a = -omega^2 * x)",
+          "B. Cùng pha với li độ",
+          "C. Vuông pha trễ hơn",
+          "D. Luôn không đổi"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "a = -omega^2 * x ngược pha với x.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 28,
+          "y": 40
+        }
+      },
+      {
+        "id": "P11_02",
+        "level": "VanDung",
+        "title": "Trạm Giao Thoa Sóng",
+        "question": "Khoảng vân i trong thí nghiệm Young giao thoa ánh sáng được tính bởi:",
+        "options": [
+          "A. i = lambda * D / a",
+          "B. i = lambda * a / D",
+          "C. i = a * D / lambda",
+          "D. i = lambda * D * a"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Khoảng cách giữa hai vân sáng liên tiếp là i = lambda * D / a.",
+        "exp_reward": 80,
+        "coordinates": {
+          "x": 65,
+          "y": 55
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_PHYS_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Vật Lý 11",
+      "curriculum": "SGK Vật Lý 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "PHYS11_01",
+          "chapter": "Chương I: Dao động điều hòa (Bài 1)",
+          "question": "Một vật dao động điều hòa theo phương trình x = A.cos(omega.t + phi). Đại lượng omega là:",
+          "options": [
+            "A. Tần số góc (rad/s)",
+            "B. Pha ban đầu",
+            "C. Biên độ",
+            "D. Chu kỳ"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: omega là tần số góc của dao động."
+        },
+        {
+          "id": "PHYS11_02",
+          "chapter": "Chương I: Vận tốc và Gia tốc (Bài 2)",
+          "question": "Trong dao động điều hòa, vận tốc biến thiên điều hòa:",
+          "options": [
+            "A. Sớm pha pi/2 so với li độ",
+            "B. Cùng pha với li độ",
+            "C. Ngược pha với li độ",
+            "D. Trễ pha pi/2 so với li độ"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: v vuông pha sớm hơn x góc pi/2."
+        },
+        {
+          "id": "PHYS11_03",
+          "chapter": "Chương I: Gia tốc dao động (Bài 2)",
+          "question": "Gia tốc a trong dao động điều hòa liên hệ với li độ x theo hệ thức:",
+          "options": [
+            "A. a = -omega^2 * x",
+            "B. a = omega^2 * x",
+            "C. a = -omega * x",
+            "D. a = omega * x^2"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: a = -omega^2 * x, ngược pha với x."
+        },
+        {
+          "id": "PHYS11_04",
+          "chapter": "Chương I: Động năng và Thế năng (Bài 3)",
+          "question": "Khi vật dao động điều hòa đi qua vị trí cân bằng thì:",
+          "options": [
+            "A. Động năng cực đại, thế năng bằng 0",
+            "B. Thế năng cực đại, động năng bằng 0",
+            "C. Cơ năng bằng 0",
+            "D. Vận tốc bằng 0"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Tại VTCB v đạt cực đại => Wd max, x=0 => Wt=0."
+        },
+        {
+          "id": "PHYS11_05",
+          "chapter": "Chương I: Con lắc lò xo (Bài 4)",
+          "question": "Chu kỳ dao động điều hòa của con lắc lò xo độ cứng k, khối lượng m là:",
+          "options": [
+            "A. T = 2pi * sqrt(m / k)",
+            "B. T = 2pi * sqrt(k / m)",
+            "C. T = 1/(2pi) * sqrt(m / k)",
+            "D. T = 2pi * (m / k)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: T = 2pi*sqrt(m/k)."
+        },
+        {
+          "id": "PHYS11_06",
+          "chapter": "Chương I: Con lắc đơn (Bài 5)",
+          "question": "Chu kỳ dao động nhỏ của con lắc đơn chiều dài l tại nơi có gia tốc trọng trường g là:",
+          "options": [
+            "A. T = 2pi * sqrt(l / g)",
+            "B. T = 2pi * sqrt(g / l)",
+            "C. T = sqrt(l / g)",
+            "D. T = 2pi * (l / g)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: T = 2pi*sqrt(l/g)."
+        },
+        {
+          "id": "PHYS11_07",
+          "chapter": "Chương I: Dao động tắt dần (Bài 6)",
+          "question": "Dao động tắt dần là dao động có:",
+          "options": [
+            "A. Biên độ và cơ năng giảm dần theo thời gian do ma sát",
+            "B. Tần số giảm dần theo thời gian",
+            "C. Chu kỳ tăng dần theo thời gian",
+            "D. Pha không đổi"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Ma sát tiêu hao cơ năng làm biên độ giảm dần."
+        },
+        {
+          "id": "PHYS11_08",
+          "chapter": "Chương I: Cộng hưởng (Bài 6)",
+          "question": "Hiện tượng cộng hưởng xảy ra khi:",
+          "options": [
+            "A. Tần số của ngoại lực cưỡng bức bằng tần số dao động riêng của hệ",
+            "B. Ngoại lực cưỡng bức triệt tiêu",
+            "C. Biên độ ngoại lực bằng 0",
+            "D. Tần số ngoại lực rất lớn"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: f_ngoại_lực = f_riêng thì biên độ đạt cực đại."
+        },
+        {
+          "id": "PHYS11_09",
+          "chapter": "Chương II: Sóng cơ (Bài 8)",
+          "question": "Bước sóng lambda là:",
+          "options": [
+            "A. Quãng đường sóng truyền đi trong 1 chu kỳ",
+            "B. Quãng đường sóng truyền đi trong 1 giây",
+            "C. Khoảng cách giữa hai điểm bất kỳ",
+            "D. Độ lệch pha giữa hai nguồn"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: lambda = v*T = v/f."
+        },
+        {
+          "id": "PHYS11_10",
+          "chapter": "Chương II: Phân loại sóng (Bài 8)",
+          "question": "Sóng ngang là sóng có phương dao động của các phần tử môi trường:",
+          "options": [
+            "A. Vuông góc với phương truyền sóng",
+            "B. Trùng với phương truyền sóng",
+            "C. Tiếp tuyến với phương truyền sóng",
+            "D. Ngẫu nhiên"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Sóng ngang có phương dao động vuông góc phương truyền sóng."
+        },
+        {
+          "id": "PHYS11_11",
+          "chapter": "Chương II: Sóng dọc (Bài 8)",
+          "question": "Sóng dọc có thể truyền được trong các môi trường:",
+          "options": [
+            "A. Rắn, lỏng và khí",
+            "B. Chỉ trong chất rắn",
+            "C. Chỉ trong chân không",
+            "D. Chỉ trong chất lỏng"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Sóng dọc truyền được trong cả rắn, lỏng, khí."
+        },
+        {
+          "id": "PHYS11_12",
+          "chapter": "Chương II: Giao thoa sóng (Bài 9)",
+          "question": "Hai nguồn sóng kết hợp là hai nguồn dao động cùng phương và:",
+          "options": [
+            "A. Cùng tần số và có hiệu số pha không đổi theo thời gian",
+            "B. Cùng biên độ và cùng pha",
+            "C. Cùng tốc độ truyền sóng",
+            "D. Cùng năng lượng"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Điều kiện nguồn kết hợp: cùng tần số và độ lệch pha không đổi."
+        },
+        {
+          "id": "PHYS11_13",
+          "chapter": "Chương II: Cực đại giao thoa (Bài 9)",
+          "question": "Trong giao thoa sóng cơ của hai nguồn cùng pha, điều kiện để tại điểm M có cực đại giao thoa là:",
+          "options": [
+            "A. d2 - d1 = k.lambda (k thuộc Z)",
+            "B. d2 - d1 = (k + 0.5)lambda",
+            "C. d2 - d1 = (2k + 1)lambda/4",
+            "D. d2 + d1 = k.lambda"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Hiệu đường đi bằng số nguyên lần bước sóng: d2 - d1 = k.lambda."
+        },
+        {
+          "id": "PHYS11_14",
+          "chapter": "Chương II: Sóng dừng (Bài 12)",
+          "question": "Khoảng cách giữa hai nút sóng hoặc hai bụng sóng liên tiếp trên dây có sóng dừng là:",
+          "options": [
+            "A. lambda / 2",
+            "B. lambda",
+            "C. lambda / 4",
+            "D. 2.lambda"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Khoảng cách giữa 2 nút hoặc 2 bụng liền kề là lambda / 2."
+        },
+        {
+          "id": "PHYS11_15",
+          "chapter": "Chương II: Sóng dừng hai đầu cố định (Bài 12)",
+          "question": "Điều kiện có sóng dừng trên dây chiều dài L có hai đầu cố định là:",
+          "options": [
+            "A. L = k * (lambda / 2) với k = 1, 2, 3...",
+            "B. L = (2k + 1) * lambda/4",
+            "C. L = k * lambda",
+            "D. L = lambda / 2"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Chiều dài dây bằng số nguyên lần nửa bước sóng."
+        },
+        {
+          "id": "PHYS11_16",
+          "chapter": "Chương II: Giao thoa ánh sáng (Bài 11)",
+          "question": "Trong thí nghiệm Young về giao thoa ánh sáng, khoảng vân i được tính theo công thức:",
+          "options": [
+            "A. i = lambda * D / a",
+            "B. i = lambda * a / D",
+            "C. i = a * D / lambda",
+            "D. i = lambda * D * a"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: i = lambda.D/a."
+        },
+        {
+          "id": "PHYS11_17",
+          "chapter": "Chương III: Định luật Coulomb (Bài 16)",
+          "question": "Độ lớn lực tương tác tĩnh điện Coulomb giữa hai điện tích q1, q2 đặt cách nhau khoảng r trong chân không là:",
+          "options": [
+            "A. F = k * |q1.q2| / r^2",
+            "B. F = k * |q1.q2| / r",
+            "C. F = k * (q1 + q2) / r^2",
+            "D. F = |q1.q2| / r^2"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: F = k.|q1.q2|/r^2 với k = 9.10^9 N.m^2/C^2."
+        },
+        {
+          "id": "PHYS11_18",
+          "chapter": "Chương III: Điện trường (Bài 17)",
+          "question": "Đơn vị đo của cường độ điện trường E trong hệ SI là:",
+          "options": [
+            "A. V/m (Vôn trên mét)",
+            "B. N (Niutơn)",
+            "C. C (Culông)",
+            "D. J (Jun)"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Đơn vị của cường độ điện trường là V/m hoặc N/C."
+        },
+        {
+          "id": "PHYS11_19",
+          "chapter": "Chương III: Đường sức điện (Bài 17)",
+          "question": "Đặc điểm của các đường sức điện trường tĩnh là:",
+          "options": [
+            "A. Xuất phát từ điện tích dương và kết thúc ở điện tích âm (hoặc vô cực)",
+            "B. Là các đường cong khép kín",
+            "C. Cắt nhau tại các điểm có điện trường mạnh",
+            "D. Luôn song song với nhau"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Đường sức điện tĩnh đi ra từ cực dương, đi vào cực âm và không khép kín."
+        },
+        {
+          "id": "PHYS11_20",
+          "chapter": "Chương III: Công của lực điện (Bài 19)",
+          "question": "Công của lực điện tác dụng lên một điện tích dịch chuyển trong điện trường đều không phụ thuộc vào:",
+          "options": [
+            "A. Hình dạng của đường đi mà chỉ phụ thuộc vào vị trí điểm đầu và điểm cuối",
+            "B. Độ lớn của điện tích",
+            "C. Cường độ điện trường",
+            "D. Khoảng cách giữa hình chiếu điểm đầu và điểm cuối"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Lực điện trường là lực thế, công không phụ thuộc hình dạng đường đi: A = q.E.d."
+        },
+        {
+          "id": "PHYS11_21",
+          "chapter": "Chương III: Tụ điện (Bài 21)",
+          "question": "Điện dung C của tụ điện phẳng có điện tích Q và hiệu điện thế U được xác định bởi:",
+          "options": [
+            "A. C = Q / U",
+            "B. C = Q * U",
+            "C. C = U / Q",
+            "D. C = Q^2 / U"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: C = Q / U, đơn vị Fara (F)."
+        },
+        {
+          "id": "PHYS11_22",
+          "chapter": "Chương III: Năng lượng tụ điện (Bài 21)",
+          "question": "Năng lượng điện trường dự trữ trong tụ điện được tính bởi công thức:",
+          "options": [
+            "A. W = 1/2 * C * U^2",
+            "B. W = C * U^2",
+            "C. W = 1/2 * C^2 * U",
+            "D. W = Q * U"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: W = 1/2 C.U^2 = 1/2 Q.U = Q^2 / (2C)."
+        },
+        {
+          "id": "PHYS11_23",
+          "chapter": "Chương IV: Dòng điện (Bài 22)",
+          "question": "Cường độ dòng điện I chạy qua dây dẫn kim loại được định nghĩa là:",
+          "options": [
+            "A. I = q / t",
+            "B. I = q * t",
+            "C. I = U * R",
+            "D. I = R / U"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: I = Delta q / Delta t, đơn vị Ampe (A)."
+        },
+        {
+          "id": "PHYS11_24",
+          "chapter": "Chương IV: Định luật Ohm đoạn mạch (Bài 23)",
+          "question": "Theo định luật Ohm cho đoạn mạch chỉ có điện trở R, cường độ dòng điện I tỉ lệ:",
+          "options": [
+            "A. Thuận với hiệu điện thế U và nghịch với điện trở R",
+            "B. Thuận với R và nghịch với U",
+            "C. Thuận với cả U và R",
+            "D. Nghịch với cả U và R"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: I = U / R."
+        },
+        {
+          "id": "PHYS11_25",
+          "chapter": "Chương IV: Điện trở dây dẫn (Bài 23)",
+          "question": "Điện trở R của dây dẫn đồng chất tiết diện đều chiều dài L, tiết diện S, điện trở suất rho là:",
+          "options": [
+            "A. R = rho * (L / S)",
+            "B. R = rho * (S / L)",
+            "C. R = L / (rho * S)",
+            "D. R = rho * L * S"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: R = rho . L / S."
+        },
+        {
+          "id": "PHYS11_26",
+          "chapter": "Chương IV: Nguồn điện (Bài 24)",
+          "question": "Suất điện động E của nguồn điện đặc trưng cho:",
+          "options": [
+            "A. Khả năng thực hiện công của nguồn điện khi dịch chuyển điện tích bên trong nguồn",
+            "B. Khả năng tích điện của nguồn",
+            "C. Điện trở trong của nguồn",
+            "D. Công suất tiêu thụ của mạch ngoài"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Suất điện động E = A_nguồn / q."
+        },
+        {
+          "id": "PHYS11_27",
+          "chapter": "Chương IV: Định luật Ohm toàn mạch (Bài 25)",
+          "question": "Cường độ dòng điện trong mạch kín gồm nguồn (E, r) và điện trở ngoài R là:",
+          "options": [
+            "A. I = E / (R + r)",
+            "B. I = E / R",
+            "C. I = E / r",
+            "D. I = (R + r) / E"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: I = E / (R + r)."
+        },
+        {
+          "id": "PHYS11_28",
+          "chapter": "Chương IV: Định luật Joule - Lenz (Bài 25)",
+          "question": "Nhiệt lượng tỏa ra trên dây dẫn có điện trở R khi có dòng điện I chạy qua trong thời gian t là:",
+          "options": [
+            "A. Q = R * I^2 * t",
+            "B. Q = R * I * t",
+            "C. Q = R^2 * I * t",
+            "D. Q = U * I^2 * t"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Q = R.I^2.t (Định luật Joule - Lenz)."
+        },
+        {
+          "id": "PHYS11_29",
+          "chapter": "Chương IV: Công suất điện (Bài 25)",
+          "question": "Công suất tiêu thụ điện P của đoạn mạch có điện áp U và dòng điện I là:",
+          "options": [
+            "A. P = U * I",
+            "B. P = U / I",
+            "C. P = U^2 * I",
+            "D. P = I^2 / U"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: P = U.I = I^2.R = U^2/R."
+        },
+        {
+          "id": "PHYS11_30",
+          "chapter": "Chương IV: Hiện tượng đoản mạch (Bài 25)",
+          "question": "Hiện tượng đoản mạch xảy ra khi điện trở mạch ngoài:",
+          "options": [
+            "A. R xấp xỉ bằng 0",
+            "B. R tiến ra vô cực",
+            "C. R bằng điện trở trong r",
+            "D. Nguồn điện hết năng lượng"
+          ],
+          "correct_answer": "A",
+          "explanation": "SGK Vật lí 11 KNTT: Khi R -> 0, dòng điện I = E/r tăng rất lớn gây chập cháy."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_CHEM_11",
+    "grade": "11",
+    "subject_code": "Hóa Học",
+    "name": "Hệ Sao Cân Bằng & Hóa Hữu Cơ 11",
+    "subject": "Hóa Học 11 (Kết Nối Tri Thức)",
+    "description": "Làm chủ thuyết acid - base Brønsted, hợp chất Nitrogen và dẫn xuất hydrocarbon.",
+    "icon": "🧪",
+    "theme_color": "#00f2fe",
+    "stations": [
+      {
+        "id": "C11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Thuyết Acid-Base",
+        "question": "Theo thuyết Brønsted - Lowry, acid là chất:",
+        "options": [
+          "A. Có khả năng cho proton (H+)",
+          "B. Có khả năng nhận proton",
+          "C. Phân li ra OH-",
+          "D. Chứa kim loại"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Acid cho H+, base nhận H+.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 30,
+          "y": 35
+        }
+      },
+      {
+        "id": "C11_02",
+        "level": "VanDung",
+        "title": "Trạm Khí Mưa Acid",
+        "question": "Khí nào sau đây là nguyên nhân chủ yếu gây ra hiện tượng mưa acid?",
+        "options": [
+          "A. SO2 và NOx",
+          "B. CO2 và CH4",
+          "C. N2 và O2",
+          "D. H2 và He"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Oxide của S và N tạo mưa acid.",
+        "exp_reward": 80,
+        "coordinates": {
+          "x": 70,
+          "y": 60
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_CHEM_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Hóa Học 11",
+      "curriculum": "SGK Hóa Học 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "CHEM11_01",
+          "chapter": "Hóa Học 11 - Chương 1: Cân bằng hóa học",
+          "question": "Câu hỏi 1: Theo Le Chatelier, tăng áp suất làm cân bằng chuyển dịch theo chiều:",
+          "options": [
+            "A. Giảm số mol phân tử khí",
+            "B. Tăng số mol phân tử khí",
+            "C. Tỏa nhiệt",
+            "D. Thu nhiệt"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Tăng P chuyển dịch về phía giảm số mol khí."
+        },
+        {
+          "id": "CHEM11_02",
+          "chapter": "Hóa Học 11 - Chương 1: Thuyết Brønsted",
+          "question": "Câu hỏi 2: Trong phản ứng NH3 + H2O <-> NH4+ + OH-, NH3 đóng vai trò là:",
+          "options": [
+            "A. Base vì nhận proton H+",
+            "B. Acid vì cho proton",
+            "C. Chất khử",
+            "D. Chất oxi hóa"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: NH3 nhận H+ từ nước nên là base theo Brønsted."
+        },
+        {
+          "id": "CHEM11_03",
+          "chapter": "Hóa Học 11 - Chương 1: pH dung dịch",
+          "question": "Câu hỏi 3: Dung dịch có nồng độ [H+] = 10^-3 M thì giá trị pH bằng:",
+          "options": [
+            "A. 3",
+            "B. 11",
+            "C. 7",
+            "D. -3"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: pH = -log[H+] = -log(10^-3) = 3."
+        },
+        {
+          "id": "CHEM11_04",
+          "chapter": "Hóa Học 11 - Chương 2: Đơn chất Nitrogen",
+          "question": "Câu hỏi 4: Ở nhiệt độ thường, đơn chất N2 khá trơ về mặt hóa học là do:",
+          "options": [
+            "A. Phân tử có liên kết ba N≡N rất bền với năng lượng liên kết lớn",
+            "B. Phân tử không phân cực",
+            "C. Nguyên tử có bán kính nhỏ",
+            "D. Độ âm điện của N thấp"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Liên kết ba bền vững (945 kJ/mol) khiến N2 trơ ở nhiệt độ thường."
+        },
+        {
+          "id": "CHEM11_05",
+          "chapter": "Hóa Học 11 - Chương 2: Khí Ammonia",
+          "question": "Câu hỏi 5: Khí NH3 làm quỳ tím ẩm chuyển sang màu:",
+          "options": [
+            "A. Xanh",
+            "B. Đỏ",
+            "C. Mất màu",
+            "D. Vàng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Dung dịch NH3 có tính base yếu làm quỳ tím hóa xanh."
+        },
+        {
+          "id": "CHEM11_06",
+          "chapter": "Hóa Học 11 - Chương 2: Nitric acid",
+          "question": "Câu hỏi 6: Kim loại nào sau đây bị thụ động hóa trong HNO3 đặc, nguội?",
+          "options": [
+            "A. Fe và Al",
+            "B. Cu và Ag",
+            "C. Mg và Zn",
+            "D. Na và K"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Fe, Al, Cr bị thụ động hóa trong HNO3 và H2SO4 đặc nguội."
+        },
+        {
+          "id": "CHEM11_07",
+          "chapter": "Hóa Học 11 - Chương 2: Sulfur",
+          "question": "Câu hỏi 7: Sulfur dioxide (SO2) thể hiện tính oxi hóa khi tác dụng với chất nào sau đây?",
+          "options": [
+            "A. Dung dịch H2S",
+            "B. Khí O2",
+            "C. Dung dịch Br2",
+            "D. Dung dịch NaOH"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: SO2 + 2H2S -> 3S + 2H2O (SO2 nhận e, thể hiện tính oxi hóa)."
+        },
+        {
+          "id": "CHEM11_08",
+          "chapter": "Hóa Học 11 - Chương 2: Sulfuric acid",
+          "question": "Câu hỏi 8: Để pha loãng dung dịch H2SO4 đặc an toàn, người ta phải:",
+          "options": [
+            "A. Rót từ từ acid đặc vào nước và khuấy nhẹ",
+            "B. Rót nhanh nước vào acid đặc",
+            "C. Đổ đồng thời cả hai vào nhau",
+            "D. Đun nóng trước khi đổ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Rót từ từ acid vào nước tránh hiện tượng sôi cục bộ bắn acid ra ngoài."
+        },
+        {
+          "id": "CHEM11_09",
+          "chapter": "Hóa Học 11 - Chương 3: Hợp chất hữu cơ",
+          "question": "Câu hỏi 9: Phương pháp sắc ký dùng để:",
+          "options": [
+            "A. Tách biệt các chất có độ hấp phụ và hòa tan khác nhau",
+            "B. Đốt cháy hoàn toàn hợp chất",
+            "C. Đo khối lượng phân tử",
+            "D. Chưng cất phân đoạn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Sắc ký tách biệt các chất dựa trên sự phân bố giữa pha động và pha tĩnh."
+        },
+        {
+          "id": "CHEM11_10",
+          "chapter": "Hóa Học 11 - Chương 3: Đồng phân",
+          "question": "Câu hỏi 10: Hiện tượng các chất có cùng công thức phân tử nhưng khác công thức cấu tạo gọi là:",
+          "options": [
+            "A. Hiện tượng đồng phân",
+            "B. Hiện tượng đồng đẳng",
+            "C. Hiện tượng đa hình",
+            "D. Hiện tượng dị thể"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Đồng phân là cùng CTPT nhưng khác CTCT dẫn tới tính chất khác nhau."
+        },
+        {
+          "id": "CHEM11_11",
+          "chapter": "Hóa Học 11 - Chương 4: Alkane",
+          "question": "Câu hỏi 11: Phản ứng đặc trưng của alkane là:",
+          "options": [
+            "A. Phản ứng thế halogen (chiếu sáng)",
+            "B. Phản ứng cộng",
+            "C. Phản ứng trùng hợp",
+            "D. Phản ứng tráng bạc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Alkane chỉ có liên kết đơn C-C và C-H nên phản ứng đặc trưng là thế."
+        },
+        {
+          "id": "CHEM11_12",
+          "chapter": "Hóa Học 11 - Chương 4: Alkene",
+          "question": "Câu hỏi 12: Chất làm mất màu dung dịch nước bromine ở điều kiện thường là:",
+          "options": [
+            "A. Ethylene (CH2=CH2)",
+            "B. Methane (CH4)",
+            "C. Ethane (C2H6)",
+            "D. Propane (C3H8)"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Alkene có liên kết đôi C=C dễ tham gia phản ứng cộng làm mất màu Br2."
+        },
+        {
+          "id": "CHEM11_13",
+          "chapter": "Hóa Học 11 - Chương 4: Arene",
+          "question": "Câu hỏi 13: Phân tử Benzene (C6H6) có cấu trúc hình học là:",
+          "options": [
+            "A. Hình lục giác đều phẳng",
+            "B. Hình chóp tứ diện",
+            "C. Đường thẳng",
+            "D. Hình bát diện"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Benzene là vòng 6 cạnh đều phẳng với hệ liên kết pi liên hợp bền vững."
+        },
+        {
+          "id": "CHEM11_14",
+          "chapter": "Hóa Học 11 - Chương 5: Alcohol",
+          "question": "Câu hỏi 14: Ethanol (C2H5OH) tác dụng với kim loại Na sinh ra khí gì?",
+          "options": [
+            "A. H2",
+            "B. O2",
+            "C. CO2",
+            "D. CH4"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: 2C2H5OH + 2Na -> 2C2H5ONa + H2."
+        },
+        {
+          "id": "CHEM11_15",
+          "chapter": "Hóa Học 11 - Chương 5: Phenol",
+          "question": "Câu hỏi 15: Phenol (C6H5OH) tác dụng với dung dịch nước bromine tạo thành kết tủa màu:",
+          "options": [
+            "A. Trắng (2,4,6-tribromophenol)",
+            "B. Vàng",
+            "C. Đỏ gạch",
+            "D. Xanh lam"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Nhóm -OH hoạt hóa vòng benzen ở các vị trí ortho và para tạo kết tủa trắng."
+        },
+        {
+          "id": "CHEM11_16",
+          "chapter": "Hóa Học 11 - Chương 1: Cân bằng hóa học",
+          "question": "Câu hỏi 16: Theo Le Chatelier, tăng áp suất làm cân bằng chuyển dịch theo chiều:",
+          "options": [
+            "A. Giảm số mol phân tử khí",
+            "B. Tăng số mol phân tử khí",
+            "C. Tỏa nhiệt",
+            "D. Thu nhiệt"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Tăng P chuyển dịch về phía giảm số mol khí."
+        },
+        {
+          "id": "CHEM11_17",
+          "chapter": "Hóa Học 11 - Chương 1: Thuyết Brønsted",
+          "question": "Câu hỏi 17: Trong phản ứng NH3 + H2O <-> NH4+ + OH-, NH3 đóng vai trò là:",
+          "options": [
+            "A. Base vì nhận proton H+",
+            "B. Acid vì cho proton",
+            "C. Chất khử",
+            "D. Chất oxi hóa"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: NH3 nhận H+ từ nước nên là base theo Brønsted."
+        },
+        {
+          "id": "CHEM11_18",
+          "chapter": "Hóa Học 11 - Chương 1: pH dung dịch",
+          "question": "Câu hỏi 18: Dung dịch có nồng độ [H+] = 10^-3 M thì giá trị pH bằng:",
+          "options": [
+            "A. 3",
+            "B. 11",
+            "C. 7",
+            "D. -3"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: pH = -log[H+] = -log(10^-3) = 3."
+        },
+        {
+          "id": "CHEM11_19",
+          "chapter": "Hóa Học 11 - Chương 2: Đơn chất Nitrogen",
+          "question": "Câu hỏi 19: Ở nhiệt độ thường, đơn chất N2 khá trơ về mặt hóa học là do:",
+          "options": [
+            "A. Phân tử có liên kết ba N≡N rất bền với năng lượng liên kết lớn",
+            "B. Phân tử không phân cực",
+            "C. Nguyên tử có bán kính nhỏ",
+            "D. Độ âm điện của N thấp"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Liên kết ba bền vững (945 kJ/mol) khiến N2 trơ ở nhiệt độ thường."
+        },
+        {
+          "id": "CHEM11_20",
+          "chapter": "Hóa Học 11 - Chương 2: Khí Ammonia",
+          "question": "Câu hỏi 20: Khí NH3 làm quỳ tím ẩm chuyển sang màu:",
+          "options": [
+            "A. Xanh",
+            "B. Đỏ",
+            "C. Mất màu",
+            "D. Vàng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Dung dịch NH3 có tính base yếu làm quỳ tím hóa xanh."
+        },
+        {
+          "id": "CHEM11_21",
+          "chapter": "Hóa Học 11 - Chương 2: Nitric acid",
+          "question": "Câu hỏi 21: Kim loại nào sau đây bị thụ động hóa trong HNO3 đặc, nguội?",
+          "options": [
+            "A. Fe và Al",
+            "B. Cu và Ag",
+            "C. Mg và Zn",
+            "D. Na và K"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Fe, Al, Cr bị thụ động hóa trong HNO3 và H2SO4 đặc nguội."
+        },
+        {
+          "id": "CHEM11_22",
+          "chapter": "Hóa Học 11 - Chương 2: Sulfur",
+          "question": "Câu hỏi 22: Sulfur dioxide (SO2) thể hiện tính oxi hóa khi tác dụng với chất nào sau đây?",
+          "options": [
+            "A. Dung dịch H2S",
+            "B. Khí O2",
+            "C. Dung dịch Br2",
+            "D. Dung dịch NaOH"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: SO2 + 2H2S -> 3S + 2H2O (SO2 nhận e, thể hiện tính oxi hóa)."
+        },
+        {
+          "id": "CHEM11_23",
+          "chapter": "Hóa Học 11 - Chương 2: Sulfuric acid",
+          "question": "Câu hỏi 23: Để pha loãng dung dịch H2SO4 đặc an toàn, người ta phải:",
+          "options": [
+            "A. Rót từ từ acid đặc vào nước và khuấy nhẹ",
+            "B. Rót nhanh nước vào acid đặc",
+            "C. Đổ đồng thời cả hai vào nhau",
+            "D. Đun nóng trước khi đổ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Rót từ từ acid vào nước tránh hiện tượng sôi cục bộ bắn acid ra ngoài."
+        },
+        {
+          "id": "CHEM11_24",
+          "chapter": "Hóa Học 11 - Chương 3: Hợp chất hữu cơ",
+          "question": "Câu hỏi 24: Phương pháp sắc ký dùng để:",
+          "options": [
+            "A. Tách biệt các chất có độ hấp phụ và hòa tan khác nhau",
+            "B. Đốt cháy hoàn toàn hợp chất",
+            "C. Đo khối lượng phân tử",
+            "D. Chưng cất phân đoạn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Sắc ký tách biệt các chất dựa trên sự phân bố giữa pha động và pha tĩnh."
+        },
+        {
+          "id": "CHEM11_25",
+          "chapter": "Hóa Học 11 - Chương 3: Đồng phân",
+          "question": "Câu hỏi 25: Hiện tượng các chất có cùng công thức phân tử nhưng khác công thức cấu tạo gọi là:",
+          "options": [
+            "A. Hiện tượng đồng phân",
+            "B. Hiện tượng đồng đẳng",
+            "C. Hiện tượng đa hình",
+            "D. Hiện tượng dị thể"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Đồng phân là cùng CTPT nhưng khác CTCT dẫn tới tính chất khác nhau."
+        },
+        {
+          "id": "CHEM11_26",
+          "chapter": "Hóa Học 11 - Chương 4: Alkane",
+          "question": "Câu hỏi 26: Phản ứng đặc trưng của alkane là:",
+          "options": [
+            "A. Phản ứng thế halogen (chiếu sáng)",
+            "B. Phản ứng cộng",
+            "C. Phản ứng trùng hợp",
+            "D. Phản ứng tráng bạc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Alkane chỉ có liên kết đơn C-C và C-H nên phản ứng đặc trưng là thế."
+        },
+        {
+          "id": "CHEM11_27",
+          "chapter": "Hóa Học 11 - Chương 4: Alkene",
+          "question": "Câu hỏi 27: Chất làm mất màu dung dịch nước bromine ở điều kiện thường là:",
+          "options": [
+            "A. Ethylene (CH2=CH2)",
+            "B. Methane (CH4)",
+            "C. Ethane (C2H6)",
+            "D. Propane (C3H8)"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Alkene có liên kết đôi C=C dễ tham gia phản ứng cộng làm mất màu Br2."
+        },
+        {
+          "id": "CHEM11_28",
+          "chapter": "Hóa Học 11 - Chương 4: Arene",
+          "question": "Câu hỏi 28: Phân tử Benzene (C6H6) có cấu trúc hình học là:",
+          "options": [
+            "A. Hình lục giác đều phẳng",
+            "B. Hình chóp tứ diện",
+            "C. Đường thẳng",
+            "D. Hình bát diện"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Benzene là vòng 6 cạnh đều phẳng với hệ liên kết pi liên hợp bền vững."
+        },
+        {
+          "id": "CHEM11_29",
+          "chapter": "Hóa Học 11 - Chương 5: Alcohol",
+          "question": "Câu hỏi 29: Ethanol (C2H5OH) tác dụng với kim loại Na sinh ra khí gì?",
+          "options": [
+            "A. H2",
+            "B. O2",
+            "C. CO2",
+            "D. CH4"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: 2C2H5OH + 2Na -> 2C2H5ONa + H2."
+        },
+        {
+          "id": "CHEM11_30",
+          "chapter": "Hóa Học 11 - Chương 5: Phenol",
+          "question": "Câu hỏi 30: Phenol (C6H5OH) tác dụng với dung dịch nước bromine tạo thành kết tủa màu:",
+          "options": [
+            "A. Trắng (2,4,6-tribromophenol)",
+            "B. Vàng",
+            "C. Đỏ gạch",
+            "D. Xanh lam"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Hóa Học 11 Kết Nối Tri Thức Với Cuộc Sống: Nhóm -OH hoạt hóa vòng benzen ở các vị trí ortho và para tạo kết tủa trắng."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_BIO_11",
+    "grade": "11",
+    "subject_code": "Sinh Học",
+    "name": "Hệ Sao Chuyển Hóa Sinh Giới 11",
+    "subject": "Sinh Học 11 (Kết Nối Tri Thức)",
+    "description": "Khám phá sinh lý học thực vật và động vật, hệ tuần hoàn và hệ thần kinh cảm ứng.",
+    "icon": "🧬",
+    "theme_color": "#52c41a",
+    "stations": [
+      {
+        "id": "B11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Dòng Mạch Rây",
+        "question": "Dòng mạch rây (phloem) trong cây vận chuyển chủ yếu chất nào sau đây?",
+        "options": [
+          "A. Các chất hữu cơ (sucrose, amino acid...) từ lá đến các cơ quan",
+          "B. Nước và ion khoáng từ rễ lên lá",
+          "C. Khí oxy",
+          "D. Độc tố"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Mạch rây dẫn sản phẩm quang hợp từ lá.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 30,
+          "y": 40
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_BIO_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Sinh Học 11",
+      "curriculum": "SGK Sinh Học 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "BIO11_01",
+          "chapter": "Sinh Học 11 - Chương 1: Trao đổi chất ở thực vật",
+          "question": "Câu hỏi 1: Động lực chính đẩy dòng mạch gỗ từ rễ lên đỉnh ngọn cây cao là:",
+          "options": [
+            "A. Lực hút do thoát hơi nước ở lá",
+            "B. Lực đẩy áp suất rễ",
+            "C. Lực liên kết giữa các phân tử nước",
+            "D. Lực hấp dẫn của Trái Đất"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Thoát hơi nước tạo sức hút kéo dòng nước và khoáng lên cao."
+        },
+        {
+          "id": "BIO11_02",
+          "chapter": "Sinh Học 11 - Chương 1: Thoát hơi nước",
+          "question": "Câu hỏi 2: Khí khổng mở ra khi tế bào hạt đậu:",
+          "options": [
+            "A. No nước, thành mỏng căng ra làm thành dày cong theo",
+            "B. Mất nước, xẹp lại",
+            "C. Nhiệt độ môi trường quá cao",
+            "D. Trời tối hoàn toàn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Cơ chế trương nước của tế bào hình hạt đậu làm mở khí khổng."
+        },
+        {
+          "id": "BIO11_03",
+          "chapter": "Sinh Học 11 - Chương 1: Dinh dưỡng khoáng",
+          "question": "Câu hỏi 3: Nguyên tố khoáng đại lượng thiết yếu cấu tạo nên diệp lục là:",
+          "options": [
+            "A. Nitrogen và Magnesium",
+            "B. Sắt và Đồng",
+            "C. Kẽm và Bo",
+            "D. Mangan và Molipđen"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mg là nhân của phân tử diệp lục, N cấu tạo nên protein và diệp lục."
+        },
+        {
+          "id": "BIO11_04",
+          "chapter": "Sinh Học 11 - Chương 1: Quang hợp",
+          "question": "Câu hỏi 4: Sản phẩm của pha sáng được cung cấp cho pha tối của quang hợp là:",
+          "options": [
+            "A. ATP và NADPH",
+            "B. Glucose và O2",
+            "C. H2O và CO2",
+            "D. ADP và NADP+"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Pha sáng tạo ATP và NADPH để khử CO2 trong chu trình Calvin."
+        },
+        {
+          "id": "BIO11_05",
+          "chapter": "Sinh Học 11 - Chương 1: Hô hấp thực vật",
+          "question": "Câu hỏi 5: Giai đoạn đường phân trong hô hấp tế bào diễn ra tại:",
+          "options": [
+            "A. Bào tương (tế bào chất)",
+            "B. Chất nền ty thể",
+            "C. Màng trong ty thể",
+            "D. Nhân tế bào"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Đường phân phân giải 1 glucose thành 2 pyruvate xảy ra ở tế bào chất."
+        },
+        {
+          "id": "BIO11_06",
+          "chapter": "Sinh Học 11 - Chương 1: Tiêu hóa động vật",
+          "question": "Câu hỏi 6: Động vật nhai lại (trâu, bò) có dạ dày cấu tạo gồm mấy ngăn?",
+          "options": [
+            "A. 4 ngăn (dạ cỏ, dạ tổ ong, dạ lá sách, dạ múi khế)",
+            "B. 3 ngăn",
+            "C. 2 ngăn",
+            "D. 1 ngăn đơn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Dạ dày 4 ngăn thích nghi tiêu hóa thức ăn thực vật giàu cellulose."
+        },
+        {
+          "id": "BIO11_07",
+          "chapter": "Sinh Học 11 - Chương 1: Hô hấp động vật",
+          "question": "Câu hỏi 7: Cơ quan hô hấp trao đổi khí hiệu quả nhất ở động vật trên cạn thuộc về:",
+          "options": [
+            "A. Phổi của chim (có hệ thống túi khí)",
+            "B. Da của giun đất",
+            "C. Phổi của thú",
+            "D. Ống khí côn trùng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Phổi chim có hệ thống túi khí giúp dòng khí qua phổi liên tục không có khí cặn."
+        },
+        {
+          "id": "BIO11_08",
+          "chapter": "Sinh Học 11 - Chương 1: Hệ tuần hoàn",
+          "question": "Câu hỏi 8: Hệ tuần hoàn hở có đặc điểm nào sau đây?",
+          "options": [
+            "A. Máu chảy trong động mạch dưới áp lực thấp và tràn vào khoang cơ thể",
+            "B. Máu luôn chảy kín trong mạch máu",
+            "C. Máu lưu thông với áp lực rất cao",
+            "D. Vận tốc máu chảy rất nhanh"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Hệ tuần hoàn hở không có mao mạch, máu tràn vào khoang cơ thể."
+        },
+        {
+          "id": "BIO11_09",
+          "chapter": "Sinh Học 11 - Chương 1: Hoạt động của tim",
+          "question": "Câu hỏi 9: Tính tự động của tim là do hoạt động của cấu trúc nào?",
+          "options": [
+            "A. Hệ dẫn truyền tim (nút xoang nhĩ, nút nhĩ thất, bó His, sợi Purkinje)",
+            "B. Hệ thần kinh trung ương",
+            "C. Tủy sống",
+            "D. Van tim"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Hệ dẫn truyền tim tự phát xung động giúp tim co bóp nhịp nhàng."
+        },
+        {
+          "id": "BIO11_10",
+          "chapter": "Sinh Học 11 - Chương 2: Hướng động",
+          "question": "Câu hỏi 10: Hiện tượng ngọn cây uốn cong về phía có ánh sáng gọi là:",
+          "options": [
+            "A. Hướng sáng dương",
+            "B. Hướng sáng âm",
+            "C. Hướng trọng lực",
+            "D. Hướng tiếp xúc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Auxin phân bố nhiều ở phía tối kích thích tế bào dãn dài làm ngọn cong về sáng."
+        },
+        {
+          "id": "BIO11_11",
+          "chapter": "Sinh Học 11 - Chương 2: Điện thế hoạt động",
+          "question": "Câu hỏi 11: Khi tế bào thần kinh bị kích thích hưng phấn, màng tế bào xảy ra quá trình:",
+          "options": [
+            "A. Khử cực và đảo cực do kênh Na+ mở ồ ạt",
+            "B. Phân cực do K+ đi ra",
+            "C. Đóng tất cả các kênh ion",
+            "D. Bơm Na-K ngừng chạy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Kênh Na+ mở làm Na+ tràn vào gây khử cực và đảo cực màng."
+        },
+        {
+          "id": "BIO11_12",
+          "chapter": "Sinh Học 11 - Chương 3: Sinh trưởng thực vật",
+          "question": "Câu hỏi 12: Mô phân sinh đỉnh ở thực vật có chức năng:",
+          "options": [
+            "A. Giúp thân và rễ dài ra (sinh trưởng sơ cấp)",
+            "B. Làm tăng đường kính thân",
+            "C. Tạo mô mạch rây thứ cấp",
+            "D. Tạo vỏ cây"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mô phân sinh đỉnh làm cây tăng trưởng theo chiều cao/dài."
+        },
+        {
+          "id": "BIO11_13",
+          "chapter": "Sinh Học 11 - Chương 3: Phát triển động vật",
+          "question": "Câu hỏi 13: Nhóm động vật nào phát triển qua biến thái hoàn toàn?",
+          "options": [
+            "A. Bướm, ếch, muỗi",
+            "B. Châu chấu, cào cào",
+            "C. Gà, vịt",
+            "D. Chó, mèo"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Sâu bướm biến thái hoàn toàn: trứng -> sâu non -> nhộng -> bướm trưởng thành."
+        },
+        {
+          "id": "BIO11_14",
+          "chapter": "Sinh Học 11 - Chương 4: Thụ tinh kép",
+          "question": "Câu hỏi 14: Hiện tượng thụ tinh kép ở thực vật có hoa là sự kết hợp của:",
+          "options": [
+            "A. Một tinh tử với noãn cầu và một tinh tử với nhân cực (tạo nội nhũ 3n)",
+            "B. Hai tinh tử với hai noãn cầu",
+            "C. Hai hạt phấn với một noãn",
+            "D. Tinh tử với bao phấn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Thụ tinh kép tạo hợp tử (2n) và phôi nhũ (3n) dự trữ dinh dưỡng."
+        },
+        {
+          "id": "BIO11_15",
+          "chapter": "Sinh Học 11 - Chương 4: Cân bằng nội môi",
+          "question": "Câu hỏi 15: Cơ quan đóng vai trò chủ đạo điều hòa áp suất thẩm thấu của máu là:",
+          "options": [
+            "A. Thận và gan",
+            "B. Phổi",
+            "C. Dạ dày",
+            "D. Tuyến tụy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Thận điều hòa nước và muối khoáng giúp duy trì áp suất thẩm thấu."
+        },
+        {
+          "id": "BIO11_16",
+          "chapter": "Sinh Học 11 - Chương 1: Trao đổi chất ở thực vật",
+          "question": "Câu hỏi 16: Động lực chính đẩy dòng mạch gỗ từ rễ lên đỉnh ngọn cây cao là:",
+          "options": [
+            "A. Lực hút do thoát hơi nước ở lá",
+            "B. Lực đẩy áp suất rễ",
+            "C. Lực liên kết giữa các phân tử nước",
+            "D. Lực hấp dẫn của Trái Đất"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Thoát hơi nước tạo sức hút kéo dòng nước và khoáng lên cao."
+        },
+        {
+          "id": "BIO11_17",
+          "chapter": "Sinh Học 11 - Chương 1: Thoát hơi nước",
+          "question": "Câu hỏi 17: Khí khổng mở ra khi tế bào hạt đậu:",
+          "options": [
+            "A. No nước, thành mỏng căng ra làm thành dày cong theo",
+            "B. Mất nước, xẹp lại",
+            "C. Nhiệt độ môi trường quá cao",
+            "D. Trời tối hoàn toàn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Cơ chế trương nước của tế bào hình hạt đậu làm mở khí khổng."
+        },
+        {
+          "id": "BIO11_18",
+          "chapter": "Sinh Học 11 - Chương 1: Dinh dưỡng khoáng",
+          "question": "Câu hỏi 18: Nguyên tố khoáng đại lượng thiết yếu cấu tạo nên diệp lục là:",
+          "options": [
+            "A. Nitrogen và Magnesium",
+            "B. Sắt và Đồng",
+            "C. Kẽm và Bo",
+            "D. Mangan và Molipđen"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mg là nhân của phân tử diệp lục, N cấu tạo nên protein và diệp lục."
+        },
+        {
+          "id": "BIO11_19",
+          "chapter": "Sinh Học 11 - Chương 1: Quang hợp",
+          "question": "Câu hỏi 19: Sản phẩm của pha sáng được cung cấp cho pha tối của quang hợp là:",
+          "options": [
+            "A. ATP và NADPH",
+            "B. Glucose và O2",
+            "C. H2O và CO2",
+            "D. ADP và NADP+"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Pha sáng tạo ATP và NADPH để khử CO2 trong chu trình Calvin."
+        },
+        {
+          "id": "BIO11_20",
+          "chapter": "Sinh Học 11 - Chương 1: Hô hấp thực vật",
+          "question": "Câu hỏi 20: Giai đoạn đường phân trong hô hấp tế bào diễn ra tại:",
+          "options": [
+            "A. Bào tương (tế bào chất)",
+            "B. Chất nền ty thể",
+            "C. Màng trong ty thể",
+            "D. Nhân tế bào"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Đường phân phân giải 1 glucose thành 2 pyruvate xảy ra ở tế bào chất."
+        },
+        {
+          "id": "BIO11_21",
+          "chapter": "Sinh Học 11 - Chương 1: Tiêu hóa động vật",
+          "question": "Câu hỏi 21: Động vật nhai lại (trâu, bò) có dạ dày cấu tạo gồm mấy ngăn?",
+          "options": [
+            "A. 4 ngăn (dạ cỏ, dạ tổ ong, dạ lá sách, dạ múi khế)",
+            "B. 3 ngăn",
+            "C. 2 ngăn",
+            "D. 1 ngăn đơn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Dạ dày 4 ngăn thích nghi tiêu hóa thức ăn thực vật giàu cellulose."
+        },
+        {
+          "id": "BIO11_22",
+          "chapter": "Sinh Học 11 - Chương 1: Hô hấp động vật",
+          "question": "Câu hỏi 22: Cơ quan hô hấp trao đổi khí hiệu quả nhất ở động vật trên cạn thuộc về:",
+          "options": [
+            "A. Phổi của chim (có hệ thống túi khí)",
+            "B. Da của giun đất",
+            "C. Phổi của thú",
+            "D. Ống khí côn trùng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Phổi chim có hệ thống túi khí giúp dòng khí qua phổi liên tục không có khí cặn."
+        },
+        {
+          "id": "BIO11_23",
+          "chapter": "Sinh Học 11 - Chương 1: Hệ tuần hoàn",
+          "question": "Câu hỏi 23: Hệ tuần hoàn hở có đặc điểm nào sau đây?",
+          "options": [
+            "A. Máu chảy trong động mạch dưới áp lực thấp và tràn vào khoang cơ thể",
+            "B. Máu luôn chảy kín trong mạch máu",
+            "C. Máu lưu thông với áp lực rất cao",
+            "D. Vận tốc máu chảy rất nhanh"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Hệ tuần hoàn hở không có mao mạch, máu tràn vào khoang cơ thể."
+        },
+        {
+          "id": "BIO11_24",
+          "chapter": "Sinh Học 11 - Chương 1: Hoạt động của tim",
+          "question": "Câu hỏi 24: Tính tự động của tim là do hoạt động của cấu trúc nào?",
+          "options": [
+            "A. Hệ dẫn truyền tim (nút xoang nhĩ, nút nhĩ thất, bó His, sợi Purkinje)",
+            "B. Hệ thần kinh trung ương",
+            "C. Tủy sống",
+            "D. Van tim"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Hệ dẫn truyền tim tự phát xung động giúp tim co bóp nhịp nhàng."
+        },
+        {
+          "id": "BIO11_25",
+          "chapter": "Sinh Học 11 - Chương 2: Hướng động",
+          "question": "Câu hỏi 25: Hiện tượng ngọn cây uốn cong về phía có ánh sáng gọi là:",
+          "options": [
+            "A. Hướng sáng dương",
+            "B. Hướng sáng âm",
+            "C. Hướng trọng lực",
+            "D. Hướng tiếp xúc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Auxin phân bố nhiều ở phía tối kích thích tế bào dãn dài làm ngọn cong về sáng."
+        },
+        {
+          "id": "BIO11_26",
+          "chapter": "Sinh Học 11 - Chương 2: Điện thế hoạt động",
+          "question": "Câu hỏi 26: Khi tế bào thần kinh bị kích thích hưng phấn, màng tế bào xảy ra quá trình:",
+          "options": [
+            "A. Khử cực và đảo cực do kênh Na+ mở ồ ạt",
+            "B. Phân cực do K+ đi ra",
+            "C. Đóng tất cả các kênh ion",
+            "D. Bơm Na-K ngừng chạy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Kênh Na+ mở làm Na+ tràn vào gây khử cực và đảo cực màng."
+        },
+        {
+          "id": "BIO11_27",
+          "chapter": "Sinh Học 11 - Chương 3: Sinh trưởng thực vật",
+          "question": "Câu hỏi 27: Mô phân sinh đỉnh ở thực vật có chức năng:",
+          "options": [
+            "A. Giúp thân và rễ dài ra (sinh trưởng sơ cấp)",
+            "B. Làm tăng đường kính thân",
+            "C. Tạo mô mạch rây thứ cấp",
+            "D. Tạo vỏ cây"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mô phân sinh đỉnh làm cây tăng trưởng theo chiều cao/dài."
+        },
+        {
+          "id": "BIO11_28",
+          "chapter": "Sinh Học 11 - Chương 3: Phát triển động vật",
+          "question": "Câu hỏi 28: Nhóm động vật nào phát triển qua biến thái hoàn toàn?",
+          "options": [
+            "A. Bướm, ếch, muỗi",
+            "B. Châu chấu, cào cào",
+            "C. Gà, vịt",
+            "D. Chó, mèo"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Sâu bướm biến thái hoàn toàn: trứng -> sâu non -> nhộng -> bướm trưởng thành."
+        },
+        {
+          "id": "BIO11_29",
+          "chapter": "Sinh Học 11 - Chương 4: Thụ tinh kép",
+          "question": "Câu hỏi 29: Hiện tượng thụ tinh kép ở thực vật có hoa là sự kết hợp của:",
+          "options": [
+            "A. Một tinh tử với noãn cầu và một tinh tử với nhân cực (tạo nội nhũ 3n)",
+            "B. Hai tinh tử với hai noãn cầu",
+            "C. Hai hạt phấn với một noãn",
+            "D. Tinh tử với bao phấn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Thụ tinh kép tạo hợp tử (2n) và phôi nhũ (3n) dự trữ dinh dưỡng."
+        },
+        {
+          "id": "BIO11_30",
+          "chapter": "Sinh Học 11 - Chương 4: Cân bằng nội môi",
+          "question": "Câu hỏi 30: Cơ quan đóng vai trò chủ đạo điều hòa áp suất thẩm thấu của máu là:",
+          "options": [
+            "A. Thận và gan",
+            "B. Phổi",
+            "C. Dạ dày",
+            "D. Tuyến tụy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Sinh Học 11 Kết Nối Tri Thức Với Cuộc Sống: Thận điều hòa nước và muối khoáng giúp duy trì áp suất thẩm thấu."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_CS_11",
+    "grade": "11",
+    "subject_code": "Tin Học",
+    "name": "Hệ Sao Cơ Sở Dữ Liệu & SQL 11",
+    "subject": "Tin Học 11 (Kết Nối Tri Thức)",
+    "description": "Làm chủ hệ cơ sở dữ liệu quan hệ, thiết kế khóa chính và ngôn ngữ truy vấn SQL.",
+    "icon": "💻",
+    "theme_color": "#00f076",
+    "stations": [
+      {
+        "id": "CS11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Khái Niệm CSDL",
+        "question": "Tập hợp dữ liệu có liên quan logic với nhau, được tổ chức có cấu trúc gọi là:",
+        "options": [
+          "A. Cơ sở dữ liệu (Database)",
+          "B. Tệp văn bản",
+          "C. Trình biên dịch",
+          "D. Thiết bị mạng"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Khái niệm CSDL.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 28,
+          "y": 45
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_CS_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Tin Học 11",
+      "curriculum": "SGK Tin Học 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "CS11_01",
+          "chapter": "Tin Học 11 - Chủ đề 1: Hệ điều hành",
+          "question": "Câu hỏi 1: Phần mềm nào sau đây là hệ điều hành mã nguồn mở phổ biến?",
+          "options": [
+            "A. Linux",
+            "B. Microsoft Windows",
+            "C. macOS",
+            "D. Adobe Photoshop"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Linux là HĐH mã nguồn mở cho phép tùy biến tự do."
+        },
+        {
+          "id": "CS11_02",
+          "chapter": "Tin Học 11 - Chủ đề 1: Bộ nhớ RAM",
+          "question": "Câu hỏi 2: Đặc tính cơ bản của bộ nhớ RAM (Random Access Memory) là:",
+          "options": [
+            "A. Tốc độ truy xuất nhanh nhưng dữ liệu sẽ mất khi mất điện",
+            "B. Lưu trữ dữ liệu vĩnh viễn không mất",
+            "C. Dung lượng lớn hàng Terabyte",
+            "D. Chỉ đọc không ghi được"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: RAM là bộ nhớ khả biến (volatile), mất dữ liệu khi ngắt điện."
+        },
+        {
+          "id": "CS11_03",
+          "chapter": "Tin Học 11 - Chủ đề 2: Mạng máy tính",
+          "question": "Câu hỏi 3: Thiết bị định tuyến mạng Internet có tên gọi là:",
+          "options": [
+            "A. Router",
+            "B. Switch",
+            "C. Card mạng NIC",
+            "D. Cáp xoắn đôi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Router định tuyến các gói tin giữa các mạng máy tính khác nhau."
+        },
+        {
+          "id": "CS11_04",
+          "chapter": "Tin Học 11 - Chủ đề 2: Giao thức mạng",
+          "question": "Câu hỏi 4: Giao thức truyền tải siêu văn bản bảo mật trên web là:",
+          "options": [
+            "A. HTTPS",
+            "B. HTTP",
+            "C. FTP",
+            "D. SMTP"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: HTTPS mã hóa dữ liệu truyền tải bằng chứng chỉ SSL/TLS."
+        },
+        {
+          "id": "CS11_05",
+          "chapter": "Tin Học 11 - Chủ đề 3: An toàn số",
+          "question": "Câu hỏi 5: Biện pháp nào phòng chống mã độc (malware) hiệu quả nhất?",
+          "options": [
+            "A. Cài đặt phần mềm diệt virus chính hãng và cập nhật định kỳ",
+            "B. Nhấp vào các link lạ nhận thưởng",
+            "C. Tắt tường lửa hệ điều hành",
+            "D. Chia sẻ mật khẩu công khai"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Cập nhật antivirus và nâng cao cảnh giác với liên kết lạ."
+        },
+        {
+          "id": "CS11_06",
+          "chapter": "Tin Học 11 - Chủ đề 4: CSDL quan hệ",
+          "question": "Câu hỏi 6: Trong mô hình dữ liệu quan hệ, một 'Quan hệ' (Relation) tương ứng với:",
+          "options": [
+            "A. Một Bảng (Table)",
+            "B. Một Cột (Column)",
+            "C. Một Ô dữ liệu",
+            "D. Một Tệp tin text"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Trong mô hình quan hệ của Codd, Relation chính là Bảng chứa các bộ (hàng)."
+        },
+        {
+          "id": "CS11_07",
+          "chapter": "Tin Học 11 - Chủ đề 4: Thuộc tính & Cột",
+          "question": "Câu hỏi 7: Một cột trong bảng dữ liệu tương ứng với khái niệm:",
+          "options": [
+            "A. Thuộc tính (Attribute)",
+            "B. Bản ghi (Record)",
+            "C. Bộ (Tuple)",
+            "D. Khóa chính"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mỗi cột đặc trưng cho một thuộc tính của đối tượng quản lý."
+        },
+        {
+          "id": "CS11_08",
+          "chapter": "Tin Học 11 - Chủ đề 4: Khóa chính",
+          "question": "Câu hỏi 8: Tính chất bắt buộc của trường khóa chính (Primary Key) là:",
+          "options": [
+            "A. Duy nhất và không được chứa giá trị rỗng (NOT NULL)",
+            "B. Phải là số thực",
+            "C. Có thể trùng lặp",
+            "D. Phải có độ dài 8 ký tự"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Khóa chính định danh duy nhất mỗi hàng trong bảng."
+        },
+        {
+          "id": "CS11_09",
+          "chapter": "Tin Học 11 - Chủ đề 4: Khóa ngoại",
+          "question": "Câu hỏi 9: Khóa ngoại (Foreign Key) được sử dụng để làm gì?",
+          "options": [
+            "A. Thiết lập liên kết dữ liệu giữa hai bảng",
+            "B. Tăng tốc độ in ấn",
+            "C. Xóa vĩnh viễn bảng dữ liệu",
+            "D. Mã hóa mật khẩu CSDL"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Khóa ngoại tham chiếu đến khóa chính của bảng khác để tạo quan hệ."
+        },
+        {
+          "id": "CS11_10",
+          "chapter": "Tin Học 11 - Chủ đề 5: Lệnh SELECT",
+          "question": "Câu hỏi 10: Câu lệnh SQL dùng để lọc dữ liệu theo điều kiện là mệnh đề:",
+          "options": [
+            "A. WHERE",
+            "B. ORDER BY",
+            "C. GROUP BY",
+            "D. FROM"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mệnh đề WHERE chỉ định điều kiện lọc bản ghi."
+        },
+        {
+          "id": "CS11_11",
+          "chapter": "Tin Học 11 - Chủ đề 5: Lệnh ORDER BY",
+          "question": "Câu hỏi 11: Trong SQL, để sắp xếp kết quả giảm dần ta dùng từ khóa:",
+          "options": [
+            "A. DESC",
+            "B. ASC",
+            "C. DOWN",
+            "D. REDUCE"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: ORDER BY <cot> DESC (Descending: giảm dần)."
+        },
+        {
+          "id": "CS11_12",
+          "chapter": "Tin Học 11 - Chủ đề 5: Thêm dữ liệu",
+          "question": "Câu hỏi 12: Lệnh SQL dùng để chèn thêm một hàng mới vào bảng là:",
+          "options": [
+            "A. INSERT INTO",
+            "B. ADD NEW",
+            "C. UPDATE ROW",
+            "D. CREATE RECORD"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: INSERT INTO ten_bang VALUES (...) dùng để thêm dữ liệu mới."
+        },
+        {
+          "id": "CS11_13",
+          "chapter": "Tin Học 11 - Chủ đề 5: Cập nhật dữ liệu",
+          "question": "Câu hỏi 13: Để sửa đổi giá trị các trường trong bảng ta dùng lệnh SQL:",
+          "options": [
+            "A. UPDATE",
+            "B. ALTER",
+            "C. MODIFY",
+            "D. CHANGE"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: UPDATE ten_bang SET cot = gia_tri WHERE dieu_kien."
+        },
+        {
+          "id": "CS11_14",
+          "chapter": "Tin Học 11 - Chủ đề 5: Xóa dữ liệu",
+          "question": "Câu hỏi 14: Để xóa dữ liệu một bản ghi thỏa mãn điều kiện ta dùng lệnh:",
+          "options": [
+            "A. DELETE FROM",
+            "B. REMOVE",
+            "C. DROP RECORD",
+            "D. CLEAR"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: DELETE FROM ten_bang WHERE dieu_kien."
+        },
+        {
+          "id": "CS11_15",
+          "chapter": "Tin Học 11 - Chủ đề 5: Hàm tổng hợp",
+          "question": "Câu hỏi 15: Hàm SQL nào dùng để đếm số lượng bản ghi thỏa mãn điều kiện?",
+          "options": [
+            "A. COUNT()",
+            "B. SUM()",
+            "C. AVG()",
+            "D. MAX()"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: COUNT(*) hoặc COUNT(cot) trả về số lượng dòng."
+        },
+        {
+          "id": "CS11_16",
+          "chapter": "Tin Học 11 - Chủ đề 1: Hệ điều hành",
+          "question": "Câu hỏi 16: Phần mềm nào sau đây là hệ điều hành mã nguồn mở phổ biến?",
+          "options": [
+            "A. Linux",
+            "B. Microsoft Windows",
+            "C. macOS",
+            "D. Adobe Photoshop"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Linux là HĐH mã nguồn mở cho phép tùy biến tự do."
+        },
+        {
+          "id": "CS11_17",
+          "chapter": "Tin Học 11 - Chủ đề 1: Bộ nhớ RAM",
+          "question": "Câu hỏi 17: Đặc tính cơ bản của bộ nhớ RAM (Random Access Memory) là:",
+          "options": [
+            "A. Tốc độ truy xuất nhanh nhưng dữ liệu sẽ mất khi mất điện",
+            "B. Lưu trữ dữ liệu vĩnh viễn không mất",
+            "C. Dung lượng lớn hàng Terabyte",
+            "D. Chỉ đọc không ghi được"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: RAM là bộ nhớ khả biến (volatile), mất dữ liệu khi ngắt điện."
+        },
+        {
+          "id": "CS11_18",
+          "chapter": "Tin Học 11 - Chủ đề 2: Mạng máy tính",
+          "question": "Câu hỏi 18: Thiết bị định tuyến mạng Internet có tên gọi là:",
+          "options": [
+            "A. Router",
+            "B. Switch",
+            "C. Card mạng NIC",
+            "D. Cáp xoắn đôi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Router định tuyến các gói tin giữa các mạng máy tính khác nhau."
+        },
+        {
+          "id": "CS11_19",
+          "chapter": "Tin Học 11 - Chủ đề 2: Giao thức mạng",
+          "question": "Câu hỏi 19: Giao thức truyền tải siêu văn bản bảo mật trên web là:",
+          "options": [
+            "A. HTTPS",
+            "B. HTTP",
+            "C. FTP",
+            "D. SMTP"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: HTTPS mã hóa dữ liệu truyền tải bằng chứng chỉ SSL/TLS."
+        },
+        {
+          "id": "CS11_20",
+          "chapter": "Tin Học 11 - Chủ đề 3: An toàn số",
+          "question": "Câu hỏi 20: Biện pháp nào phòng chống mã độc (malware) hiệu quả nhất?",
+          "options": [
+            "A. Cài đặt phần mềm diệt virus chính hãng và cập nhật định kỳ",
+            "B. Nhấp vào các link lạ nhận thưởng",
+            "C. Tắt tường lửa hệ điều hành",
+            "D. Chia sẻ mật khẩu công khai"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Cập nhật antivirus và nâng cao cảnh giác với liên kết lạ."
+        },
+        {
+          "id": "CS11_21",
+          "chapter": "Tin Học 11 - Chủ đề 4: CSDL quan hệ",
+          "question": "Câu hỏi 21: Trong mô hình dữ liệu quan hệ, một 'Quan hệ' (Relation) tương ứng với:",
+          "options": [
+            "A. Một Bảng (Table)",
+            "B. Một Cột (Column)",
+            "C. Một Ô dữ liệu",
+            "D. Một Tệp tin text"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Trong mô hình quan hệ của Codd, Relation chính là Bảng chứa các bộ (hàng)."
+        },
+        {
+          "id": "CS11_22",
+          "chapter": "Tin Học 11 - Chủ đề 4: Thuộc tính & Cột",
+          "question": "Câu hỏi 22: Một cột trong bảng dữ liệu tương ứng với khái niệm:",
+          "options": [
+            "A. Thuộc tính (Attribute)",
+            "B. Bản ghi (Record)",
+            "C. Bộ (Tuple)",
+            "D. Khóa chính"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mỗi cột đặc trưng cho một thuộc tính của đối tượng quản lý."
+        },
+        {
+          "id": "CS11_23",
+          "chapter": "Tin Học 11 - Chủ đề 4: Khóa chính",
+          "question": "Câu hỏi 23: Tính chất bắt buộc của trường khóa chính (Primary Key) là:",
+          "options": [
+            "A. Duy nhất và không được chứa giá trị rỗng (NOT NULL)",
+            "B. Phải là số thực",
+            "C. Có thể trùng lặp",
+            "D. Phải có độ dài 8 ký tự"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Khóa chính định danh duy nhất mỗi hàng trong bảng."
+        },
+        {
+          "id": "CS11_24",
+          "chapter": "Tin Học 11 - Chủ đề 4: Khóa ngoại",
+          "question": "Câu hỏi 24: Khóa ngoại (Foreign Key) được sử dụng để làm gì?",
+          "options": [
+            "A. Thiết lập liên kết dữ liệu giữa hai bảng",
+            "B. Tăng tốc độ in ấn",
+            "C. Xóa vĩnh viễn bảng dữ liệu",
+            "D. Mã hóa mật khẩu CSDL"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Khóa ngoại tham chiếu đến khóa chính của bảng khác để tạo quan hệ."
+        },
+        {
+          "id": "CS11_25",
+          "chapter": "Tin Học 11 - Chủ đề 5: Lệnh SELECT",
+          "question": "Câu hỏi 25: Câu lệnh SQL dùng để lọc dữ liệu theo điều kiện là mệnh đề:",
+          "options": [
+            "A. WHERE",
+            "B. ORDER BY",
+            "C. GROUP BY",
+            "D. FROM"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: Mệnh đề WHERE chỉ định điều kiện lọc bản ghi."
+        },
+        {
+          "id": "CS11_26",
+          "chapter": "Tin Học 11 - Chủ đề 5: Lệnh ORDER BY",
+          "question": "Câu hỏi 26: Trong SQL, để sắp xếp kết quả giảm dần ta dùng từ khóa:",
+          "options": [
+            "A. DESC",
+            "B. ASC",
+            "C. DOWN",
+            "D. REDUCE"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: ORDER BY <cot> DESC (Descending: giảm dần)."
+        },
+        {
+          "id": "CS11_27",
+          "chapter": "Tin Học 11 - Chủ đề 5: Thêm dữ liệu",
+          "question": "Câu hỏi 27: Lệnh SQL dùng để chèn thêm một hàng mới vào bảng là:",
+          "options": [
+            "A. INSERT INTO",
+            "B. ADD NEW",
+            "C. UPDATE ROW",
+            "D. CREATE RECORD"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: INSERT INTO ten_bang VALUES (...) dùng để thêm dữ liệu mới."
+        },
+        {
+          "id": "CS11_28",
+          "chapter": "Tin Học 11 - Chủ đề 5: Cập nhật dữ liệu",
+          "question": "Câu hỏi 28: Để sửa đổi giá trị các trường trong bảng ta dùng lệnh SQL:",
+          "options": [
+            "A. UPDATE",
+            "B. ALTER",
+            "C. MODIFY",
+            "D. CHANGE"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: UPDATE ten_bang SET cot = gia_tri WHERE dieu_kien."
+        },
+        {
+          "id": "CS11_29",
+          "chapter": "Tin Học 11 - Chủ đề 5: Xóa dữ liệu",
+          "question": "Câu hỏi 29: Để xóa dữ liệu một bản ghi thỏa mãn điều kiện ta dùng lệnh:",
+          "options": [
+            "A. DELETE FROM",
+            "B. REMOVE",
+            "C. DROP RECORD",
+            "D. CLEAR"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: DELETE FROM ten_bang WHERE dieu_kien."
+        },
+        {
+          "id": "CS11_30",
+          "chapter": "Tin Học 11 - Chủ đề 5: Hàm tổng hợp",
+          "question": "Câu hỏi 30: Hàm SQL nào dùng để đếm số lượng bản ghi thỏa mãn điều kiện?",
+          "options": [
+            "A. COUNT()",
+            "B. SUM()",
+            "C. AVG()",
+            "D. MAX()"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tin Học 11 Kết Nối Tri Thức Với Cuộc Sống: COUNT(*) hoặc COUNT(cot) trả về số lượng dòng."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_HIS_11",
+    "grade": "11",
+    "subject_code": "Lịch Sử",
+    "name": "Hệ Sao Lịch Sử Cận Hiện Đại 11",
+    "subject": "Lịch Sử 11 (Kết Nối Tri Thức)",
+    "description": "Chinh phục các cuộc cách mạng tư sản, Cách mạng tháng Mười và bảo vệ chủ quyền Biển Đông.",
+    "icon": "📜",
+    "theme_color": "#ff4d4f",
+    "stations": [
+      {
+        "id": "H11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Tuyên Ngôn Độc Lập Mỹ 1776",
+        "question": "Bản Tuyên ngôn Độc lập của Hợp chúng quốc Mỹ được công bố vào ngày nào?",
+        "options": [
+          "A. 4/7/1776",
+          "B. 14/7/1789",
+          "C. 2/9/1945",
+          "D. 1/5/1886"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Ngày 4 tháng 7 năm 1776.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 30,
+          "y": 40
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_HIS_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Lịch Sử 11",
+      "curriculum": "SGK Lịch Sử 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "HIS11_01",
+          "chapter": "Lịch Sử 11 - Chương 1: Cách mạng Anh",
+          "question": "Câu hỏi 1: Cuộc cách mạng tư sản Anh thế kỷ XVII diễn ra dưới hình thức:",
+          "options": [
+            "A. Nội chiến giữa Nghị viện và chế độ quân chủ chuyên chế",
+            "B. Chiến tranh giải phóng dân tộc",
+            "C. Khởi nghĩa nông dân",
+            "D. Đấu tranh nghị trường thuần túy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nội chiến giữa phe Nghị viện do Cromwell lãnh đạo với vua Charles I."
+        },
+        {
+          "id": "HIS11_02",
+          "chapter": "Lịch Sử 11 - Chương 1: Chiến tranh Bắc Mỹ",
+          "question": "Câu hỏi 2: Ý nghĩa lớn nhất của cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là:",
+          "options": [
+            "A. Khai sinh Hợp chúng quốc Hoa Kỳ và mở đường cho CNTB phát triển",
+            "B. Giải phóng nô lệ da đen",
+            "C. Thiết lập chế độ quân chủ lập hiến",
+            "D. Đánh bại hoàn toàn thực dân Tây Ban Nha"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Chiến tranh thành lập nước Mỹ (1776) có tính chất cách mạng tư sản."
+        },
+        {
+          "id": "HIS11_03",
+          "chapter": "Lịch Sử 11 - Chương 1: Cách mạng Pháp 1789",
+          "question": "Câu hỏi 3: Khẩu hiệu nổi tiếng trong Tuyên ngôn Nhân quyền và Dân quyền Pháp 1789 là:",
+          "options": [
+            "A. Tự do - Bình đẳng - Bác ái",
+            "B. Độc lập - Tự do - Hạnh phúc",
+            "C. Hòa bình - Ruộng đất - Bánh mì",
+            "D. Đoàn kết - Đấu tranh - Thắng lợi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Tự do - Bình đẳng - Bác ái là ngọn cờ tư tưởng vĩ đại của CM Pháp."
+        },
+        {
+          "id": "HIS11_04",
+          "chapter": "Lịch Sử 11 - Chương 2: Chủ nghĩa xã hội",
+          "question": "Câu hỏi 4: Quốc gia đầu tiên trên thế giới xây dựng nhà nước xã hội chủ nghĩa là:",
+          "options": [
+            "A. Nước Nga Xô viết (sau là Liên bang Xô viết)",
+            "B. Trung Quốc",
+            "C. Việt Nam",
+            "D. Cuba"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Cách mạng tháng Mười Nga 1917 khai sinh nhà nước Xô viết."
+        },
+        {
+          "id": "HIS11_05",
+          "chapter": "Lịch Sử 11 - Chương 2: Liên Xô thành lập",
+          "question": "Câu hỏi 5: Liên bang Cộng hòa xã hội chủ nghĩa Xô viết (Liên Xô) chính thức thành lập năm nào?",
+          "options": [
+            "A. Năm 1922",
+            "B. Năm 1917",
+            "C. Năm 1924",
+            "D. Năm 1945"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Cuối năm 1922, Đại hội Xô viết toàn Nga thông qua hiệp ước thành lập Liên Xô."
+        },
+        {
+          "id": "HIS11_06",
+          "chapter": "Lịch Sử 11 - Chương 3: Xâm lược Đông Nam Á",
+          "question": "Câu hỏi 6: Nước duy nhất ở khu vực Đông Nam Á giữ được nền độc lập trong thời kỳ thực dân là:",
+          "options": [
+            "A. Xiêm (Thái Lan ngày nay)",
+            "B. Miến Điện (Myanmar)",
+            "C. Mã Lai",
+            "D. Philippines"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Xiêm nhờ chính sách ngoại giao khôn khéo và cải cách của vua Rama V."
+        },
+        {
+          "id": "HIS11_07",
+          "chapter": "Lịch Sử 11 - Chương 4: Kháng chiến chống Tống",
+          "question": "Câu hỏi 7: Vị tướng chỉ huy cuộc kháng chiến chống Tống (1075 - 1077) với chiến thắng trên sông Như Nguyệt là:",
+          "options": [
+            "A. Lý Thường Kiệt",
+            "B. Trần Hưng Đạo",
+            "C. Ngô Quyền",
+            "D. Quang Trung"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Lý Thường Kiệt chủ động tấn công tự vệ và lập phòng tuyến Như Nguyệt."
+        },
+        {
+          "id": "HIS11_08",
+          "chapter": "Lịch Sử 11 - Chương 4: Kháng chiến chống Mông - Nguyên",
+          "question": "Câu hỏi 8: Chiến thắng quyết định kết thúc cuộc kháng chiến chống Mông - Nguyên lần 3 năm 1288 là trận:",
+          "options": [
+            "A. Bạch Đằng",
+            "B. Chi Lăng",
+            "C. Ngọc Hồi - Đống Đa",
+            "D. Rạch Gầm - Xoài Mút"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Trần Hưng Đạo tổ chức trận địa cọc trên sông Bạch Đằng tiêu diệt thủy quân Ô Mã Nhi."
+        },
+        {
+          "id": "HIS11_09",
+          "chapter": "Lịch Sử 11 - Chương 4: Khởi nghĩa Lam Sơn",
+          "question": "Câu hỏi 9: Bình Ngô đại cáo của Nguyễn Trãi ra đời sau thắng lợi của cuộc khởi nghĩa nào?",
+          "options": [
+            "A. Khởi nghĩa Lam Sơn",
+            "B. Khởi nghĩa Tây Sơn",
+            "C. Kháng chiến chống Tống",
+            "D. Khởi nghĩa Hai Bà Trưng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nguyễn Trãi thừa lệnh Lê Lợi viết Bình Ngô đại cáo công bố quét sạch giặc Minh."
+        },
+        {
+          "id": "HIS11_10",
+          "chapter": "Lịch Sử 11 - Chương 4: Phong trào Tây Sơn",
+          "question": "Câu hỏi 10: Trận đánh đại phá 29 vạn quân Mãn Thanh mùa xuân năm 1789 do người anh hùng nào chỉ huy?",
+          "options": [
+            "A. Quang Trung - Nguyễn Huệ",
+            "B. Lê Lợi",
+            "C. Đinh Tiên Hoàng",
+            "D. Trần Quốc Tuấn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Vua Quang Trung hành quân thần tốc đánh tan quân Thanh ở Ngọc Hồi - Đống Đa."
+        },
+        {
+          "id": "HIS11_11",
+          "chapter": "Lịch Sử 11 - Chương 5: Cải cách Minh Mạng",
+          "question": "Câu hỏi 11: Cải cách hành chính của vua Minh Mạng (thế kỷ XIX) nổi bật với việc chia cả nước thành:",
+          "options": [
+            "A. 30 tỉnh và 1 phủ Thừa Thiên",
+            "B. 3 kỳ (Bắc, Trung, Nam)",
+            "C. 13 đạo thừa tuyên",
+            "D. 24 lộ phủ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Năm 1831 - 1832, Minh Mạng bãi bỏ các tổng trấn, chia cả nước thành 30 tỉnh và phủ Thừa Thiên."
+        },
+        {
+          "id": "HIS11_12",
+          "chapter": "Lịch Sử 11 - Chương 6: Chủ quyền Biển Đông",
+          "question": "Câu hỏi 12: Hai quần đảo thuộc chủ quyền lâu đời không thể chối cãi của Việt Nam ở Biển Đông là:",
+          "options": [
+            "A. Quần đảo Hoàng Sa và quần đảo Trường Sa",
+            "B. Quần đảo Côn Đảo và Phú Quốc",
+            "C. Quần đảo Cát Bà và Cô Tô",
+            "D. Quần đảo Thổ Chu và Hòn Khoai"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nhà nước Việt Nam xác lập và thực thi chủ quyền liên tục đối với Hoàng Sa và Trường Sa."
+        },
+        {
+          "id": "HIS11_13",
+          "chapter": "Lịch Sử 11 - Chương 6: Sử liệu xác lập chủ quyền",
+          "question": "Câu hỏi 13: Đội dân binh do triều Nguyễn và chúa Nguyễn lập ra để thu lượm hải vật và cắm mốc ở Hoàng Sa là:",
+          "options": [
+            "A. Đội Hoàng Sa và đội Bắc Hải",
+            "B. Thủy quân Tây Sơn",
+            "C. Đội Tuần hải",
+            "D. Đội dân công biển"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Đội Hoàng Sa kiêm quản đội Bắc Hải đi thuyền ra khai thác và tuần phòng biển đảo."
+        },
+        {
+          "id": "HIS11_14",
+          "chapter": "Lịch Sử 11 - Chương 6: Công ước UNCLOS 1982",
+          "question": "Câu hỏi 14: Công ước của Liên Hợp Quốc về Luật Biển năm 1982 viết tắt là:",
+          "options": [
+            "A. UNCLOS 1982",
+            "B. UNESCO",
+            "C. ASEAN",
+            "D. WTO"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: UNCLOS 1982 là hiến chương toàn cầu về luật biển quốc tế."
+        },
+        {
+          "id": "HIS11_15",
+          "chapter": "Lịch Sử 11 - Chương 6: Vùng đặc quyền kinh tế",
+          "question": "Câu hỏi 15: Theo luật biển quốc tế, vùng đặc quyền kinh tế (EEZ) của quốc gia ven biển có chiều rộng tối đa:",
+          "options": [
+            "A. 200 hải lý tính từ đường cơ sở",
+            "B. 12 hải lý",
+            "C. 24 hải lý",
+            "D. 350 hải lý"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Vùng đặc quyền kinh tế rộng 200 hải lý tính từ đường cơ sở."
+        },
+        {
+          "id": "HIS11_16",
+          "chapter": "Lịch Sử 11 - Chương 1: Cách mạng Anh",
+          "question": "Câu hỏi 16: Cuộc cách mạng tư sản Anh thế kỷ XVII diễn ra dưới hình thức:",
+          "options": [
+            "A. Nội chiến giữa Nghị viện và chế độ quân chủ chuyên chế",
+            "B. Chiến tranh giải phóng dân tộc",
+            "C. Khởi nghĩa nông dân",
+            "D. Đấu tranh nghị trường thuần túy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nội chiến giữa phe Nghị viện do Cromwell lãnh đạo với vua Charles I."
+        },
+        {
+          "id": "HIS11_17",
+          "chapter": "Lịch Sử 11 - Chương 1: Chiến tranh Bắc Mỹ",
+          "question": "Câu hỏi 17: Ý nghĩa lớn nhất của cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là:",
+          "options": [
+            "A. Khai sinh Hợp chúng quốc Hoa Kỳ và mở đường cho CNTB phát triển",
+            "B. Giải phóng nô lệ da đen",
+            "C. Thiết lập chế độ quân chủ lập hiến",
+            "D. Đánh bại hoàn toàn thực dân Tây Ban Nha"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Chiến tranh thành lập nước Mỹ (1776) có tính chất cách mạng tư sản."
+        },
+        {
+          "id": "HIS11_18",
+          "chapter": "Lịch Sử 11 - Chương 1: Cách mạng Pháp 1789",
+          "question": "Câu hỏi 18: Khẩu hiệu nổi tiếng trong Tuyên ngôn Nhân quyền và Dân quyền Pháp 1789 là:",
+          "options": [
+            "A. Tự do - Bình đẳng - Bác ái",
+            "B. Độc lập - Tự do - Hạnh phúc",
+            "C. Hòa bình - Ruộng đất - Bánh mì",
+            "D. Đoàn kết - Đấu tranh - Thắng lợi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Tự do - Bình đẳng - Bác ái là ngọn cờ tư tưởng vĩ đại của CM Pháp."
+        },
+        {
+          "id": "HIS11_19",
+          "chapter": "Lịch Sử 11 - Chương 2: Chủ nghĩa xã hội",
+          "question": "Câu hỏi 19: Quốc gia đầu tiên trên thế giới xây dựng nhà nước xã hội chủ nghĩa là:",
+          "options": [
+            "A. Nước Nga Xô viết (sau là Liên bang Xô viết)",
+            "B. Trung Quốc",
+            "C. Việt Nam",
+            "D. Cuba"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Cách mạng tháng Mười Nga 1917 khai sinh nhà nước Xô viết."
+        },
+        {
+          "id": "HIS11_20",
+          "chapter": "Lịch Sử 11 - Chương 2: Liên Xô thành lập",
+          "question": "Câu hỏi 20: Liên bang Cộng hòa xã hội chủ nghĩa Xô viết (Liên Xô) chính thức thành lập năm nào?",
+          "options": [
+            "A. Năm 1922",
+            "B. Năm 1917",
+            "C. Năm 1924",
+            "D. Năm 1945"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Cuối năm 1922, Đại hội Xô viết toàn Nga thông qua hiệp ước thành lập Liên Xô."
+        },
+        {
+          "id": "HIS11_21",
+          "chapter": "Lịch Sử 11 - Chương 3: Xâm lược Đông Nam Á",
+          "question": "Câu hỏi 21: Nước duy nhất ở khu vực Đông Nam Á giữ được nền độc lập trong thời kỳ thực dân là:",
+          "options": [
+            "A. Xiêm (Thái Lan ngày nay)",
+            "B. Miến Điện (Myanmar)",
+            "C. Mã Lai",
+            "D. Philippines"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Xiêm nhờ chính sách ngoại giao khôn khéo và cải cách của vua Rama V."
+        },
+        {
+          "id": "HIS11_22",
+          "chapter": "Lịch Sử 11 - Chương 4: Kháng chiến chống Tống",
+          "question": "Câu hỏi 22: Vị tướng chỉ huy cuộc kháng chiến chống Tống (1075 - 1077) với chiến thắng trên sông Như Nguyệt là:",
+          "options": [
+            "A. Lý Thường Kiệt",
+            "B. Trần Hưng Đạo",
+            "C. Ngô Quyền",
+            "D. Quang Trung"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Lý Thường Kiệt chủ động tấn công tự vệ và lập phòng tuyến Như Nguyệt."
+        },
+        {
+          "id": "HIS11_23",
+          "chapter": "Lịch Sử 11 - Chương 4: Kháng chiến chống Mông - Nguyên",
+          "question": "Câu hỏi 23: Chiến thắng quyết định kết thúc cuộc kháng chiến chống Mông - Nguyên lần 3 năm 1288 là trận:",
+          "options": [
+            "A. Bạch Đằng",
+            "B. Chi Lăng",
+            "C. Ngọc Hồi - Đống Đa",
+            "D. Rạch Gầm - Xoài Mút"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Trần Hưng Đạo tổ chức trận địa cọc trên sông Bạch Đằng tiêu diệt thủy quân Ô Mã Nhi."
+        },
+        {
+          "id": "HIS11_24",
+          "chapter": "Lịch Sử 11 - Chương 4: Khởi nghĩa Lam Sơn",
+          "question": "Câu hỏi 24: Bình Ngô đại cáo của Nguyễn Trãi ra đời sau thắng lợi của cuộc khởi nghĩa nào?",
+          "options": [
+            "A. Khởi nghĩa Lam Sơn",
+            "B. Khởi nghĩa Tây Sơn",
+            "C. Kháng chiến chống Tống",
+            "D. Khởi nghĩa Hai Bà Trưng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nguyễn Trãi thừa lệnh Lê Lợi viết Bình Ngô đại cáo công bố quét sạch giặc Minh."
+        },
+        {
+          "id": "HIS11_25",
+          "chapter": "Lịch Sử 11 - Chương 4: Phong trào Tây Sơn",
+          "question": "Câu hỏi 25: Trận đánh đại phá 29 vạn quân Mãn Thanh mùa xuân năm 1789 do người anh hùng nào chỉ huy?",
+          "options": [
+            "A. Quang Trung - Nguyễn Huệ",
+            "B. Lê Lợi",
+            "C. Đinh Tiên Hoàng",
+            "D. Trần Quốc Tuấn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Vua Quang Trung hành quân thần tốc đánh tan quân Thanh ở Ngọc Hồi - Đống Đa."
+        },
+        {
+          "id": "HIS11_26",
+          "chapter": "Lịch Sử 11 - Chương 5: Cải cách Minh Mạng",
+          "question": "Câu hỏi 26: Cải cách hành chính của vua Minh Mạng (thế kỷ XIX) nổi bật với việc chia cả nước thành:",
+          "options": [
+            "A. 30 tỉnh và 1 phủ Thừa Thiên",
+            "B. 3 kỳ (Bắc, Trung, Nam)",
+            "C. 13 đạo thừa tuyên",
+            "D. 24 lộ phủ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Năm 1831 - 1832, Minh Mạng bãi bỏ các tổng trấn, chia cả nước thành 30 tỉnh và phủ Thừa Thiên."
+        },
+        {
+          "id": "HIS11_27",
+          "chapter": "Lịch Sử 11 - Chương 6: Chủ quyền Biển Đông",
+          "question": "Câu hỏi 27: Hai quần đảo thuộc chủ quyền lâu đời không thể chối cãi của Việt Nam ở Biển Đông là:",
+          "options": [
+            "A. Quần đảo Hoàng Sa và quần đảo Trường Sa",
+            "B. Quần đảo Côn Đảo và Phú Quốc",
+            "C. Quần đảo Cát Bà và Cô Tô",
+            "D. Quần đảo Thổ Chu và Hòn Khoai"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nhà nước Việt Nam xác lập và thực thi chủ quyền liên tục đối với Hoàng Sa và Trường Sa."
+        },
+        {
+          "id": "HIS11_28",
+          "chapter": "Lịch Sử 11 - Chương 6: Sử liệu xác lập chủ quyền",
+          "question": "Câu hỏi 28: Đội dân binh do triều Nguyễn và chúa Nguyễn lập ra để thu lượm hải vật và cắm mốc ở Hoàng Sa là:",
+          "options": [
+            "A. Đội Hoàng Sa và đội Bắc Hải",
+            "B. Thủy quân Tây Sơn",
+            "C. Đội Tuần hải",
+            "D. Đội dân công biển"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Đội Hoàng Sa kiêm quản đội Bắc Hải đi thuyền ra khai thác và tuần phòng biển đảo."
+        },
+        {
+          "id": "HIS11_29",
+          "chapter": "Lịch Sử 11 - Chương 6: Công ước UNCLOS 1982",
+          "question": "Câu hỏi 29: Công ước của Liên Hợp Quốc về Luật Biển năm 1982 viết tắt là:",
+          "options": [
+            "A. UNCLOS 1982",
+            "B. UNESCO",
+            "C. ASEAN",
+            "D. WTO"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: UNCLOS 1982 là hiến chương toàn cầu về luật biển quốc tế."
+        },
+        {
+          "id": "HIS11_30",
+          "chapter": "Lịch Sử 11 - Chương 6: Vùng đặc quyền kinh tế",
+          "question": "Câu hỏi 30: Theo luật biển quốc tế, vùng đặc quyền kinh tế (EEZ) của quốc gia ven biển có chiều rộng tối đa:",
+          "options": [
+            "A. 200 hải lý tính từ đường cơ sở",
+            "B. 12 hải lý",
+            "C. 24 hải lý",
+            "D. 350 hải lý"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Vùng đặc quyền kinh tế rộng 200 hải lý tính từ đường cơ sở."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_GEO_11",
+    "grade": "11",
+    "subject_code": "Địa Lý",
+    "name": "Hệ Sao Kinh Tế Toàn Cầu & ASEAN 11",
+    "subject": "Địa Lý 11 (Kết Nối Tri Thức)",
+    "description": "Khám phá địa lý kinh tế xã hội thế giới, Hoa Kỳ, Liên minh châu Âu và khối ASEAN.",
+    "icon": "🌍",
+    "theme_color": "#13c2c2",
+    "stations": [
+      {
+        "id": "G11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Toàn Cầu Hóa",
+        "question": "Tổ chức thương mại lớn nhất hành tinh điều tiết tự do hóa thương mại là:",
+        "options": [
+          "A. WTO",
+          "B. UNESCO",
+          "C. WHO",
+          "D. UNICEF"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Tổ chức Thương mại Thế giới WTO.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 32,
+          "y": 42
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_GEO_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Địa Lý 11",
+      "curriculum": "SGK Địa Lý 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "GEO11_01",
+          "chapter": "Địa Lý 11 - Phần 1: Toàn cầu hóa",
+          "question": "Câu hỏi 1: Tác động tích cực hàng đầu của toàn cầu hóa kinh tế đối với các nước đang phát triển là:",
+          "options": [
+            "A. Tiếp cận nhanh nguồn vốn, công nghệ tiên tiến và mở rộng thị trường xuất khẩu",
+            "B. Giảm sự phụ thuộc vào kinh tế thế giới",
+            "C. Xóa bỏ hoàn toàn khoảng cách giàu nghèo",
+            "D. Tự chủ 100% công nghệ lõi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Toàn cầu hóa thúc đẩy chuyển giao công nghệ và hợp tác quốc tế."
+        },
+        {
+          "id": "GEO11_02",
+          "chapter": "Địa Lý 11 - Phần 1: Khu vực hóa",
+          "question": "Câu hỏi 2: Tổ chức liên kết khu vực có mức độ hội nhập kinh tế sâu sắc nhất hiện nay là:",
+          "options": [
+            "A. Liên minh châu Âu (EU)",
+            "B. Diễn đàn APEC",
+            "C. Khối NAFTA/USMCA",
+            "D. Tổ chức OPEC"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: EU sử dụng đồng tiền chung Euro và thị trường nội khối tự do hoàn toàn."
+        },
+        {
+          "id": "GEO11_03",
+          "chapter": "Địa Lý 11 - Phần 1: Biến đổi khí hậu",
+          "question": "Câu hỏi 3: Hậu quả nặng nề nhất của hiện tượng biến đổi khí hậu toàn cầu đối với vùng đồng bằng châu thổ là:",
+          "options": [
+            "A. Mực nước biển dâng gây ngập lụt và xâm nhập mặn sâu vào nội đồng",
+            "B. Rừng nguyên sinh phát triển nhanh",
+            "C. Nhiệt độ giảm mạnh đóng băng",
+            "D. Động đất sóng thần tăng vọt"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nước biển dâng làm ngập đất sản xuất và nhiễm mặn nguồn nước ngọt."
+        },
+        {
+          "id": "GEO11_04",
+          "chapter": "Địa Lý 11 - Phần 2: Khu vực Mỹ La-tinh",
+          "question": "Câu hỏi 4: Tài nguyên khoáng sản nổi bật có trữ lượng lớn hàng đầu thế giới của Mỹ La-tinh là:",
+          "options": [
+            "A. Dầu mỏ, sắt, đồng, bauxite",
+            "B. Than đá và uranium",
+            "C. Kim cương",
+            "D. Khí thiên nhiên hóa lỏng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Mỹ La-tinh rất giàu kim loại màu (đồng Chile, bauxite Brazil) và dầu mỏ (Venezuela)."
+        },
+        {
+          "id": "GEO11_05",
+          "chapter": "Địa Lý 11 - Phần 2: Dân cư Mỹ La-tinh",
+          "question": "Câu hỏi 5: Ngôn ngữ chính thức được sử dụng phổ biến nhất ở đa số các nước Mỹ La-tinh là:",
+          "options": [
+            "A. Tiếng Tây Ban Nha và Bồ Đào Nha",
+            "B. Tiếng Anh và tiếng Pháp",
+            "C. Tiếng Ả Rập",
+            "D. Tiếng Đức"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Hậu quả thời kỳ thuộc địa, Brazil nói tiếng Bồ Đào Nha, các nước còn lại nói tiếng TBN."
+        },
+        {
+          "id": "GEO11_06",
+          "chapter": "Địa Lý 11 - Phần 2: Liên minh châu Âu (EU)",
+          "question": "Câu hỏi 6: Đồng tiền chung châu Âu chính thức đi vào lưu thông từ năm 2002 là đồng:",
+          "options": [
+            "A. Euro (EUR)",
+            "B. Dollar (USD)",
+            "C. Bảng Anh (GBP)",
+            "D. Yên (JPY)"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Đồng Euro là biểu tượng hội nhập tài chính tiền tệ của EU."
+        },
+        {
+          "id": "GEO11_07",
+          "chapter": "Địa Lý 11 - Phần 2: Tự do lưu thông EU",
+          "question": "Câu hỏi 7: Bốn mặt tự do lưu thông cơ bản trong thị trường chung EU gồm:",
+          "options": [
+            "A. Hàng hóa, dịch vụ, con người và tiền vốn",
+            "B. Vũ khí, công nghệ, lương thực và đất đai",
+            "C. Xe cộ, nhà ở, giáo dục và y tế",
+            "D. Năng lượng, tài nguyên, thông tin và dầu mỏ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Thị trường chung EU đảm bảo tự do di chuyển hàng hóa, dịch vụ, con người và vốn."
+        },
+        {
+          "id": "GEO11_08",
+          "chapter": "Địa Lý 11 - Phần 2: Hợp chúng quốc Hoa Kỳ",
+          "question": "Câu hỏi 8: Vùng kinh tế Đông Bắc Hoa Kỳ gắn liền với truyền thống phát triển ngành:",
+          "options": [
+            "A. Công nghiệp luyện kim, chế tạo máy và dệt may truyền thống",
+            "B. Nông nghiệp nhiệt đới trồng lúa gạo",
+            "C. Du lịch sa mạc",
+            "D. Khai thác gỗ rừng lá kim"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Vùng Đông Bắc là cái nôi công nghiệp lâu đời của Mỹ."
+        },
+        {
+          "id": "GEO11_09",
+          "chapter": "Địa Lý 11 - Phần 2: Thung lũng Silicon",
+          "question": "Câu hỏi 9: Trung tâm công nghệ cao Thung lũng Silicon (Silicon Valley) của Hoa Kỳ nằm ở bang nào?",
+          "options": [
+            "A. California",
+            "B. Texas",
+            "C. New York",
+            "D. Florida"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Silicon Valley ở phía nam vùng vịnh San Francisco, bang California."
+        },
+        {
+          "id": "GEO11_10",
+          "chapter": "Địa Lý 11 - Phần 2: Nông nghiệp Hoa Kỳ",
+          "question": "Câu hỏi 10: Nông nghiệp Hoa Kỳ có đặc điểm nổi bật là:",
+          "options": [
+            "A. Trình độ cơ giới hóa, tự động hóa cao và hình thành các vành đai chuyên canh quy mô lớn",
+            "B. Chủ yếu sản xuất tự túc theo hộ gia đình",
+            "C. Sử dụng nhiều lao động thủ công",
+            "D. Năng suất thấp do thiếu đất canh tác"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nền nông nghiệp hiện đại hóa hàng đầu thế giới với các vùng chuyên canh."
+        },
+        {
+          "id": "GEO11_11",
+          "chapter": "Địa Lý 11 - Phần 2: Liên bang Nga",
+          "question": "Câu hỏi 11: Liên bang Nga là quốc gia có đặc điểm địa lý nổi bật:",
+          "options": [
+            "A. Diện tích lãnh thổ lớn nhất thế giới, trải dài trên cả hai châu lục Á và Âu",
+            "B. Quốc gia có số dân đông nhất thế giới",
+            "C. Nằm hoàn toàn trong vùng nhiệt đới",
+            "D. Toàn bộ lãnh thổ là đồng bằng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Diện tích hơn 17 triệu km2, lớn nhất thế giới."
+        },
+        {
+          "id": "GEO11_12",
+          "chapter": "Địa Lý 11 - Phần 2: Nhật Bản",
+          "question": "Câu hỏi 12: Nhật Bản là quốc gia quần đảo nằm ở khu vực nào của châu Á?",
+          "options": [
+            "A. Đông Á",
+            "B. Đông Nam Á",
+            "C. Nam Á",
+            "D. Trung Á"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nhật Bản nằm ở Đông Á, bao gồm 4 đảo lớn: Honshu, Hokkaido, Kyushu, Shikoku."
+        },
+        {
+          "id": "GEO11_13",
+          "chapter": "Địa Lý 11 - Phần 2: Kinh tế Nhật Bản",
+          "question": "Câu hỏi 13: Chiến lược phát triển kinh tế then chốt giúp Nhật Bản vươn lên thành cường quốc là:",
+          "options": [
+            "A. Đầu tư mạnh vào khoa học công nghệ, giáo dục đào tạo con người và tiết kiệm năng lượng",
+            "B. Dựa hoàn toàn vào xuất khẩu tài nguyên khoáng sản",
+            "C. Đóng cửa thị trường nội địa",
+            "D. Mở rộng chiếm đóng lãnh thổ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nhật Bản nghèo tài nguyên nên coi trọng con người và công nghệ cao."
+        },
+        {
+          "id": "GEO11_14",
+          "chapter": "Địa Lý 11 - Phần 2: Khối ASEAN",
+          "question": "Câu hỏi 14: Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập vào năm nào tại Bangkok?",
+          "options": [
+            "A. Năm 1967",
+            "B. Năm 1975",
+            "C. Năm 1995",
+            "D. Năm 2000"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Tuyên bố Bangkok ngày 8/8/1967 đánh dấu sự thành lập ASEAN với 5 nước sáng lập."
+        },
+        {
+          "id": "GEO11_15",
+          "chapter": "Địa Lý 11 - Phần 2: Việt Nam gia nhập ASEAN",
+          "question": "Câu hỏi 15: Việt Nam chính thức trở thành thành viên thứ 7 của ASEAN vào năm nào?",
+          "options": [
+            "A. Năm 1995",
+            "B. Năm 1986",
+            "C. Năm 1990",
+            "D. Năm 2007"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Ngày 28/7/1995 tại Brunei, Việt Nam chính thức gia nhập ASEAN."
+        },
+        {
+          "id": "GEO11_16",
+          "chapter": "Địa Lý 11 - Phần 1: Toàn cầu hóa",
+          "question": "Câu hỏi 16: Tác động tích cực hàng đầu của toàn cầu hóa kinh tế đối với các nước đang phát triển là:",
+          "options": [
+            "A. Tiếp cận nhanh nguồn vốn, công nghệ tiên tiến và mở rộng thị trường xuất khẩu",
+            "B. Giảm sự phụ thuộc vào kinh tế thế giới",
+            "C. Xóa bỏ hoàn toàn khoảng cách giàu nghèo",
+            "D. Tự chủ 100% công nghệ lõi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Toàn cầu hóa thúc đẩy chuyển giao công nghệ và hợp tác quốc tế."
+        },
+        {
+          "id": "GEO11_17",
+          "chapter": "Địa Lý 11 - Phần 1: Khu vực hóa",
+          "question": "Câu hỏi 17: Tổ chức liên kết khu vực có mức độ hội nhập kinh tế sâu sắc nhất hiện nay là:",
+          "options": [
+            "A. Liên minh châu Âu (EU)",
+            "B. Diễn đàn APEC",
+            "C. Khối NAFTA/USMCA",
+            "D. Tổ chức OPEC"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: EU sử dụng đồng tiền chung Euro và thị trường nội khối tự do hoàn toàn."
+        },
+        {
+          "id": "GEO11_18",
+          "chapter": "Địa Lý 11 - Phần 1: Biến đổi khí hậu",
+          "question": "Câu hỏi 18: Hậu quả nặng nề nhất của hiện tượng biến đổi khí hậu toàn cầu đối với vùng đồng bằng châu thổ là:",
+          "options": [
+            "A. Mực nước biển dâng gây ngập lụt và xâm nhập mặn sâu vào nội đồng",
+            "B. Rừng nguyên sinh phát triển nhanh",
+            "C. Nhiệt độ giảm mạnh đóng băng",
+            "D. Động đất sóng thần tăng vọt"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nước biển dâng làm ngập đất sản xuất và nhiễm mặn nguồn nước ngọt."
+        },
+        {
+          "id": "GEO11_19",
+          "chapter": "Địa Lý 11 - Phần 2: Khu vực Mỹ La-tinh",
+          "question": "Câu hỏi 19: Tài nguyên khoáng sản nổi bật có trữ lượng lớn hàng đầu thế giới của Mỹ La-tinh là:",
+          "options": [
+            "A. Dầu mỏ, sắt, đồng, bauxite",
+            "B. Than đá và uranium",
+            "C. Kim cương",
+            "D. Khí thiên nhiên hóa lỏng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Mỹ La-tinh rất giàu kim loại màu (đồng Chile, bauxite Brazil) và dầu mỏ (Venezuela)."
+        },
+        {
+          "id": "GEO11_20",
+          "chapter": "Địa Lý 11 - Phần 2: Dân cư Mỹ La-tinh",
+          "question": "Câu hỏi 20: Ngôn ngữ chính thức được sử dụng phổ biến nhất ở đa số các nước Mỹ La-tinh là:",
+          "options": [
+            "A. Tiếng Tây Ban Nha và Bồ Đào Nha",
+            "B. Tiếng Anh và tiếng Pháp",
+            "C. Tiếng Ả Rập",
+            "D. Tiếng Đức"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Hậu quả thời kỳ thuộc địa, Brazil nói tiếng Bồ Đào Nha, các nước còn lại nói tiếng TBN."
+        },
+        {
+          "id": "GEO11_21",
+          "chapter": "Địa Lý 11 - Phần 2: Liên minh châu Âu (EU)",
+          "question": "Câu hỏi 21: Đồng tiền chung châu Âu chính thức đi vào lưu thông từ năm 2002 là đồng:",
+          "options": [
+            "A. Euro (EUR)",
+            "B. Dollar (USD)",
+            "C. Bảng Anh (GBP)",
+            "D. Yên (JPY)"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Đồng Euro là biểu tượng hội nhập tài chính tiền tệ của EU."
+        },
+        {
+          "id": "GEO11_22",
+          "chapter": "Địa Lý 11 - Phần 2: Tự do lưu thông EU",
+          "question": "Câu hỏi 22: Bốn mặt tự do lưu thông cơ bản trong thị trường chung EU gồm:",
+          "options": [
+            "A. Hàng hóa, dịch vụ, con người và tiền vốn",
+            "B. Vũ khí, công nghệ, lương thực và đất đai",
+            "C. Xe cộ, nhà ở, giáo dục và y tế",
+            "D. Năng lượng, tài nguyên, thông tin và dầu mỏ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Thị trường chung EU đảm bảo tự do di chuyển hàng hóa, dịch vụ, con người và vốn."
+        },
+        {
+          "id": "GEO11_23",
+          "chapter": "Địa Lý 11 - Phần 2: Hợp chúng quốc Hoa Kỳ",
+          "question": "Câu hỏi 23: Vùng kinh tế Đông Bắc Hoa Kỳ gắn liền với truyền thống phát triển ngành:",
+          "options": [
+            "A. Công nghiệp luyện kim, chế tạo máy và dệt may truyền thống",
+            "B. Nông nghiệp nhiệt đới trồng lúa gạo",
+            "C. Du lịch sa mạc",
+            "D. Khai thác gỗ rừng lá kim"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Vùng Đông Bắc là cái nôi công nghiệp lâu đời của Mỹ."
+        },
+        {
+          "id": "GEO11_24",
+          "chapter": "Địa Lý 11 - Phần 2: Thung lũng Silicon",
+          "question": "Câu hỏi 24: Trung tâm công nghệ cao Thung lũng Silicon (Silicon Valley) của Hoa Kỳ nằm ở bang nào?",
+          "options": [
+            "A. California",
+            "B. Texas",
+            "C. New York",
+            "D. Florida"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Silicon Valley ở phía nam vùng vịnh San Francisco, bang California."
+        },
+        {
+          "id": "GEO11_25",
+          "chapter": "Địa Lý 11 - Phần 2: Nông nghiệp Hoa Kỳ",
+          "question": "Câu hỏi 25: Nông nghiệp Hoa Kỳ có đặc điểm nổi bật là:",
+          "options": [
+            "A. Trình độ cơ giới hóa, tự động hóa cao và hình thành các vành đai chuyên canh quy mô lớn",
+            "B. Chủ yếu sản xuất tự túc theo hộ gia đình",
+            "C. Sử dụng nhiều lao động thủ công",
+            "D. Năng suất thấp do thiếu đất canh tác"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nền nông nghiệp hiện đại hóa hàng đầu thế giới với các vùng chuyên canh."
+        },
+        {
+          "id": "GEO11_26",
+          "chapter": "Địa Lý 11 - Phần 2: Liên bang Nga",
+          "question": "Câu hỏi 26: Liên bang Nga là quốc gia có đặc điểm địa lý nổi bật:",
+          "options": [
+            "A. Diện tích lãnh thổ lớn nhất thế giới, trải dài trên cả hai châu lục Á và Âu",
+            "B. Quốc gia có số dân đông nhất thế giới",
+            "C. Nằm hoàn toàn trong vùng nhiệt đới",
+            "D. Toàn bộ lãnh thổ là đồng bằng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Diện tích hơn 17 triệu km2, lớn nhất thế giới."
+        },
+        {
+          "id": "GEO11_27",
+          "chapter": "Địa Lý 11 - Phần 2: Nhật Bản",
+          "question": "Câu hỏi 27: Nhật Bản là quốc gia quần đảo nằm ở khu vực nào của châu Á?",
+          "options": [
+            "A. Đông Á",
+            "B. Đông Nam Á",
+            "C. Nam Á",
+            "D. Trung Á"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nhật Bản nằm ở Đông Á, bao gồm 4 đảo lớn: Honshu, Hokkaido, Kyushu, Shikoku."
+        },
+        {
+          "id": "GEO11_28",
+          "chapter": "Địa Lý 11 - Phần 2: Kinh tế Nhật Bản",
+          "question": "Câu hỏi 28: Chiến lược phát triển kinh tế then chốt giúp Nhật Bản vươn lên thành cường quốc là:",
+          "options": [
+            "A. Đầu tư mạnh vào khoa học công nghệ, giáo dục đào tạo con người và tiết kiệm năng lượng",
+            "B. Dựa hoàn toàn vào xuất khẩu tài nguyên khoáng sản",
+            "C. Đóng cửa thị trường nội địa",
+            "D. Mở rộng chiếm đóng lãnh thổ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Nhật Bản nghèo tài nguyên nên coi trọng con người và công nghệ cao."
+        },
+        {
+          "id": "GEO11_29",
+          "chapter": "Địa Lý 11 - Phần 2: Khối ASEAN",
+          "question": "Câu hỏi 29: Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập vào năm nào tại Bangkok?",
+          "options": [
+            "A. Năm 1967",
+            "B. Năm 1975",
+            "C. Năm 1995",
+            "D. Năm 2000"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Tuyên bố Bangkok ngày 8/8/1967 đánh dấu sự thành lập ASEAN với 5 nước sáng lập."
+        },
+        {
+          "id": "GEO11_30",
+          "chapter": "Địa Lý 11 - Phần 2: Việt Nam gia nhập ASEAN",
+          "question": "Câu hỏi 30: Việt Nam chính thức trở thành thành viên thứ 7 của ASEAN vào năm nào?",
+          "options": [
+            "A. Năm 1995",
+            "B. Năm 1986",
+            "C. Năm 1990",
+            "D. Năm 2007"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Địa Lý 11 Kết Nối Tri Thức Với Cuộc Sống: Ngày 28/7/1995 tại Brunei, Việt Nam chính thức gia nhập ASEAN."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_LIT_11",
+    "grade": "11",
+    "subject_code": "Ngữ Văn",
+    "name": "Hệ Sao Văn Học & Nghệ Thuật Ngôn Từ 11",
+    "subject": "Ngữ Văn 11 (Kết Nối Tri Thức)",
+    "description": "Thám hiểm thế giới văn xuôi tự sự, thơ trữ tình Thơ mới và nghệ thuật tùy bút tài hoa.",
+    "icon": "📖",
+    "theme_color": "#eb2f96",
+    "stations": [
+      {
+        "id": "L11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Thơ Mới 1932 - 1945",
+        "question": "Nhà thơ nào được mệnh danh là 'nhà thơ mới nhất trong các nhà thơ mới'?",
+        "options": [
+          "A. Xuân Diệu",
+          "B. Huy Cận",
+          "C. Hàn Mặc Tử",
+          "D. Chế Lan Viên"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Nhà thơ của tình yêu và tuổi trẻ Xuân Diệu.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 35,
+          "y": 45
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_LIT_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Ngữ Văn 11",
+      "curriculum": "SGK Ngữ Văn 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "LIT11_01",
+          "chapter": "Ngữ Văn 11 - Bài 1: Truyện ngắn hiện thực",
+          "question": "Câu hỏi 1: Trong truyện ngắn 'Chí Phèo' của Nam Cao, chi tiết 'bát cháo hành' của Thị Nở biểu tượng cho:",
+          "options": [
+            "A. Hương vị của tình thương nhân đạo và ánh sáng lương tri thức tỉnh phần người trong Chí",
+            "B. Món ăn nghèo nàn của nông thôn",
+            "C. Sự cứu đói nhất thời",
+            "D. Nỗi sợ hãi của Thị Nở"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Bát cháo hành là biểu tượng nghệ thuật tuyệt đẹp về tình thương và lương tri."
+        },
+        {
+          "id": "LIT11_02",
+          "chapter": "Ngữ Văn 11 - Bài 1: Điểm nhìn nghệ thuật",
+          "question": "Câu hỏi 2: Điểm nhìn bên trong (internal focalization) giúp tác giả:",
+          "options": [
+            "A. Đi sâu vào thế giới nội tâm, diễn biến tâm lý và cảm xúc thầm kín của nhân vật",
+            "B. Quan sát bao quát cảnh quan bên ngoài",
+            "C. Liệt kê hành động thuần túy",
+            "D. Miêu tả ngoại hình nhân vật khách quan"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Điểm nhìn bên trong thâm nhập trực tiếp vào dòng tâm tư nhân vật."
+        },
+        {
+          "id": "LIT11_03",
+          "chapter": "Ngữ Văn 11 - Bài 2: Thơ Tràng giang",
+          "question": "Câu hỏi 3: Hai câu thơ: 'Sóng gợn tràng giang buồn điệp điệp / Con thuyền xuôi mái nước song song' sử dụng từ láy nhằm:",
+          "options": [
+            "A. Gợi tả nỗi buồn triền miên, bất tận trước không gian sông nước mênh mông",
+            "B. Miêu tả sự vui tươi tấp nập của bến sông",
+            "C. Diễn tả tốc độ nhanh của con thuyền",
+            "D. Khắc họa vẻ đẹp rực rỡ buổi bình minh"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Từ láy điệp điệp, song song mở ra nỗi sầu vạn cổ của hồn thơ Huy Cận."
+        },
+        {
+          "id": "LIT11_04",
+          "chapter": "Ngữ Văn 11 - Bài 2: Thơ Đây thôn Vĩ Dạ",
+          "question": "Câu hỏi 4: Hình ảnh 'Vườn ai mướt quá xanh như ngọc' của Hàn Mặc Tử gợi lên vẻ đẹp:",
+          "options": [
+            "A. Tinh khôi, mượt mà và tràn đầy sức sống của thiên nhiên xứ Huế",
+            "B. U ám hoang tàn",
+            "C. Khô cằn sỏi đá",
+            "D. Kỳ bí ma quái"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Từ 'mướt' và so sánh 'xanh như ngọc' diễn tả vẻ đẹp tinh khiết, non tơ."
+        },
+        {
+          "id": "LIT11_05",
+          "chapter": "Ngữ Văn 11 - Bài 3: Truyện thơ dân gian",
+          "question": "Câu hỏi 5: Đoạn trích 'Lời tiễn dặn' (Xống chụ xon xao - truyện thơ dân tộc Thái) thể hiện:",
+          "options": [
+            "A. Tình yêu thủy chung tha thiết và khát vọng tự do yêu đương vượt qua rào cản tập tục phong kiến",
+            "B. Cuộc chiến tranh giành lãnh thổ",
+            "C. Khát khao làm giàu của chàng trai",
+            "D. Lòng hiếu thảo với cha mẹ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Khát vọng hạnh phúc lứa đôi bất diệt trong truyện thơ Thái."
+        },
+        {
+          "id": "LIT11_06",
+          "chapter": "Ngữ Văn 11 - Bài 3: Bi kịch sân khấu",
+          "question": "Câu hỏi 6: Xung đột kịch tính trong vở kịch 'Vũ Như Tô' của Nguyễn Huy Tưởng nảy sinh giữa:",
+          "options": [
+            "A. Khát vọng nghệ thuật thuần túy cao siêu với lợi ích thiết thực của đời sống nhân dân lao động",
+            "B. Tình yêu đôi lứa với gia đình",
+            "C. Phe thiện và phe ác thuần túy",
+            "D. Sự tranh giành quyền lực hoàng tộc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Bi kịch giữa nghệ thuật vị nghệ thuật và hiện thực cuộc sống."
+        },
+        {
+          "id": "LIT11_07",
+          "chapter": "Ngữ Văn 11 - Bài 4: Thơ Vội vàng",
+          "question": "Câu hỏi 7: Quan niệm sống trong bài thơ 'Vội vàng' của nhà thơ Xuân Diệu là:",
+          "options": [
+            "A. Sống mãnh liệt, cuống quýt tận hưởng từng giây phút thanh xuân và tuổi trẻ giữa trần thế",
+            "B. Lánh đời ẩn dật chốn thôn quê",
+            "C. Chờ đợi số phận an bài",
+            "D. Hướng về thế giới hư vô thần tiên"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Tuyên ngôn sống tích cực, chạy đua với thời gian để cống hiến và yêu đời."
+        },
+        {
+          "id": "LIT11_08",
+          "chapter": "Ngữ Văn 11 - Bài 4: Thơ Tự tình II",
+          "question": "Câu hỏi 8: Hai câu thơ: 'Chén rượu hương đưa say lại tỉnh / Vầng trăng bóng xế khuyết chưa tròn' của Hồ Xuân Hương diễn tả:",
+          "options": [
+            "A. Nỗi cô đơn cay đắng, duyên phận dở dang nhưng vẫn le lói khát khao hạnh phúc",
+            "B. Thú vui uống rượu ngắm trăng thanh tao",
+            "C. Sự say sưa quên hết sự đời",
+            "D. Niềm hạnh phúc sum vầy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Vòng luẩn quẩn say lại tỉnh và bi kịch duyên phận khuyết chưa tròn."
+        },
+        {
+          "id": "LIT11_09",
+          "chapter": "Ngữ Văn 11 - Bài 5: Tùy bút Sông Đà",
+          "question": "Câu hỏi 9: Trong tùy bút 'Người lái đò Sông Đà', Nguyễn Tuân khám phá dòng sông Đà ở hai nét tính cách đối lập là:",
+          "options": [
+            "A. Hung bạo hiểm trở và thơ mộng trữ tình",
+            "B. Hiền hòa và phẳng lặng",
+            "C. Đục ngầu và khô cạn",
+            "D. Bí ẩn và lạnh giá"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Sông Đà vừa hùng vĩ, hiểm trở như kẻ thù số một, vừa dịu dàng, trữ tình như cố nhân."
+        },
+        {
+          "id": "LIT11_10",
+          "chapter": "Ngữ Văn 11 - Bài 5: Tùy bút Sông Hương",
+          "question": "Câu hỏi 10: Vẻ đẹp của sông Hương qua trang viết của Hoàng Phủ Ngọc Tường ở thượng nguồn là:",
+          "options": [
+            "A. Bản trường ca của rừng già, rầm rộ giữa bóng cây đại ngàn, mãnh liệt và phóng khoáng",
+            "B. Êm đềm như một mặt hồ phẳng lặng",
+            "C. Nước chảy xiết đục ngầu phù sa",
+            "D. Cằn cỗi giữa sỏi đá"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Vẻ đẹp phóng khoáng, hoang dại của Sông Hương vùng thượng lưu."
+        },
+        {
+          "id": "LIT11_11",
+          "chapter": "Ngữ Văn 11 - Bài 6: Văn nghị luận",
+          "question": "Câu hỏi 11: Yếu tố cốt lõi tạo nên sức thuyết phục của một bài văn nghị luận là:",
+          "options": [
+            "A. Luận điểm rõ ràng, lập luận chặt chẽ, luận cứ và dẫn chứng xác thực, cảm xúc chân thành",
+            "B. Cốt truyện ly kỳ hấp dẫn",
+            "C. Nhiều câu thơ vần điệu",
+            "D. Nhân vật hư cấu sinh động"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Hệ thống luận điểm, luận cứ logic kết hợp dẫn chứng thực tế."
+        },
+        {
+          "id": "LIT11_12",
+          "chapter": "Ngữ Văn 11 - Bài 7: Biện pháp tu từ",
+          "question": "Câu hỏi 12: Tác dụng của biện pháp tu từ 'Điệp cấu trúc' (lặp cú pháp) là:",
+          "options": [
+            "A. Tạo nhịp điệu hài hòa, nhấn mạnh cảm xúc và khắc sâu luận điểm của tác giả",
+            "B. Làm cho câu văn ngắn lại",
+            "C. Tránh trùng lặp từ ngữ",
+            "D. Làm câu văn trừu tượng hơn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Điệp cấu trúc tăng tính nhạc, nhịp điệu và sức biểu cảm."
+        },
+        {
+          "id": "LIT11_13",
+          "chapter": "Ngữ Văn 11 - Bài 7: Thành phần chêm xen",
+          "question": "Câu hỏi 13: Thành phần chêm xen trong câu văn thường được đánh dấu bằng dấu gì?",
+          "options": [
+            "A. Dấu gạch ngang, dấu ngoặc đơn hoặc hai dấu phẩy",
+            "B. Dấu chấm hỏi",
+            "C. Dấu hai chấm",
+            "D. Dấu chấm phẩy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Dùng để bổ sung thông tin phụ giải thích cho ngữ cảnh."
+        },
+        {
+          "id": "LIT11_14",
+          "chapter": "Ngữ Văn 11 - Bài 8: Văn bản thông tin",
+          "question": "Câu hỏi 14: Đặc trưng ngôn ngữ chủ yếu của văn bản thông tin là:",
+          "options": [
+            "A. Rõ ràng, chính xác, khách quan, giàu dữ liệu thực tế",
+            "B. Giàu tính biểu tượng đa nghĩa",
+            "C. Nhiều hư cấu tưởng tượng",
+            "D. Gieo vần bằng trắc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Văn bản thông tin cung cấp tri thức chính xác, tin cậy cho người đọc."
+        },
+        {
+          "id": "LIT11_15",
+          "chapter": "Ngữ Văn 11 - Bài 8: Tra cứu tài liệu",
+          "question": "Câu hỏi 15: Khi trích dẫn ý kiến của tác giả khác trong bài viết, người viết bắt buộc phải:",
+          "options": [
+            "A. Ghi rõ họ tên tác giả, tên tác phẩm, năm xuất bản và trang trích dẫn",
+            "B. Coi như ý tưởng của mình",
+            "C. Thay đổi câu chữ để không ai biết",
+            "D. Xóa bỏ nguồn gốc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Đảm bảo tính trung thực học thuật và tôn trọng quyền tác giả."
+        },
+        {
+          "id": "LIT11_16",
+          "chapter": "Ngữ Văn 11 - Bài 1: Truyện ngắn hiện thực",
+          "question": "Câu hỏi 16: Trong truyện ngắn 'Chí Phèo' của Nam Cao, chi tiết 'bát cháo hành' của Thị Nở biểu tượng cho:",
+          "options": [
+            "A. Hương vị của tình thương nhân đạo và ánh sáng lương tri thức tỉnh phần người trong Chí",
+            "B. Món ăn nghèo nàn của nông thôn",
+            "C. Sự cứu đói nhất thời",
+            "D. Nỗi sợ hãi của Thị Nở"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Bát cháo hành là biểu tượng nghệ thuật tuyệt đẹp về tình thương và lương tri."
+        },
+        {
+          "id": "LIT11_17",
+          "chapter": "Ngữ Văn 11 - Bài 1: Điểm nhìn nghệ thuật",
+          "question": "Câu hỏi 17: Điểm nhìn bên trong (internal focalization) giúp tác giả:",
+          "options": [
+            "A. Đi sâu vào thế giới nội tâm, diễn biến tâm lý và cảm xúc thầm kín của nhân vật",
+            "B. Quan sát bao quát cảnh quan bên ngoài",
+            "C. Liệt kê hành động thuần túy",
+            "D. Miêu tả ngoại hình nhân vật khách quan"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Điểm nhìn bên trong thâm nhập trực tiếp vào dòng tâm tư nhân vật."
+        },
+        {
+          "id": "LIT11_18",
+          "chapter": "Ngữ Văn 11 - Bài 2: Thơ Tràng giang",
+          "question": "Câu hỏi 18: Hai câu thơ: 'Sóng gợn tràng giang buồn điệp điệp / Con thuyền xuôi mái nước song song' sử dụng từ láy nhằm:",
+          "options": [
+            "A. Gợi tả nỗi buồn triền miên, bất tận trước không gian sông nước mênh mông",
+            "B. Miêu tả sự vui tươi tấp nập của bến sông",
+            "C. Diễn tả tốc độ nhanh của con thuyền",
+            "D. Khắc họa vẻ đẹp rực rỡ buổi bình minh"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Từ láy điệp điệp, song song mở ra nỗi sầu vạn cổ của hồn thơ Huy Cận."
+        },
+        {
+          "id": "LIT11_19",
+          "chapter": "Ngữ Văn 11 - Bài 2: Thơ Đây thôn Vĩ Dạ",
+          "question": "Câu hỏi 19: Hình ảnh 'Vườn ai mướt quá xanh như ngọc' của Hàn Mặc Tử gợi lên vẻ đẹp:",
+          "options": [
+            "A. Tinh khôi, mượt mà và tràn đầy sức sống của thiên nhiên xứ Huế",
+            "B. U ám hoang tàn",
+            "C. Khô cằn sỏi đá",
+            "D. Kỳ bí ma quái"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Từ 'mướt' và so sánh 'xanh như ngọc' diễn tả vẻ đẹp tinh khiết, non tơ."
+        },
+        {
+          "id": "LIT11_20",
+          "chapter": "Ngữ Văn 11 - Bài 3: Truyện thơ dân gian",
+          "question": "Câu hỏi 20: Đoạn trích 'Lời tiễn dặn' (Xống chụ xon xao - truyện thơ dân tộc Thái) thể hiện:",
+          "options": [
+            "A. Tình yêu thủy chung tha thiết và khát vọng tự do yêu đương vượt qua rào cản tập tục phong kiến",
+            "B. Cuộc chiến tranh giành lãnh thổ",
+            "C. Khát khao làm giàu của chàng trai",
+            "D. Lòng hiếu thảo với cha mẹ"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Khát vọng hạnh phúc lứa đôi bất diệt trong truyện thơ Thái."
+        },
+        {
+          "id": "LIT11_21",
+          "chapter": "Ngữ Văn 11 - Bài 3: Bi kịch sân khấu",
+          "question": "Câu hỏi 21: Xung đột kịch tính trong vở kịch 'Vũ Như Tô' của Nguyễn Huy Tưởng nảy sinh giữa:",
+          "options": [
+            "A. Khát vọng nghệ thuật thuần túy cao siêu với lợi ích thiết thực của đời sống nhân dân lao động",
+            "B. Tình yêu đôi lứa với gia đình",
+            "C. Phe thiện và phe ác thuần túy",
+            "D. Sự tranh giành quyền lực hoàng tộc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Bi kịch giữa nghệ thuật vị nghệ thuật và hiện thực cuộc sống."
+        },
+        {
+          "id": "LIT11_22",
+          "chapter": "Ngữ Văn 11 - Bài 4: Thơ Vội vàng",
+          "question": "Câu hỏi 22: Quan niệm sống trong bài thơ 'Vội vàng' của nhà thơ Xuân Diệu là:",
+          "options": [
+            "A. Sống mãnh liệt, cuống quýt tận hưởng từng giây phút thanh xuân và tuổi trẻ giữa trần thế",
+            "B. Lánh đời ẩn dật chốn thôn quê",
+            "C. Chờ đợi số phận an bài",
+            "D. Hướng về thế giới hư vô thần tiên"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Tuyên ngôn sống tích cực, chạy đua với thời gian để cống hiến và yêu đời."
+        },
+        {
+          "id": "LIT11_23",
+          "chapter": "Ngữ Văn 11 - Bài 4: Thơ Tự tình II",
+          "question": "Câu hỏi 23: Hai câu thơ: 'Chén rượu hương đưa say lại tỉnh / Vầng trăng bóng xế khuyết chưa tròn' của Hồ Xuân Hương diễn tả:",
+          "options": [
+            "A. Nỗi cô đơn cay đắng, duyên phận dở dang nhưng vẫn le lói khát khao hạnh phúc",
+            "B. Thú vui uống rượu ngắm trăng thanh tao",
+            "C. Sự say sưa quên hết sự đời",
+            "D. Niềm hạnh phúc sum vầy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Vòng luẩn quẩn say lại tỉnh và bi kịch duyên phận khuyết chưa tròn."
+        },
+        {
+          "id": "LIT11_24",
+          "chapter": "Ngữ Văn 11 - Bài 5: Tùy bút Sông Đà",
+          "question": "Câu hỏi 24: Trong tùy bút 'Người lái đò Sông Đà', Nguyễn Tuân khám phá dòng sông Đà ở hai nét tính cách đối lập là:",
+          "options": [
+            "A. Hung bạo hiểm trở và thơ mộng trữ tình",
+            "B. Hiền hòa và phẳng lặng",
+            "C. Đục ngầu và khô cạn",
+            "D. Bí ẩn và lạnh giá"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Sông Đà vừa hùng vĩ, hiểm trở như kẻ thù số một, vừa dịu dàng, trữ tình như cố nhân."
+        },
+        {
+          "id": "LIT11_25",
+          "chapter": "Ngữ Văn 11 - Bài 5: Tùy bút Sông Hương",
+          "question": "Câu hỏi 25: Vẻ đẹp của sông Hương qua trang viết của Hoàng Phủ Ngọc Tường ở thượng nguồn là:",
+          "options": [
+            "A. Bản trường ca của rừng già, rầm rộ giữa bóng cây đại ngàn, mãnh liệt và phóng khoáng",
+            "B. Êm đềm như một mặt hồ phẳng lặng",
+            "C. Nước chảy xiết đục ngầu phù sa",
+            "D. Cằn cỗi giữa sỏi đá"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Vẻ đẹp phóng khoáng, hoang dại của Sông Hương vùng thượng lưu."
+        },
+        {
+          "id": "LIT11_26",
+          "chapter": "Ngữ Văn 11 - Bài 6: Văn nghị luận",
+          "question": "Câu hỏi 26: Yếu tố cốt lõi tạo nên sức thuyết phục của một bài văn nghị luận là:",
+          "options": [
+            "A. Luận điểm rõ ràng, lập luận chặt chẽ, luận cứ và dẫn chứng xác thực, cảm xúc chân thành",
+            "B. Cốt truyện ly kỳ hấp dẫn",
+            "C. Nhiều câu thơ vần điệu",
+            "D. Nhân vật hư cấu sinh động"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Hệ thống luận điểm, luận cứ logic kết hợp dẫn chứng thực tế."
+        },
+        {
+          "id": "LIT11_27",
+          "chapter": "Ngữ Văn 11 - Bài 7: Biện pháp tu từ",
+          "question": "Câu hỏi 27: Tác dụng của biện pháp tu từ 'Điệp cấu trúc' (lặp cú pháp) là:",
+          "options": [
+            "A. Tạo nhịp điệu hài hòa, nhấn mạnh cảm xúc và khắc sâu luận điểm của tác giả",
+            "B. Làm cho câu văn ngắn lại",
+            "C. Tránh trùng lặp từ ngữ",
+            "D. Làm câu văn trừu tượng hơn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Điệp cấu trúc tăng tính nhạc, nhịp điệu và sức biểu cảm."
+        },
+        {
+          "id": "LIT11_28",
+          "chapter": "Ngữ Văn 11 - Bài 7: Thành phần chêm xen",
+          "question": "Câu hỏi 28: Thành phần chêm xen trong câu văn thường được đánh dấu bằng dấu gì?",
+          "options": [
+            "A. Dấu gạch ngang, dấu ngoặc đơn hoặc hai dấu phẩy",
+            "B. Dấu chấm hỏi",
+            "C. Dấu hai chấm",
+            "D. Dấu chấm phẩy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Dùng để bổ sung thông tin phụ giải thích cho ngữ cảnh."
+        },
+        {
+          "id": "LIT11_29",
+          "chapter": "Ngữ Văn 11 - Bài 8: Văn bản thông tin",
+          "question": "Câu hỏi 29: Đặc trưng ngôn ngữ chủ yếu của văn bản thông tin là:",
+          "options": [
+            "A. Rõ ràng, chính xác, khách quan, giàu dữ liệu thực tế",
+            "B. Giàu tính biểu tượng đa nghĩa",
+            "C. Nhiều hư cấu tưởng tượng",
+            "D. Gieo vần bằng trắc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Văn bản thông tin cung cấp tri thức chính xác, tin cậy cho người đọc."
+        },
+        {
+          "id": "LIT11_30",
+          "chapter": "Ngữ Văn 11 - Bài 8: Tra cứu tài liệu",
+          "question": "Câu hỏi 30: Khi trích dẫn ý kiến của tác giả khác trong bài viết, người viết bắt buộc phải:",
+          "options": [
+            "A. Ghi rõ họ tên tác giả, tên tác phẩm, năm xuất bản và trang trích dẫn",
+            "B. Coi như ý tưởng của mình",
+            "C. Thay đổi câu chữ để không ai biết",
+            "D. Xóa bỏ nguồn gốc"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Ngữ Văn 11 Kết Nối Tri Thức Với Cuộc Sống: Đảm bảo tính trung thực học thuật và tôn trọng quyền tác giả."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_ENG_11",
+    "grade": "11",
+    "subject_code": "Tiếng Anh",
+    "name": "Hệ Sao English 11 Global Success",
+    "subject": "Tiếng Anh 11 (Kết Nối Tri Thức)",
+    "description": "Chinh phục từ vựng và ngữ pháp tiếng Anh chuẩn bộ SGK Global Success Kết Nối Tri Thức.",
+    "icon": "🌐",
+    "theme_color": "#fa8c16",
+    "stations": [
+      {
+        "id": "E11_01",
+        "level": "NhanBiet",
+        "title": "Trạm Vocabulary Unit 1",
+        "question": "The noun form of the adjective 'healthy' is:",
+        "options": [
+          "A. health",
+          "B. healthily",
+          "C. healthiness",
+          "D. healthful"
+        ],
+        "correct_answer": "A",
+        "ai_hint": "Health (sức khỏe).",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 30,
+          "y": 40
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_GALAXY_ENG_11",
+      "title": "Hố Đen 30 Câu Tổng Hợp: Tiếng Anh 11",
+      "curriculum": "SGK Tiếng Anh 11 - Kết Nối Tri Thức Với Cuộc Sống (Trọn Vẹn 30 Câu)",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 900,
+      "pass_percentage": 80,
+      "bonus_exp": 1000,
+      "questions": [
+        {
+          "id": "ENG11_01",
+          "chapter": "Tiếng Anh 11 - Unit 1: A Long and Healthy Life",
+          "question": "Câu hỏi 1: Regular exercise and a balanced diet help prevent many lifestyle ______.",
+          "options": [
+            "A. diseases",
+            "B. remedies",
+            "C. habits",
+            "D. symptoms"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Lifestyle diseases = bệnh do lối sống (tim mạch, béo phì)."
+        },
+        {
+          "id": "ENG11_02",
+          "chapter": "Tiếng Anh 11 - Unit 1: Past Simple vs Present Perfect",
+          "question": "Câu hỏi 2: My grandfather _______ in this village for over fifty years and he still loves it.",
+          "options": [
+            "A. has lived",
+            "B. lived",
+            "C. is living",
+            "D. was living"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Hành động bắt đầu trong quá khứ kéo dài đến hiện tại dùng HTHT (for over 50 years)."
+        },
+        {
+          "id": "ENG11_03",
+          "chapter": "Tiếng Anh 11 - Unit 2: The Generation Gap",
+          "question": "Câu hỏi 3: Parents and teenagers sometimes have conflicts because of the difference in their ______.",
+          "options": [
+            "A. viewpoints and values",
+            "B. school uniforms",
+            "C. physical heights",
+            "D. handwriting styles"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Khoảng cách thế hệ xuất phát từ sự khác biệt về quan điểm và giá trị sống."
+        },
+        {
+          "id": "ENG11_04",
+          "chapter": "Tiếng Anh 11 - Unit 2: Modal Verbs",
+          "question": "Câu hỏi 4: You _______ park your car here. It is a strictly forbidden zone.",
+          "options": [
+            "A. mustn't",
+            "B. don't have to",
+            "C. should",
+            "D. ought to"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Mustn't diễn tả sự cấm đoán."
+        },
+        {
+          "id": "ENG11_05",
+          "chapter": "Tiếng Anh 11 - Unit 3: Cities of the Future",
+          "question": "Câu hỏi 5: A city that makes use of digital technology and AI to enhance public services is a ______.",
+          "options": [
+            "A. smart city",
+            "B. ancient town",
+            "C. rural village",
+            "D. industrial slum"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Smart city = thành phố thông minh."
+        },
+        {
+          "id": "ENG11_06",
+          "chapter": "Tiếng Anh 11 - Unit 3: Stative Verbs",
+          "question": "Câu hỏi 6: The soup _______ delicious. What ingredients did you put in it?",
+          "options": [
+            "A. smells",
+            "B. is smelling",
+            "C. was smelling",
+            "D. smell"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Động từ chỉ tri giác 'smell' dùng ở thì đơn giản (stative verb)."
+        },
+        {
+          "id": "ENG11_07",
+          "chapter": "Tiếng Anh 11 - Unit 4: ASEAN and Viet Nam",
+          "question": "Câu hỏi 7: One of the key principles of the ASEAN Charter is _______ in the internal affairs of member states.",
+          "options": [
+            "A. non-interference",
+            "B. intervention",
+            "C. separation",
+            "D. competition"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Nguyên tắc không can thiệp vào công việc nội bộ (non-interference)."
+        },
+        {
+          "id": "ENG11_08",
+          "chapter": "Tiếng Anh 11 - Unit 4: Gerunds",
+          "question": "Câu hỏi 8: _______ part in youth volunteer activities helps students develop social skills.",
+          "options": [
+            "A. Taking",
+            "B. Took",
+            "C. Take",
+            "D. Taken"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Danh động từ V-ing đóng vai trò chủ ngữ số ít."
+        },
+        {
+          "id": "ENG11_09",
+          "chapter": "Tiếng Anh 11 - Unit 5: Global Warming",
+          "question": "Câu hỏi 9: Carbon dioxide and methane are major _______ that trap heat in the atmosphere.",
+          "options": [
+            "A. greenhouse gases",
+            "B. fossil minerals",
+            "C. renewable energies",
+            "D. organic fuels"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Greenhouse gases = khí nhà kính."
+        },
+        {
+          "id": "ENG11_10",
+          "chapter": "Tiếng Anh 11 - Unit 5: Participle Clauses",
+          "question": "Câu hỏi 10: _______ by human activities, polar ice caps are melting at an alarming rate.",
+          "options": [
+            "A. Caused",
+            "B. Causing",
+            "C. Having caused",
+            "D. To cause"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Phân từ hai (Caused) mang nghĩa bị động: 'Được gây ra bởi...'"
+        },
+        {
+          "id": "ENG11_11",
+          "chapter": "Tiếng Anh 11 - Unit 6: Preserving Heritage",
+          "question": "Câu hỏi 11: The ancient town of Hoi An was recognized by UNESCO as a World _______ Site.",
+          "options": [
+            "A. Heritage",
+            "B. Tradition",
+            "C. Custom",
+            "D. Monument"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: World Heritage Site = Di sản thế giới."
+        },
+        {
+          "id": "ENG11_12",
+          "chapter": "Tiếng Anh 11 - Unit 6: To-infinitive clauses",
+          "question": "Câu hỏi 12: Ha Long Bay is the most famous landscape _______ by millions of international tourists each year.",
+          "options": [
+            "A. to be visited",
+            "B. visit",
+            "C. visited to",
+            "D. visiting"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Rút gọn mệnh đề quan hệ sau 'the most famous...' dùng to-infinitive."
+        },
+        {
+          "id": "ENG11_13",
+          "chapter": "Tiếng Anh 11 - Unit 7: Education Options",
+          "question": "Câu hỏi 13: Students who prefer hands-on training rather than academic theories often choose _______ education.",
+          "options": [
+            "A. vocational",
+            "B. secondary",
+            "C. nursery",
+            "D. compulsory"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Vocational education = giáo dục nghề nghiệp."
+        },
+        {
+          "id": "ENG11_14",
+          "chapter": "Tiếng Anh 11 - Unit 8: Becoming Independent",
+          "question": "Câu hỏi 14: Time management and budget planning are crucial life _______ for college students.",
+          "options": [
+            "A. skills",
+            "B. chores",
+            "C. rules",
+            "D. duties"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Life skills = kỹ năng sống."
+        },
+        {
+          "id": "ENG11_15",
+          "chapter": "Tiếng Anh 11 - Unit 8: Cleft sentences",
+          "question": "Câu hỏi 15: It was her mother _______ taught her how to cook and manage household chores.",
+          "options": [
+            "A. that",
+            "B. which",
+            "C. whom",
+            "D. what"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Cấu trúc câu chẻ nhấn mạnh: It was [chủ ngữ] that..."
+        },
+        {
+          "id": "ENG11_16",
+          "chapter": "Tiếng Anh 11 - Unit 9: Social Issues",
+          "question": "Câu hỏi 16: Peer _______ can push teenagers into adopting unhealthy behaviors to fit in with their friends.",
+          "options": [
+            "A. pressure",
+            "B. relation",
+            "C. advice",
+            "D. trust"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Peer pressure = áp lực từ bạn bè đồng trang lứa."
+        },
+        {
+          "id": "ENG11_17",
+          "chapter": "Tiếng Anh 11 - Unit 10: Ecosystem",
+          "question": "Câu hỏi 17: Deforestation poses a severe threat to the natural _______ of many endangered species.",
+          "options": [
+            "A. habitats",
+            "B. resources",
+            "C. climates",
+            "D. reserves"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Natural habitat = môi trường sống tự nhiên."
+        },
+        {
+          "id": "ENG11_18",
+          "chapter": "Tiếng Anh 11 - Unit 1: A Long and Healthy Life",
+          "question": "Câu hỏi 18: Regular exercise and a balanced diet help prevent many lifestyle ______.",
+          "options": [
+            "A. diseases",
+            "B. remedies",
+            "C. habits",
+            "D. symptoms"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Lifestyle diseases = bệnh do lối sống (tim mạch, béo phì)."
+        },
+        {
+          "id": "ENG11_19",
+          "chapter": "Tiếng Anh 11 - Unit 1: Past Simple vs Present Perfect",
+          "question": "Câu hỏi 19: My grandfather _______ in this village for over fifty years and he still loves it.",
+          "options": [
+            "A. has lived",
+            "B. lived",
+            "C. is living",
+            "D. was living"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Hành động bắt đầu trong quá khứ kéo dài đến hiện tại dùng HTHT (for over 50 years)."
+        },
+        {
+          "id": "ENG11_20",
+          "chapter": "Tiếng Anh 11 - Unit 2: The Generation Gap",
+          "question": "Câu hỏi 20: Parents and teenagers sometimes have conflicts because of the difference in their ______.",
+          "options": [
+            "A. viewpoints and values",
+            "B. school uniforms",
+            "C. physical heights",
+            "D. handwriting styles"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Khoảng cách thế hệ xuất phát từ sự khác biệt về quan điểm và giá trị sống."
+        },
+        {
+          "id": "ENG11_21",
+          "chapter": "Tiếng Anh 11 - Unit 2: Modal Verbs",
+          "question": "Câu hỏi 21: You _______ park your car here. It is a strictly forbidden zone.",
+          "options": [
+            "A. mustn't",
+            "B. don't have to",
+            "C. should",
+            "D. ought to"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Mustn't diễn tả sự cấm đoán."
+        },
+        {
+          "id": "ENG11_22",
+          "chapter": "Tiếng Anh 11 - Unit 3: Cities of the Future",
+          "question": "Câu hỏi 22: A city that makes use of digital technology and AI to enhance public services is a ______.",
+          "options": [
+            "A. smart city",
+            "B. ancient town",
+            "C. rural village",
+            "D. industrial slum"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Smart city = thành phố thông minh."
+        },
+        {
+          "id": "ENG11_23",
+          "chapter": "Tiếng Anh 11 - Unit 3: Stative Verbs",
+          "question": "Câu hỏi 23: The soup _______ delicious. What ingredients did you put in it?",
+          "options": [
+            "A. smells",
+            "B. is smelling",
+            "C. was smelling",
+            "D. smell"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Động từ chỉ tri giác 'smell' dùng ở thì đơn giản (stative verb)."
+        },
+        {
+          "id": "ENG11_24",
+          "chapter": "Tiếng Anh 11 - Unit 4: ASEAN and Viet Nam",
+          "question": "Câu hỏi 24: One of the key principles of the ASEAN Charter is _______ in the internal affairs of member states.",
+          "options": [
+            "A. non-interference",
+            "B. intervention",
+            "C. separation",
+            "D. competition"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Nguyên tắc không can thiệp vào công việc nội bộ (non-interference)."
+        },
+        {
+          "id": "ENG11_25",
+          "chapter": "Tiếng Anh 11 - Unit 4: Gerunds",
+          "question": "Câu hỏi 25: _______ part in youth volunteer activities helps students develop social skills.",
+          "options": [
+            "A. Taking",
+            "B. Took",
+            "C. Take",
+            "D. Taken"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Danh động từ V-ing đóng vai trò chủ ngữ số ít."
+        },
+        {
+          "id": "ENG11_26",
+          "chapter": "Tiếng Anh 11 - Unit 5: Global Warming",
+          "question": "Câu hỏi 26: Carbon dioxide and methane are major _______ that trap heat in the atmosphere.",
+          "options": [
+            "A. greenhouse gases",
+            "B. fossil minerals",
+            "C. renewable energies",
+            "D. organic fuels"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Greenhouse gases = khí nhà kính."
+        },
+        {
+          "id": "ENG11_27",
+          "chapter": "Tiếng Anh 11 - Unit 5: Participle Clauses",
+          "question": "Câu hỏi 27: _______ by human activities, polar ice caps are melting at an alarming rate.",
+          "options": [
+            "A. Caused",
+            "B. Causing",
+            "C. Having caused",
+            "D. To cause"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Phân từ hai (Caused) mang nghĩa bị động: 'Được gây ra bởi...'"
+        },
+        {
+          "id": "ENG11_28",
+          "chapter": "Tiếng Anh 11 - Unit 6: Preserving Heritage",
+          "question": "Câu hỏi 28: The ancient town of Hoi An was recognized by UNESCO as a World _______ Site.",
+          "options": [
+            "A. Heritage",
+            "B. Tradition",
+            "C. Custom",
+            "D. Monument"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: World Heritage Site = Di sản thế giới."
+        },
+        {
+          "id": "ENG11_29",
+          "chapter": "Tiếng Anh 11 - Unit 6: To-infinitive clauses",
+          "question": "Câu hỏi 29: Ha Long Bay is the most famous landscape _______ by millions of international tourists each year.",
+          "options": [
+            "A. to be visited",
+            "B. visit",
+            "C. visited to",
+            "D. visiting"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Rút gọn mệnh đề quan hệ sau 'the most famous...' dùng to-infinitive."
+        },
+        {
+          "id": "ENG11_30",
+          "chapter": "Tiếng Anh 11 - Unit 7: Education Options",
+          "question": "Câu hỏi 30: Students who prefer hands-on training rather than academic theories often choose _______ education.",
+          "options": [
+            "A. vocational",
+            "B. secondary",
+            "C. nursery",
+            "D. compulsory"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Tiếng Anh 11 Kết Nối Tri Thức Với Cuộc Sống: Vocational education = giáo dục nghề nghiệp."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GALAXY_HIS_10",
+    "grade": "10",
+    "subject_code": "Lịch Sử",
+    "name": "Hệ Sao Điện Biên Phủ 10",
+    "subject": "Lịch Sử 10 (Kết Nối Tri Thức)",
+    "description": "Chinh phục các mốc son lịch sử hào hùng của chiến dịch Điện Biên Phủ 1954.",
+    "icon": "📜",
+    "theme_color": "#ff4d4f",
+    "stations": [
+      {
+        "id": "HIS_01",
+        "level": "NhanBiet",
+        "title": "Trạm Căn Cứ Khởi Đầu",
+        "question": "Chiến dịch Điện Biên Phủ diễn ra vào năm nào và dưới sự chỉ huy trực tiếp của vị Đại tướng nào?",
+        "options": [
+          "A. 1945 - Đại tướng Văn Tiến Dũng",
+          "B. 1954 - Đại tướng Võ Nguyên Giáp",
+          "C. 1975 - Đại tướng Chu Huy Mân",
+          "D. 1950 - Đại tướng Hoàng Văn Thái"
+        ],
+        "correct_answer": "B",
+        "ai_hint": "Vị tướng tài ba này từng là người thầy giáo dạy sử và chiến dịch diễn ra vào mùa xuân năm 1954.",
+        "exp_reward": 50,
+        "coordinates": {
+          "x": 22,
+          "y": 35
+        }
+      }
+    ],
+    "boss_blackhole": {
+      "id": "BOSS_HIS_10",
+      "title": "Hố Đen Thử Thách Lịch Sử 10",
+      "curriculum": "Bộ Sách Giáo Khoa Kết Nối Tri Thức Với Cuộc Sống",
+      "unlock_stars_required": 1,
+      "time_limit_seconds": 360,
+      "pass_percentage": 80,
+      "bonus_exp": 500,
+      "questions": [
+        {
+          "id": "HIS11_01",
+          "chapter": "Lịch Sử 11 - Chương 1: Cách mạng Anh",
+          "question": "Câu hỏi 1: Cuộc cách mạng tư sản Anh thế kỷ XVII diễn ra dưới hình thức:",
+          "options": [
+            "A. Nội chiến giữa Nghị viện và chế độ quân chủ chuyên chế",
+            "B. Chiến tranh giải phóng dân tộc",
+            "C. Khởi nghĩa nông dân",
+            "D. Đấu tranh nghị trường thuần túy"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nội chiến giữa phe Nghị viện do Cromwell lãnh đạo với vua Charles I."
+        },
+        {
+          "id": "HIS11_02",
+          "chapter": "Lịch Sử 11 - Chương 1: Chiến tranh Bắc Mỹ",
+          "question": "Câu hỏi 2: Ý nghĩa lớn nhất của cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là:",
+          "options": [
+            "A. Khai sinh Hợp chúng quốc Hoa Kỳ và mở đường cho CNTB phát triển",
+            "B. Giải phóng nô lệ da đen",
+            "C. Thiết lập chế độ quân chủ lập hiến",
+            "D. Đánh bại hoàn toàn thực dân Tây Ban Nha"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Chiến tranh thành lập nước Mỹ (1776) có tính chất cách mạng tư sản."
+        },
+        {
+          "id": "HIS11_03",
+          "chapter": "Lịch Sử 11 - Chương 1: Cách mạng Pháp 1789",
+          "question": "Câu hỏi 3: Khẩu hiệu nổi tiếng trong Tuyên ngôn Nhân quyền và Dân quyền Pháp 1789 là:",
+          "options": [
+            "A. Tự do - Bình đẳng - Bác ái",
+            "B. Độc lập - Tự do - Hạnh phúc",
+            "C. Hòa bình - Ruộng đất - Bánh mì",
+            "D. Đoàn kết - Đấu tranh - Thắng lợi"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Tự do - Bình đẳng - Bác ái là ngọn cờ tư tưởng vĩ đại của CM Pháp."
+        },
+        {
+          "id": "HIS11_04",
+          "chapter": "Lịch Sử 11 - Chương 2: Chủ nghĩa xã hội",
+          "question": "Câu hỏi 4: Quốc gia đầu tiên trên thế giới xây dựng nhà nước xã hội chủ nghĩa là:",
+          "options": [
+            "A. Nước Nga Xô viết (sau là Liên bang Xô viết)",
+            "B. Trung Quốc",
+            "C. Việt Nam",
+            "D. Cuba"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Cách mạng tháng Mười Nga 1917 khai sinh nhà nước Xô viết."
+        },
+        {
+          "id": "HIS11_05",
+          "chapter": "Lịch Sử 11 - Chương 2: Liên Xô thành lập",
+          "question": "Câu hỏi 5: Liên bang Cộng hòa xã hội chủ nghĩa Xô viết (Liên Xô) chính thức thành lập năm nào?",
+          "options": [
+            "A. Năm 1922",
+            "B. Năm 1917",
+            "C. Năm 1924",
+            "D. Năm 1945"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Cuối năm 1922, Đại hội Xô viết toàn Nga thông qua hiệp ước thành lập Liên Xô."
+        },
+        {
+          "id": "HIS11_06",
+          "chapter": "Lịch Sử 11 - Chương 3: Xâm lược Đông Nam Á",
+          "question": "Câu hỏi 6: Nước duy nhất ở khu vực Đông Nam Á giữ được nền độc lập trong thời kỳ thực dân là:",
+          "options": [
+            "A. Xiêm (Thái Lan ngày nay)",
+            "B. Miến Điện (Myanmar)",
+            "C. Mã Lai",
+            "D. Philippines"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Xiêm nhờ chính sách ngoại giao khôn khéo và cải cách của vua Rama V."
+        },
+        {
+          "id": "HIS11_07",
+          "chapter": "Lịch Sử 11 - Chương 4: Kháng chiến chống Tống",
+          "question": "Câu hỏi 7: Vị tướng chỉ huy cuộc kháng chiến chống Tống (1075 - 1077) với chiến thắng trên sông Như Nguyệt là:",
+          "options": [
+            "A. Lý Thường Kiệt",
+            "B. Trần Hưng Đạo",
+            "C. Ngô Quyền",
+            "D. Quang Trung"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Lý Thường Kiệt chủ động tấn công tự vệ và lập phòng tuyến Như Nguyệt."
+        },
+        {
+          "id": "HIS11_08",
+          "chapter": "Lịch Sử 11 - Chương 4: Kháng chiến chống Mông - Nguyên",
+          "question": "Câu hỏi 8: Chiến thắng quyết định kết thúc cuộc kháng chiến chống Mông - Nguyên lần 3 năm 1288 là trận:",
+          "options": [
+            "A. Bạch Đằng",
+            "B. Chi Lăng",
+            "C. Ngọc Hồi - Đống Đa",
+            "D. Rạch Gầm - Xoài Mút"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Trần Hưng Đạo tổ chức trận địa cọc trên sông Bạch Đằng tiêu diệt thủy quân Ô Mã Nhi."
+        },
+        {
+          "id": "HIS11_09",
+          "chapter": "Lịch Sử 11 - Chương 4: Khởi nghĩa Lam Sơn",
+          "question": "Câu hỏi 9: Bình Ngô đại cáo của Nguyễn Trãi ra đời sau thắng lợi của cuộc khởi nghĩa nào?",
+          "options": [
+            "A. Khởi nghĩa Lam Sơn",
+            "B. Khởi nghĩa Tây Sơn",
+            "C. Kháng chiến chống Tống",
+            "D. Khởi nghĩa Hai Bà Trưng"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Nguyễn Trãi thừa lệnh Lê Lợi viết Bình Ngô đại cáo công bố quét sạch giặc Minh."
+        },
+        {
+          "id": "HIS11_10",
+          "chapter": "Lịch Sử 11 - Chương 4: Phong trào Tây Sơn",
+          "question": "Câu hỏi 10: Trận đánh đại phá 29 vạn quân Mãn Thanh mùa xuân năm 1789 do người anh hùng nào chỉ huy?",
+          "options": [
+            "A. Quang Trung - Nguyễn Huệ",
+            "B. Lê Lợi",
+            "C. Đinh Tiên Hoàng",
+            "D. Trần Quốc Tuấn"
+          ],
+          "correct_answer": "A",
+          "explanation": "Trích dẫn kiến thức chuẩn từ bộ SGK Lịch Sử 11 Kết Nối Tri Thức Với Cuộc Sống: Vua Quang Trung hành quân thần tốc đánh tan quân Thanh ở Ngọc Hồi - Đống Đa."
+        }
+      ]
+    }
+  }
+]

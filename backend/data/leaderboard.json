@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 1,
+    "name": "Hoàng Thị Mai",
+    "class_name": "11A1",
+    "ship": "Phượng Hoàng Lửa Bộc Bố",
+    "score": 2850,
+    "streak": 14,
+    "badge": "Chỉ huy Hạm đội ⭐⭐⭐"
+  },
+  {
+    "rank": 2,
+    "name": "Triệu Đức Nam",
+    "class_name": "12A2",
+    "ship": "Hải Âu Phương Bắc",
+    "score": 2640,
+    "streak": 12,
+    "badge": "Chỉ huy Hạm đội ⭐⭐"
+  },
+  {
+    "rank": 3,
+    "name": "Nông Văn Khang",
+    "class_name": "10A1",
+    "ship": "Sao Băng Bộc Bố 01",
+    "score": 2390,
+    "streak": 9,
+    "badge": "Chỉ huy Hạm đội ⭐"
+  },
+  {
+    "rank": 4,
+    "name": "Đặng Thu Thảo",
+    "class_name": "10A3",
+    "ship": "Vệ Tinh Xanh",
+    "score": 2180,
+    "streak": 8,
+    "badge": "Phi công Tiên phong"
+  },
+  {
+    "rank": 5,
+    "name": "Lê Quốc Bảo",
+    "class_name": "11A2",
+    "ship": "Kỷ Nguyên Số",
+    "score": 1950,
+    "streak": 7,
+    "badge": "Phi công Cấp cao"
+  },
+  {
+    "rank": 6,
+    "name": "Bàn Thị Tuyết",
+    "class_name": "10A2",
+    "ship": "Hoa Hướng Dương",
+    "score": 1820,
+    "streak": 6,
+    "badge": "Thám hiểm Gia"
+  },
+  {
+    "rank": 7,
+    "name": "Ma Phúc Hưng",
+    "class_name": "12A1",
+    "ship": "Sấm Sét Rừng Xanh",
+    "score": 1710,
+    "streak": 5,
+    "badge": "Thám hiểm Gia"
+  },
+  {
+    "rank": 8,
+    "name": "Dương Thùy Linh",
+    "class_name": "11A3",
+    "ship": "Ánh Sao Ba Bể",
+    "score": 1590,
+    "streak": 5,
+    "badge": "Tân Binh Cần mẫn"
+  },
+  {
+    "rank": 9,
+    "name": "Hoàng Minh Quân",
+    "class_name": "10A1",
+    "ship": "Chiến Mã Pác Nặm",
+    "score": 1480,
+    "streak": 4,
+    "badge": "Tân Binh Cần mẫn"
+  },
+  {
+    "rank": 10,
+    "name": "La Văn Tuấn",
+    "class_name": "10A4",
+    "ship": "Đại Bàng Bộc Bố",
+    "score": 1390,
+    "streak": 4,
+    "badge": "Tân Binh Cần mẫn"
+  }
+]
