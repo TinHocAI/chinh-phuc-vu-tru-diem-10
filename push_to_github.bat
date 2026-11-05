@@ -1,30 +1,40 @@
 @echo off
 chcp 65001 > nul
-title Day code len GitHub - THPT Boc Bo
+title Đồng Bộ Dữ Liệu Lên GitHub - CLB AI THPT Bộc Bố
+color 0b
+
 echo ========================================================
 echo   CHINH PHỤC VŨ TRỤ ĐIỂM 10 - CLB AI THPT BỘC BỐ
-echo           ĐẨY DỰ ÁN LÊN GITHUB TỰ ĐỘNG
+echo       TỰ ĐỘNG ĐỒNG BỘ DỮ LIỆU LÊN GITHUB 1-CLICK
 echo ========================================================
 echo.
-echo Bước 1: Hãy truy cập https://github.com/new và tạo 1 Repository mới.
-echo Bước 2: Copy link Repository dạng: https://github.com/username/ten-repo.git
+echo Repo liên kết: https://github.com/TinHocAI/chinh-phuc-vu-tru-diem-10
 echo.
-set /p REPO_URL="Dán link GitHub của bạn vào đây rồi bấm Enter: "
 
-if "%REPO_URL%"=="" (
-    echo Chưa nhập link. Quá trình hủy bỏ.
-    pause
-    exit /b
+set /p MSG="Nhập mô tả cập nhật (hoặc nhấn Enter để dùng mặc định): "
+if "%MSG%"=="" set MSG=Cap nhat du lieu va noi dung game moi nhat
+
+echo.
+echo [1/3] Đang ghi nhận các thay đổi dữ liệu mới...
+git add .
+
+echo [2/3] Đang đóng gói bản cập nhật...
+git commit -m "%MSG%"
+
+echo [3/3] Đang đẩy lên GitHub...
+git push origin main
+
+echo.
+if %ERRORLEVEL% equ 0 (
+    color 0a
+    echo ========================================================
+    echo   THANH CONG! DU LIEU DA DUOC DONG BO LEN GITHUB.
+    echo   Xem tai: https://github.com/TinHocAI/chinh-phuc-vu-tru-diem-10
+    echo ========================================================
+) else (
+    color 0c
+    echo Co loi xay ra trong qua trinh dong bo. Vui long kiem tra ket noi mang.
 )
 
 echo.
-echo Đang kết nối tới GitHub...
-git remote remove origin 2>nul
-git remote add origin %REPO_URL%
-git branch -M main
-echo Đang đẩy mã nguồn lên nhánh main...
-git push -u origin main
-
-echo.
-echo Hoàn tất! Mã nguồn đã được đưa lên GitHub thành công.
 pause
