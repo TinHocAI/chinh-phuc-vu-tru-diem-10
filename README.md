@@ -45,7 +45,7 @@ Game **"Chinh Phục Vũ Trụ Điểm 10"** là nền tảng học tập thông
 ### Yêu cầu:
 - Python 3.10+ (Đã cài sẵn trong máy)
 
-### Cách khởi chạy nhanh:
+### Cách khởi chạy nhanh trên máy (Offline):
 1. Nhấp đúp chuột vào file `start_game.bat`  
    *hoặc* chạy lệnh trong terminal:
    ```bash
@@ -55,6 +55,22 @@ Game **"Chinh Phục Vũ Trụ Điểm 10"** là nền tảng học tập thông
    ```
    http://127.0.0.1:8000
    ```
+
+---
+
+## 🌐 Triển Khai Chơi Game Online (Miễn Phí)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/TinHocAI/chinh-phuc-vu-tru-diem-10)
+
+- **Cách 1: Triển khai 1-Click trên Render.com (Khuyên dùng)**
+  1. Bấm vào nút **Deploy to Render** ở trên (hoặc truy cập: `https://render.com/deploy?repo=https://github.com/TinHocAI/chinh-phuc-vu-tru-diem-10`).
+  2. Đăng nhập bằng tài khoản GitHub `TinHocAI`.
+  3. Bấm **Apply**, Render sẽ tự động dựng server và cấp link chơi online (dạng `https://chinh-phuc-vu-tru-diem-10.onrender.com`).
+
+- **Cách 2: Triển khai trên Railway.app**
+  1. Truy cập [Railway.app](https://railway.app/) và đăng nhập bằng GitHub.
+  2. Chọn **New Project** > **Deploy from GitHub repo** > Chọn `TinHocAI/chinh-phuc-vu-tru-diem-10`.
+  3. Railway sẽ tự động nhận diện cấu hình và cung cấp domain công khai.
 
 ---
 
